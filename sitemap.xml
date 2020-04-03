@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pufanyi.github.io/about/index.html</loc>
+    
+    <lastmod>2020-04-03T04:33:46.499Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pufanyi.github.io/agc043_c/</loc>
+    
+    <lastmod>2020-04-03T04:15:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pufanyi.github.io/agc043_d/</loc>
     
     <lastmod>2020-03-31T01:59:58.000Z</lastmod>
@@ -103,13 +117,6 @@
     <loc>https://pufanyi.github.io/categories/index.html</loc>
     
     <lastmod>2020-02-10T05:11:46.586Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pufanyi.github.io/about/index.html</loc>
-    
-    <lastmod>2020-02-10T05:11:40.307Z</lastmod>
     
   </url>
   
