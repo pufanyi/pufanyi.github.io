@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pufanyi.github.io/"/>
-  <updated>2020-04-07T01:55:04.000Z</updated>
+  <updated>2020-04-18T02:13:26.242Z</updated>
   <id>https://pufanyi.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rho</title>
+    <link href="https://pufanyi.github.io/Rho/"/>
+    <id>https://pufanyi.github.io/Rho/</id>
+    <published>2020-04-18T02:13:26.242Z</published>
+    <updated>2020-04-18T02:13:26.242Z</updated>
+    
+    <content type="html"><![CDATA[<!-- build time:Sat Apr 18 2020 10:13:47 GMT+0800 (GMT+08:00) --><!-- rebuild by neat -->]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!-- build time:Sat Apr 18 2020 10:13:47 GMT+0800 (GMT+08:00) --&gt;&lt;!-- rebuild by neat --&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>AGC043C Giant Graph</title>
@@ -497,25 +519,6 @@
       <category term="CodeForces" scheme="https://pufanyi.github.io/tags/CodeForces/"/>
     
       <category term="DP" scheme="https://pufanyi.github.io/tags/DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>换了个主题</title>
-    <link href="https://pufanyi.github.io/%E6%8D%A2%E4%B8%AA%E4%B8%BB%E9%A2%98/"/>
-    <id>https://pufanyi.github.io/%E6%8D%A2%E4%B8%AA%E4%B8%BB%E9%A2%98/</id>
-    <published>2020-01-28T16:00:00.000Z</published>
-    <updated>2020-01-28T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<!-- build time:Wed Apr 08 2020 09:40:40 GMT+0800 (GMT+08:00) --><p>之前的主题太丑了……</p><a id="more"></a><p>换上了 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">Material X</a>，很多修改直接偷了 <a href="https://github.com/AutumnKite/hexo-theme-material-x" target="_blank" rel="noopener">myh 的代码 </a>。</p><p> 之前搭得太臃肿了，现在删库之后全部重新搭了一遍……</p><p>好感人啊，搭完发现速度快了好多……</p><!-- rebuild by neat -->]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Wed Apr 08 2020 09:40:40 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;之前的主题太丑了……&lt;/p&gt;
-    
-    </summary>
-    
-    
     
   </entry>
   
