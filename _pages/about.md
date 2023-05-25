@@ -6,7 +6,7 @@ subtitle: Student from <a href="https://ntu.edu.sg">Nanyang Technological Univer
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: modorinodoraemon.webp
   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>
