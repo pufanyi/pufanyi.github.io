@@ -8,7 +8,7 @@
     - name: Date of Birth
       value: 11th February 2003
     - name: Languages
-      value: Chinese, English, Japanese
+      value: Chinese（中文）, English, Japanese（日本語）
 
 - title: Education
   type: time_table
