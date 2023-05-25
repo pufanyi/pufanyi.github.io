@@ -8,13 +8,13 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>
-      <a href="https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-science-in-data-science-artificial-intelligence">Data Science and Artificial Intelligence</a>
-    </p>
-    <p>
-      <a href="https://www.ntu.edu.sg">Nanyang Technological University</a>
-    </p>
+  # address: >
+  #   <p>
+  #     <a href="https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-science-in-data-science-artificial-intelligence">Data Science and Artificial Intelligence</a>
+  #   </p>
+  #   <p>
+  #     <a href="https://www.ntu.edu.sg">Nanyang Technological University</a>
+  #   </p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
