@@ -2,11 +2,13 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Pu Fanyi
+    - name: Chinese Name
+      value: 濮凡轶
     - name: Date of Birth
-      value: 14th March 1879
+      value: 11th February 2003
     - name: Languages
-      value: English, German
+      value: Chinese, English, Japanese
 
 - title: Education
   type: time_table
