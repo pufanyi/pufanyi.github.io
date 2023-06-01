@@ -22,7 +22,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a year 1 student at Nanyang Technological University, specializing in Data Science and Artificial Intelligence. I'm passionate about AI. And algorithm design and problem-solving in Competitive Programming. I also enjoy mathematics. Outside of academics, I pursue calligraphy, chess, and running for personal growth. I'm constantly improving my skills through self-directed learning, reading ML books, and taking online courses. My ultimate goal is to make significant contributions to the field of AI.
+I am currently a first-year student at Nanyang Technological University, where I am specializing in Data Science and Artificial Intelligence. I have a deep passion for AI and am particularly interested in algorithm design and problem-solving within the realm of Competitive Programming. Mathematics is another subject that captivates me, and I thoroughly enjoy exploring its intricacies.
+
+Beyond my academic pursuits, I actively engage in various activities to foster personal growth. Calligraphy, chess, and running are among my favorite hobbies, as they offer unique avenues for self-expression, strategic thinking, and physical well-being. In addition to my coursework, I am committed to continuous improvement through self-directed learning, delving into machine learning literature, and enrolling in online courses.
+
+My ultimate aspiration is to make significant contributions to the field of AI. I am driven to explore its vast potential and aim to leverage my skills and knowledge to advance the boundaries of this exciting domain.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
