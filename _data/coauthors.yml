@@ -1,34 +1,27 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Bo Li":
+  - firstname: ["Bo", "Bo Li"]
+    url: https://brianboli.com/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Yuanhan Zhang":
+  - firstname: ["Yuanhan", "Yuanhan Zhang"]
+    url: https://zhangyuanhan-ai.github.io/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Liangyu Chen":
+  - firstname: ["Liangyu", "Liangyu Chen"]
+    url: https://cliangyu.com/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Jinghao Wang":
+  - firstname: ["Jinghao", "Jinghao Wang"]
+    url: https://king159.github.io/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Jingkang Yang":
+  - firstname: ["Jingkang", "Jingkang Yang"]
+    url: https://jingkang50.github.io/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Ziwei Liu":
+  - firstname: ["Ziwei", "Ziwei Liu"]
+    url: https://liuziwei7.github.io/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Chunyuan Li":
+  - firstname: ["Chunyuan", "Chunyuan Li"]
+    url: https://chunyuan.li/
