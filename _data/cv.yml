@@ -88,6 +88,23 @@
         - Enhanced coding and problem-solving skills through the competition.
         - Developed critical thinking and algorithmic design abilities.
 
+- title: Co-Curricular Activities
+  type: time_table
+  contents:
+    - title: Welfare Manager
+      institution: Institution of Engineering and Technology - NTU
+      year: 2022 - now
+      description:
+        - Organized 2 events.
+        - Conducted orientation for IET-NTU.
+        - Hosted IET-UoSM students' visit to NTU campus.
+    - title: NTU SCSE Club
+      # institution: Institution of Engineering and Technology - NTU
+      year: Dec 2022 - Jan 2023
+      description:
+        - Wrote a detailed solution for the final exam of Discrete Mathematics.
+        - Solution adopted by NTU SCSE Club.
+
 
 # - title: Open Source Projects
 #   type: time_table
