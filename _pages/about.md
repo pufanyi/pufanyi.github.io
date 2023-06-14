@@ -26,7 +26,7 @@ I am currently a first-year student at [Nanyang Technological University](https:
 
 Beyond my academic pursuits, I actively engage in various activities to foster personal growth. Calligraphy, chess, and running are among my favorite hobbies, as they offer unique avenues for self-expression, strategic thinking, and physical well-being. In addition to my coursework, I am committed to continuous improvement through self-directed learning, delving into machine learning literature, and enrolling in online courses.
 
-My ultimate aspiration is to make significant contributions to the field of AI. I am driven to explore its vast potential and aim to leverage my skills and knowledge to advance the boundaries of this exciting domain.
+My ultimate aspiration is to make some contributions to the field of AI. I am driven to explore its vast potential and aim to leverage my skills and knowledge to advance the boundaries of this exciting domain.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
