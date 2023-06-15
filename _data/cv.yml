@@ -9,6 +9,8 @@
     #   value: 11th February 2003
     - name: Languages
       value: Chinese, English, Japanese
+    - name: Email
+      value: FPU001@e.ntu.edu.sg
 
 - title: Education
   type: time_table
