@@ -1,27 +1,25 @@
-"Bo Li":
-  - firstname: ["Bo", "Bo Li"]
+"Li":
+  - firstname: ["Bo"]
     url: https://brianboli.com/
+  - firstname: ["Chunyuan"]
+    url: https://chunyuan.li/
 
-"Yuanhan Zhang":
+"Zhang":
   - firstname: ["Yuanhan", "Yuanhan Zhang"]
     url: https://zhangyuanhan-ai.github.io/
 
-"Liangyu Chen":
+"Chen":
   - firstname: ["Liangyu", "Liangyu Chen"]
     url: https://cliangyu.com/
 
-"Jinghao Wang":
+"Wang":
   - firstname: ["Jinghao", "Jinghao Wang"]
     url: https://king159.github.io/
 
-"Jingkang Yang":
+"Yang":
   - firstname: ["Jingkang", "Jingkang Yang"]
     url: https://jingkang50.github.io/
 
-"Ziwei Liu":
-  - firstname: ["Ziwei", "Ziwei Liu"]
+"Liu":
+  - firstname: ["Ziwei"]
     url: https://liuziwei7.github.io/
-
-"Chunyuan Li":
-  - firstname: ["Chunyuan", "Chunyuan Li"]
-    url: https://chunyuan.li/
