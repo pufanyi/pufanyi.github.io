@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gender Recognition By Voice
+title: GRBV
 description: NTU SC1015 Group Project - Gender Recognition By Voice (GRBV).
 img:
 redirect: https://pufanyi.github.io/GenderRecognitionByVoice/
