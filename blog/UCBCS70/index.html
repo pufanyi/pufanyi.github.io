@@ -428,7 +428,7 @@
 <h3 id="2-propositional-practice">2 Propositional Practice</h3>
 
 <p><strong>(a)</strong>
-\(\exist x\in\R, x\not\in\mathbb{Q}.\)</p>
+\(\exists x\in\R, x\not\in\mathbb{Q}.\)</p>
 
 <p><strong>(b)</strong>
 \(\forall n\in \mathbb{Z},\left((n\in\mathbb{N})\lor(n&lt;0)\right)\land\lnot\left((n\in\mathbb{N})\land(n&lt;0)\right).\)</p>
@@ -473,35 +473,35 @@
 
 <p><strong>(a)</strong>
 \(\begin{aligned}
-\mathrm{LHS}&amp;\equiv\forall x\ ((\exist y\ Q(x, y))\implies P(x))\\
-&amp;\equiv \forall x\ (\lnot(\exist y\ Q(x, y))\lor P(x))\\
+\mathrm{LHS}&amp;\equiv\forall x\ ((\exists y\ Q(x, y))\implies P(x))\\
+&amp;\equiv \forall x\ (\lnot(\exists y\ Q(x, y))\lor P(x))\\
 &amp;\equiv \forall x\ ((\forall y\ \lnot Q(x, y))\lor P(x))\\
 &amp;\equiv \forall x\forall y\ (\lnot Q(x, y)\lor P(x))\\
 &amp;\equiv \forall x\forall y\ (Q(x, y)\implies P(x))\\
-&amp;\not \equiv \forall x\exist y\ (Q(x, y)\implies P(x))\\
+&amp;\not \equiv \forall x\exists y\ (Q(x, y)\implies P(x))\\
 &amp;\equiv \mathrm{RHS}
 \end{aligned}\)</p>
 
-<p>To find one counterexample, we could let \(P(x)\) to be contradictions, like “\(x\) is an elephant”, and \(Q(x, y)\) be “\(x=y\)”. On the one hand, for all \(x\), \(\exist y\ Q(x, y)\) is true because we could just let \(y=x\), and \(P(x)\) is false, so \(\mathrm{LHS}\) is false. However, for all \(x\), we just let \(y=x+1\), then since \(Q(x, y)\) is false, \(Q(x, y)\implies P(x)\) is true, so \(\mathrm{RHS}\) is true.</p>
+<p>To find one counterexample, we could let \(P(x)\) to be contradictions, like “\(x\) is an elephant”, and \(Q(x, y)\) be “\(x=y\)”. On the one hand, for all \(x\), \(\exists y\ Q(x, y)\) is true because we could just let \(y=x\), and \(P(x)\) is false, so \(\mathrm{LHS}\) is false. However, for all \(x\), we just let \(y=x+1\), then since \(Q(x, y)\) is false, \(Q(x, y)\implies P(x)\) is true, so \(\mathrm{RHS}\) is true.</p>
 
 <p><strong>(b)</strong>
 \(\begin{aligned}
-\mathrm{LHS}&amp;\equiv\forall x\exist y\ \left(\lnot\left(P(x, y)\implies \lnot Q(x, y)\right)\right)\\
-&amp;\equiv\forall x\exist y\ \left(\lnot\left(\lnot P(x, y)\lor \lnot Q(x, y)\right)\right)\\
-&amp;\equiv\forall x\exist y\ \left(P(x, y)\land Q(x, y)\right)\\
-&amp;\not\equiv\forall x\left((\exist y\ P(x, y))\land (\exist y\ Q(x, y))\right)\\
+\mathrm{LHS}&amp;\equiv\forall x\exists y\ \left(\lnot\left(P(x, y)\implies \lnot Q(x, y)\right)\right)\\
+&amp;\equiv\forall x\exists y\ \left(\lnot\left(\lnot P(x, y)\lor \lnot Q(x, y)\right)\right)\\
+&amp;\equiv\forall x\exists y\ \left(P(x, y)\land Q(x, y)\right)\\
+&amp;\not\equiv\forall x\left((\exists y\ P(x, y))\land (\exists y\ Q(x, y))\right)\\
 &amp;\equiv \mathrm{RHS}
 \end{aligned}\)</p>
 
-<p>To find one counterexample, we could let \(P(x, y)\) to be \(x=y\), and \(Q(x, y)\) be “\(x=y+1\)”. On the one hand, when \(x=y\), \(x\neq y+1\), so \(P(x, y)\implies \lnot Q(x, y)\) is true. So \(\mathrm{LHS}\) is false. But for all \(x\). For \(\exist y\ P(x, y)\), we just let \(y=x\), so it is true. And for \(\exist y\ Q(x, y)\), we just let \(y = x - 1\), so it is also true. In all \(\mathrm{RHS}\) is true. So \(\mathrm{LHS}\not\equiv\mathrm{RHS}\).</p>
+<p>To find one counterexample, we could let \(P(x, y)\) to be \(x=y\), and \(Q(x, y)\) be “\(x=y+1\)”. On the one hand, when \(x=y\), \(x\neq y+1\), so \(P(x, y)\implies \lnot Q(x, y)\) is true. So \(\mathrm{LHS}\) is false. But for all \(x\). For \(\exists y\ P(x, y)\), we just let \(y=x\), so it is true. And for \(\exists y\ Q(x, y)\), we just let \(y = x - 1\), so it is also true. In all \(\mathrm{RHS}\) is true. So \(\mathrm{LHS}\not\equiv\mathrm{RHS}\).</p>
 
 <p><strong>(c)</strong>
 \(\begin{aligned}
-\mathrm{LHS}&amp;\equiv \forall x\exist y\ (\lnot P(x)\lor Q(x,y))\\
-\mathrm{RHS}&amp;\equiv\forall x\ (\lnot P(x)\lor(\exist y\ Q(x, y)))
+\mathrm{LHS}&amp;\equiv \forall x\exists y\ (\lnot P(x)\lor Q(x,y))\\
+\mathrm{RHS}&amp;\equiv\forall x\ (\lnot P(x)\lor(\exists y\ Q(x, y)))
 \end{aligned}\)</p>
 
-<p>If \(P(x)\) is true, \(\mathrm{LHS}\equiv \forall x\exist y\ (\mathtt{F}\lor Q(x, y))\equiv \forall x\exist y\ Q(x, y)\), \(\mathrm{RHS}\equiv\forall x\ (\mathtt{F}\lor (\exist y\ Q(x, y)))\equiv \forall x\exist y\ Q(x, y)\). So \(\mathrm{LHS}\equiv \mathrm{RHS}\).</p>
+<p>If \(P(x)\) is true, \(\mathrm{LHS}\equiv \forall x\exists y\ (\mathtt{F}\lor Q(x, y))\equiv \forall x\exists y\ Q(x, y)\), \(\mathrm{RHS}\equiv\forall x\ (\mathtt{F}\lor (\exists y\ Q(x, y)))\equiv \forall x\exists y\ Q(x, y)\). So \(\mathrm{LHS}\equiv \mathrm{RHS}\).</p>
 
 <p>If \(P(x)\) is true, then \(\mathrm{LHS}\equiv \mathrm{RHS}\equiv \mathtt{T}\).</p>
 
@@ -512,10 +512,10 @@
 <h3 id="5-propositional-practice">5 Propositional Practice</h3>
 
 <p><strong>(a)</strong>
-\(\exist x\in\R\ ((x^2=0)\land(\forall y\in\R\ ((y^2=0)\implies (x=y)))).\)</p>
+\(\exists x\in\R\ ((x^2=0)\land(\forall y\in\R\ ((y^2=0)\implies (x=y)))).\)</p>
 
 <p><strong>(b)</strong>
-\(\forall x\in\mathbb{Q}\ \forall y\in\mathbb{Q}\ \exist z\in \mathbb{Q}\ ((x=y)\lor (x&lt;y&lt;z)\lor(x&gt;y&gt;z)).\)</p>
+\(\forall x\in\mathbb{Q}\ \forall y\in\mathbb{Q}\ \exists z\in \mathbb{Q}\ ((x=y)\lor (x&lt;y&lt;z)\lor(x&gt;y&gt;z)).\)</p>
 
 <p><strong>(c)</strong>
 \(\forall x\in\Z\ ((x^2&gt;4)\implies((x&lt;-2)\lor(x&gt;2))).\)</p>
@@ -645,14 +645,14 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
     <table>
       <tbody>
         <tr>
-          <td>\(\exist k\in [0, n-1]\cap\Z, \forall i, a_i\neq k\). Which means, \(\forall i, a_i\in [0, n-1]\cap\Z\backslash\{k\}\). And since $$\left</td>
+          <td>\(\exists k\in [0, n-1]\cap\Z, \forall i, a_i\neq k\). Which means, \(\forall i, a_i\in [0, n-1]\cap\Z\backslash\{k\}\). And since $$\left</td>
           <td>[0, n-1]\cap\Z\backslash{k}\right</td>
           <td>=n-1\(, and there are\)n\(numbers. Due to the Pigeonhole Principle, there must be\)2$$ of them have the same number.</td>
         </tr>
       </tbody>
     </table>
   </li>
-  <li>If \(\forall k\in [0, n-1]\cap\Z, \exist i, a_i=k\), there must be some one with \(0\) friends (name A) and some one with \(n-1\) friends (name B). A have \(0\) friends shows that A and B are not friends, but B have \(n-1\) friends shows that A and B are friends. This forms a contradiction, so this case is impossible.</li>
+  <li>If \(\forall k\in [0, n-1]\cap\Z, \exists i, a_i=k\), there must be some one with \(0\) friends (name A) and some one with \(n-1\) friends (name B). A have \(0\) friends shows that A and B are not friends, but B have \(n-1\) friends shows that A and B are friends. This forms a contradiction, so this case is impossible.</li>
 </ol>
 
 <p>In all, there must be at least \(2\) of them have the same number of friends at the party.</p>
@@ -677,9 +677,9 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><strong>(b)</strong> We want to prove \(f(A\cup B)\subseteq f(A)\cup f(B)\) and \(f(A\cup B)\supseteq f(A)\cup f(B)\).</p>
 
-<p>We firstly prove \(f(A\cup B)\subseteq f(A)\cup f(B)\). Let \(x\in f(A\cup B)\), which is \(\exist y\in A\cup B, f(y)=x\). So \(\exist y\in A, f(y)=x\) or \(\exist y\in B, f(y)=x\). So \(x\in f(A)\) or \(x\in f(B)\). So \(x\in f(A)\cup f(B)\). So \(f(A\cup B)\subseteq f(A)\cup f(B)\).</p>
+<p>We firstly prove \(f(A\cup B)\subseteq f(A)\cup f(B)\). Let \(x\in f(A\cup B)\), which is \(\exists y\in A\cup B, f(y)=x\). So \(\exists y\in A, f(y)=x\) or \(\exists y\in B, f(y)=x\). So \(x\in f(A)\) or \(x\in f(B)\). So \(x\in f(A)\cup f(B)\). So \(f(A\cup B)\subseteq f(A)\cup f(B)\).</p>
 
-<p>Then we want to prove \(f(A\cup B)\supseteq f(A)\cup f(B)\). Let \(x\in f(A)\cup f(B)\), which is \(x\in f(A)\) or \(x\in f(B)\). So \(\exist y\in A, x=f(y)\) or \(\exist y\in B, x = f(y)\). So \(\exist y\in A\cup B, x = f(y)\). So \(x\in f(A\cup B)\). So \(f(A)\cup f(B)\subseteq f(A\cup B)\).</p>
+<p>Then we want to prove \(f(A\cup B)\supseteq f(A)\cup f(B)\). Let \(x\in f(A)\cup f(B)\), which is \(x\in f(A)\) or \(x\in f(B)\). So \(\exists y\in A, x=f(y)\) or \(\exists y\in B, x = f(y)\). So \(\exists y\in A\cup B, x = f(y)\). So \(x\in f(A\cup B)\). So \(f(A)\cup f(B)\subseteq f(A\cup B)\).</p>
 
 <p>In all \(f(A\cup B)=f(A)\cup f(B)\).</p>
 
@@ -853,8 +853,8 @@ disp(int(sin(x) * exp(-x), 0, inf));
 <p><strong>(c)</strong> True.</p>
 
 \[\begin{aligned}
-\exist x\ (P(x)\lor Q(x))&amp;\equiv\bigvee_{x}(P(x)\lor Q(x))\\&amp;\equiv\left(\bigvee_x P(x)\right)\lor\left(\bigvee_x Q(x)\right)\\
-&amp;\equiv \left(\exist x\ P(x)\right)\lor\left(\exist x\ Q(x)\right)
+\exists x\ (P(x)\lor Q(x))&amp;\equiv\bigvee_{x}(P(x)\lor Q(x))\\&amp;\equiv\left(\bigvee_x P(x)\right)\lor\left(\bigvee_x Q(x)\right)\\
+&amp;\equiv \left(\exists x\ P(x)\right)\lor\left(\exists x\ Q(x)\right)
 \end{aligned}\]
 
 <p><strong>(d)</strong> False.</p>
@@ -891,8 +891,8 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 \[\begin{aligned}
 &amp;y\in f(A\cap B)\\
-\Longleftrightarrow\ &amp;\exist x\in A\cap B, f(x)=y\\
-\implies&amp;(\exist x \in A, f(x)=y)\land (\exist x\in B, f(x)=y)\\
+\Longleftrightarrow\ &amp;\exists x\in A\cap B, f(x)=y\\
+\implies&amp;(\exists x \in A, f(x)=y)\land (\exists x\in B, f(x)=y)\\
 \Longleftrightarrow\ &amp;(y\in f(A))\land (y\in f(B))\\
 \Longleftrightarrow\ &amp;y\in f(A)\cap f(B)
 \end{aligned}\]
@@ -905,8 +905,8 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 \[\begin{aligned}
 &amp;y\in f(A\setminus B)\\
-\Longleftrightarrow\ &amp;\exist x\in A\setminus B, f(x)=y\\
-\impliedby\ &amp;(\exist x \in A, f(x)=y)\land (\forall x\in B, f(x)\neq y)\\
+\Longleftrightarrow\ &amp;\exists x\in A\setminus B, f(x)=y\\
+\impliedby\ &amp;(\exists x \in A, f(x)=y)\land (\forall x\in B, f(x)\neq y)\\
 \Longleftrightarrow\ &amp;(y\in f(A))\land (y\not\in f(B))\\
 \Longleftrightarrow\ &amp;y\in f(A)\setminus f(B)
 \end{aligned}\]
