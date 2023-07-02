@@ -471,8 +471,9 @@
 
 <h3 id="4-equivalences-with-quantifiers">4 Equivalences with Quantifiers</h3>
 
-<p><strong>(a)</strong>
-\(\begin{aligned}
+<p><strong>(a)</strong></p>
+
+\[\begin{aligned}
 \mathrm{LHS}&amp;\equiv\forall x\ ((\exists y\ Q(x, y))\implies P(x))\\
 &amp;\equiv \forall x\ (\lnot(\exists y\ Q(x, y))\lor P(x))\\
 &amp;\equiv \forall x\ ((\forall y\ \lnot Q(x, y))\lor P(x))\\
@@ -480,18 +481,19 @@
 &amp;\equiv \forall x\forall y\ (Q(x, y)\implies P(x))\\
 &amp;\not \equiv \forall x\exists y\ (Q(x, y)\implies P(x))\\
 &amp;\equiv \mathrm{RHS}
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>To find one counterexample, we could let \(P(x)\) to be contradictions, like “\(x\) is an elephant”, and \(Q(x, y)\) be “\(x=y\)”. On the one hand, for all \(x\), \(\exists y\ Q(x, y)\) is true because we could just let \(y=x\), and \(P(x)\) is false, so \(\mathrm{LHS}\) is false. However, for all \(x\), we just let \(y=x+1\), then since \(Q(x, y)\) is false, \(Q(x, y)\implies P(x)\) is true, so \(\mathrm{RHS}\) is true.</p>
 
-<p><strong>(b)</strong>
-\(\begin{aligned}
+<p><strong>(b)</strong></p>
+
+\[\begin{aligned}
 \mathrm{LHS}&amp;\equiv\forall x\exists y\ \left(\lnot\left(P(x, y)\implies \lnot Q(x, y)\right)\right)\\
 &amp;\equiv\forall x\exists y\ \left(\lnot\left(\lnot P(x, y)\lor \lnot Q(x, y)\right)\right)\\
 &amp;\equiv\forall x\exists y\ \left(P(x, y)\land Q(x, y)\right)\\
 &amp;\not\equiv\forall x\left((\exists y\ P(x, y))\land (\exists y\ Q(x, y))\right)\\
 &amp;\equiv \mathrm{RHS}
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>To find one counterexample, we could let \(P(x, y)\) to be \(x=y\), and \(Q(x, y)\) be “\(x=y+1\)”. On the one hand, when \(x=y\), \(x\neq y+1\), so \(P(x, y)\implies \lnot Q(x, y)\) is true. So \(\mathrm{LHS}\) is false. But for all \(x\). For \(\exists y\ P(x, y)\), we just let \(y=x\), so it is true. And for \(\exists y\ Q(x, y)\), we just let \(y = x - 1\), so it is also true. In all \(\mathrm{RHS}\) is true. So \(\mathrm{LHS}\not\equiv\mathrm{RHS}\).</p>
 
