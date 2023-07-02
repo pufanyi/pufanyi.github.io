@@ -652,17 +652,7 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 <p>Then we check if there exist \(k\in [0, n-1]\cap\mathbb{Z}\), \(\forall i, a_i\neq k\).</p>
 
 <ol>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>\(\exists k\in [0, n-1]\cap\mathbb{Z}, \forall i, a_i\neq k\). Which means, \(\forall i, a_i\in [0, n-1]\cap\mathbb{Z}\backslash\{k\}\). And since $$\left</td>
-          <td>[0, n-1]\cap\mathbb{Z}\backslash{k}\right</td>
-          <td>=n-1\(, and there are\)n\(numbers. Due to the Pigeonhole Principle, there must be\)2$$ of them have the same number.</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
+  <li>\(\exists k\in [0, n-1]\cap\mathbb{Z}, \forall i, a_i\neq k\). Which means, \(\forall i, a_i\in [0, n-1]\cap\mathbb{Z}\backslash\{k\}\). And since \(\left\|[0, n-1]\cap\mathbb{Z}\backslash\{k\}\right\|=n-1\), and there are \(n\) numbers. Due to the Pigeonhole Principle, there must be \(2\) of them have the same number.</li>
   <li>If \(\forall k\in [0, n-1]\cap\mathbb{Z}, \exists i, a_i=k\), there must be some one with \(0\) friends (name A) and some one with \(n-1\) friends (name B). A have \(0\) friends shows that A and B are not friends, but B have \(n-1\) friends shows that A and B are friends. This forms a contradiction, so this case is impossible.</li>
 </ol>
 
@@ -706,13 +696,14 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><em>Induction Hypothesis:</em> Assume that \((1+x)^k\ge 1+kx\), for \(k\in \mathbb{N}\).</p>
 
-<p><em>Induction Step:</em> When \(n=k+1\),
-\(\begin{aligned}
+<p><em>Induction Step:</em> When \(n=k+1\),</p>
+
+\[\begin{aligned}
 (1+x)^{k+1}&amp;=(1+x)\cdot(1+x)^k\\
 &amp;\ge(1+x)\cdot(1+kx)\\
 &amp;=1+(k+1)\cdot x+kx^2\\
 &amp;\ge 1+(k+1)\cdot x
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>Thus, \(\forall n\in\mathbb{N}, x&gt;0, \ (1+x)^n\ge 1+nx\) holds.</p>
 
@@ -757,14 +748,15 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><em>Induction Hypothesis:</em> We assume that \(2\mid F_{3k}\) when \(k\in\mathbb{N}\).</p>
 
-<p><em>Induction Step:</em>
-\(\begin{aligned}
+<p><em>Induction Step:</em></p>
+
+\[\begin{aligned}
 F_{3(k+1)}&amp;\equiv F_{3k+3}\pmod 2\\
 &amp;\equiv F_{3k+2}+F_{3k+1}\pmod 2\\
 &amp;\equiv F_{3k+1}+F_{3k}+F_{3k+1}\pmod 2\\
 &amp;\equiv 2F_{3k+1}+F_{3k}\pmod 2\\
 &amp;\equiv 0\pmod 2
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>So \(2\mid F_{3(k+1)}\).</p>
 
@@ -774,8 +766,9 @@ F_{3(k+1)}&amp;\equiv F_{3k+3}\pmod 2\\
 
 <h3 id="1-solving-a-system-of-equations">1 Solving a System of Equations</h3>
 
-<p>Let the prices for an apple, for a beet, and for a carrot be \(a, b, c\) separately. Then we have:
-\(\begin{bmatrix}
+<p>Let the prices for an apple, for a beet, and for a carrot be \(a, b, c\) separately. Then we have:</p>
+
+\[\begin{bmatrix}
     1   &amp;   1   &amp;   1   \\
     2   &amp;   3   &amp;   0   \\
     1   &amp;   2   &amp;   3
@@ -791,7 +784,7 @@ F_{3(k+1)}&amp;\equiv F_{3k+3}\pmod 2\\
 16\\
 23\\
 35
-\end{bmatrix}\)</p>
+\end{bmatrix}\]
 
 <pre><code class="language-Matlab">A = [1 1 1; 2 3 0; 1 2 3];
 b = [16; 23; 35];
