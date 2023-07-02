@@ -270,7 +270,7 @@ display_tags: [announcements] # these tags will be displayed on the front page o
 scholar:
 
   last_name: [Pu]
-  first_name: [Fanyi, Fanyi*, F., Fanyi Pu, Fanyi Pu*]
+  first_name: [Fanyi, F., Fanyi Pu, Fanyi Pu*]
 
   style: apa
   locale: en
