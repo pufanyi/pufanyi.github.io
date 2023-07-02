@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-02T12:35:57+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-02T12:39:30+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">UCB EECS 70 Discrete Mathematics and Probability Theory</title><link href="https://pufanyi.github.io/blog/UCBCS70/" rel="alternate" type="text/html" title="UCB EECS 70 Discrete Mathematics and Probability Theory" /><published>2023-07-02T00:00:00+00:00</published><updated>2023-07-02T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/UCBCS70</id><content type="html" xml:base="https://pufanyi.github.io/blog/UCBCS70/"><![CDATA[<p>Here is my answer for the <a href="https://fa22.eecs70.org/">UCB EECS 70 Discrete Mathematics and Probability Theory</a> course.</p>
 
 <p>Due to the absence of official answers, some of the answers to the questions may be incorrect, and we also welcome everyone to point them out.</p>
@@ -12,11 +12,11 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">$P$</th>
-      <th style="text-align: center">$Q$</th>
-      <th style="text-align: center">$Q\lor P$</th>
-      <th style="text-align: center">$P\land(Q\lor P)$</th>
-      <th style="text-align: center">$P\land Q$</th>
+      <th style="text-align: center">\(P\)</th>
+      <th style="text-align: center">\(Q\)</th>
+      <th style="text-align: center">\(Q\lor P\)</th>
+      <th style="text-align: center">\(P\land(Q\lor P)\)</th>
+      <th style="text-align: center">\(P\land Q\)</th>
     </tr>
   </thead>
   <tbody>
@@ -51,23 +51,23 @@
   </tbody>
 </table>
 
-<p>When \(P=\mathtt{T},Q=\mathtt{F}$, $\mathrm{LHS}=\mathtt{T}\) but \(\mathrm{RHS}=\mathtt{F}\).</p>
+<p>When \(P=\mathtt{T},Q=\mathtt{F}\), \(\mathrm{LHS}=\mathtt{T}\) but \(\mathrm{RHS}=\mathtt{F}\).</p>
 
-<p>So $\mathrm{LHS}\not\equiv \mathrm{RHS}$.</p>
+<p>So \(\mathrm{LHS}\not\equiv \mathrm{RHS}\).</p>
 
 <p><strong>(b)</strong></p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">$P$</th>
-      <th style="text-align: center">$Q$</th>
-      <th style="text-align: center">$R$</th>
-      <th style="text-align: center">$P\lor Q$</th>
-      <th style="text-align: center">$(P\lor Q)\land R$</th>
-      <th style="text-align: center">$P\land R$</th>
-      <th style="text-align: center">$Q\land R$</th>
-      <th style="text-align: center">$(P\land R)\lor(Q\land R)$</th>
+      <th style="text-align: center">\(P\)</th>
+      <th style="text-align: center">\(Q\)</th>
+      <th style="text-align: center">\(R\)</th>
+      <th style="text-align: center">\(P\lor Q\)</th>
+      <th style="text-align: center">\((P\lor Q)\land R\)</th>
+      <th style="text-align: center">\(P\land R\)</th>
+      <th style="text-align: center">\(Q\land R\)</th>
+      <th style="text-align: center">\((P\land R)\lor(Q\land R)\)</th>
     </tr>
   </thead>
   <tbody>
@@ -171,14 +171,14 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">$P$</th>
-      <th style="text-align: center">$Q$</th>
-      <th style="text-align: center">$R$</th>
-      <th style="text-align: center">$P\land Q$</th>
-      <th style="text-align: center">$(P\land Q)\lor R$</th>
-      <th style="text-align: center">$P\lor R$</th>
-      <th style="text-align: center">$Q\lor R$</th>
-      <th style="text-align: center">$(P\lor R)\land(Q\lor R)$</th>
+      <th style="text-align: center">\(P\)</th>
+      <th style="text-align: center">\(Q\)</th>
+      <th style="text-align: center">\(R\)</th>
+      <th style="text-align: center">\(P\land Q\)</th>
+      <th style="text-align: center">\((P\land Q)\lor R\)</th>
+      <th style="text-align: center">\(P\lor R\)</th>
+      <th style="text-align: center">\(Q\lor R\)</th>
+      <th style="text-align: center">\((P\lor R)\land(Q\lor R)\)</th>
     </tr>
   </thead>
   <tbody>
@@ -265,7 +265,7 @@
   </tbody>
 </table>
 
-<p>So $\mathrm{LHS}\equiv \mathrm{RHS}$.</p>
+<p>So \(\mathrm{LHS}\equiv \mathrm{RHS}\).</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">itertools</span> <span class="kn">import</span> <span class="n">product</span>
 
@@ -290,7 +290,7 @@
 
 <p><strong>(d)</strong> All integers are rational numbers.</p>
 
-<p><strong>(e)</strong> All integers divisible by $2$ or $3$ are divisible by $6$.</p>
+<p><strong>(e)</strong> All integers divisible by \(2\) or \(3\) are divisible by \(6\).</p>
 
 <p><strong>(f)</strong> Any natural number greater than 7 can be decomposed into the sum of two natural numbers.</p>
 
@@ -301,25 +301,25 @@
 
 <p>It is true.</p>
 
-<p>We let $n=4k, k\in \N$.</p>
+<p>We let \(n=4k, k\in \N\).</p>
 
-<p>We have $n=2\cdot (2k)$, so $2\mid n$.</p>
+<p>We have \(n=2\cdot (2k)\), so \(2\mid n\).</p>
 
-<p><strong>(b)</strong> If a natural number is not divisible by $4$, it is not divisible by $2$.
+<p><strong>(b)</strong> If a natural number is not divisible by \(4\), it is not divisible by \(2\).
 \(\forall n\in\N, (4\nmid n\implies 2\nmid n).\)</p>
 
 <p>It is false.</p>
 
-<p>A possible counterexample is when $n=2$, $4\nmid 2$, but $2\mid 2$.</p>
+<p>A possible counterexample is when \(n=2\), \(4\nmid 2\), but \(2\mid 2\).</p>
 
-<p><strong>(c)</strong> If a natural number is divisible by $2$, it is divisible by $4$.
+<p><strong>(c)</strong> If a natural number is divisible by \(2\), it is divisible by \(4\).
 \(\forall n\in\N, (2\mid n\implies 4\mid n).\)</p>
 
 <p>It is false.</p>
 
-<p>A possible counterexample is when $n=2$, $2\mid 2$, but $4\nmid 2$.</p>
+<p>A possible counterexample is when \(n=2\), \(2\mid 2\), but \(4\nmid 2\).</p>
 
-<p><strong>(d)</strong> If a natural number is divisible by $2$, it is divisible by $4$.</p>
+<p><strong>(d)</strong> If a natural number is divisible by \(2\), it is divisible by \(4\).</p>
 
 <h3 id="4-equivalences-with-quantifiers">4 Equivalences with Quantifiers</h3>
 
@@ -334,7 +334,7 @@
 &amp;\equiv \mathrm{RHS}
 \end{aligned}\)</p>
 
-<p>To find one counterexample, we could let $P(x)$ to be contradictions, like “$x$ is an elephant”, and $Q(x, y)$ be “$x=y$”. On the one hand, for all $x$, $\exist y\ Q(x, y)$ is true because we could just let $y=x$, and $P(x)$ is false, so $\mathrm{LHS}$ is false. However, for all $x$, we just let $y=x+1$, then since $Q(x, y)$ is false, $Q(x, y)\implies P(x)$ is true, so $\mathrm{RHS}$ is true.</p>
+<p>To find one counterexample, we could let \(P(x)\) to be contradictions, like “\(x\) is an elephant”, and \(Q(x, y)\) be “\(x=y\)”. On the one hand, for all \(x\), \(\exist y\ Q(x, y)\) is true because we could just let \(y=x\), and \(P(x)\) is false, so \(\mathrm{LHS}\) is false. However, for all \(x\), we just let \(y=x+1\), then since \(Q(x, y)\) is false, \(Q(x, y)\implies P(x)\) is true, so \(\mathrm{RHS}\) is true.</p>
 
 <p><strong>(b)</strong>
 \(\begin{aligned}
@@ -345,7 +345,7 @@
 &amp;\equiv \mathrm{RHS}
 \end{aligned}\)</p>
 
-<p>To find one counterexample, we could let $P(x, y)$ to be $x=y$, and $Q(x, y)$ be “$x=y+1$”. On the one hand, when $x=y$, $x\neq y+1$, so $P(x, y)\implies \lnot Q(x, y)$ is true. So $\mathrm{LHS}$ is false. But for all $x$. For $\exist y\ P(x, y)$, we just let $y=x$, so it is true. And for $\exist y\ Q(x, y)$, we just let $y = x - 1$, so it is also true. In all $\mathrm{RHS}$ is true. So $\mathrm{LHS}\not\equiv\mathrm{RHS}$.</p>
+<p>To find one counterexample, we could let \(P(x, y)\) to be \(x=y\), and \(Q(x, y)\) be “\(x=y+1\)”. On the one hand, when \(x=y\), \(x\neq y+1\), so \(P(x, y)\implies \lnot Q(x, y)\) is true. So \(\mathrm{LHS}\) is false. But for all \(x\). For \(\exist y\ P(x, y)\), we just let \(y=x\), so it is true. And for \(\exist y\ Q(x, y)\), we just let \(y = x - 1\), so it is also true. In all \(\mathrm{RHS}\) is true. So \(\mathrm{LHS}\not\equiv\mathrm{RHS}\).</p>
 
 <p><strong>(c)</strong>
 \(\begin{aligned}
@@ -353,11 +353,11 @@
 \mathrm{RHS}&amp;\equiv\forall x\ (\lnot P(x)\lor(\exist y\ Q(x, y)))
 \end{aligned}\)</p>
 
-<p>If $P(x)$ is true, $\mathrm{LHS}\equiv \forall x\exist y\ (\mathtt{F}\lor Q(x, y))\equiv \forall x\exist y\ Q(x, y)$, $\mathrm{RHS}\equiv\forall x\ (\mathtt{F}\lor (\exist y\ Q(x, y)))\equiv \forall x\exist y\ Q(x, y)$. So $\mathrm{LHS}\equiv \mathrm{RHS}$.</p>
+<p>If \(P(x)\) is true, \(\mathrm{LHS}\equiv \forall x\exist y\ (\mathtt{F}\lor Q(x, y))\equiv \forall x\exist y\ Q(x, y)\), \(\mathrm{RHS}\equiv\forall x\ (\mathtt{F}\lor (\exist y\ Q(x, y)))\equiv \forall x\exist y\ Q(x, y)\). So \(\mathrm{LHS}\equiv \mathrm{RHS}\).</p>
 
-<p>If $P(x)$ is true, then $\mathrm{LHS}\equiv \mathrm{RHS}\equiv \mathtt{T}$.</p>
+<p>If \(P(x)\) is true, then \(\mathrm{LHS}\equiv \mathrm{RHS}\equiv \mathtt{T}\).</p>
 
-<p>In all $\mathrm{LHS}\equiv\mathrm{RHS}$.</p>
+<p>In all \(\mathrm{LHS}\equiv\mathrm{RHS}\).</p>
 
 <h2 id="homework-0">Homework 0</h2>
 
@@ -374,9 +374,9 @@
 
 <p><strong>(d)</strong> All real numbers are complex numbers.</p>
 
-<p><strong>(e)</strong> There is no integer solution of $x^2-y^2=10$.</p>
+<p><strong>(e)</strong> There is no integer solution of \(x^2-y^2=10\).</p>
 
-<p><strong>(f)</strong> All greater than $2$ natural numbers can be decomposed into the sum of two prime numbers.</p>
+<p><strong>(f)</strong> All greater than \(2\) natural numbers can be decomposed into the sum of two prime numbers.</p>
 
 <h2 id="note-2">Note 2</h2>
 
@@ -391,24 +391,24 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 \end{aligned}\)
 <strong>2.</strong>
 \(\begin{aligned}
-&amp;\text{$a^2$ is even}\implies \text{$a$ is even}\\
-\equiv&amp;\lnot(\text{$a$ is even})\implies \lnot(\text{$a^2$ is even})\\
-\equiv&amp; \text{$a$ is odd}\implies \text{$a^2$ is odd}
+&amp;\text{\)a^2\(is even}\implies \text{\)a\(is even}\\
+\equiv&amp;\lnot(\text{\)a\(is even})\implies \lnot(\text{\)a^2\(is even})\\
+\equiv&amp; \text{\)a\(is odd}\implies \text{\)a^2\(is odd}
 \end{aligned}\)</p>
 
-<p>Let $a=2k+1, k\in \Z$, we have $a^2=4k^2+4k+1=2(2k^2+1)+1$, so $a^2$ is odd.</p>
+<p>Let \(a=2k+1, k\in \Z\), we have \(a^2=4k^2+4k+1=2(2k^2+1)+1\), so \(a^2\) is odd.</p>
 
-<p>So $a\text{ is odd}\implies a^2\text{ is odd}$ holds, so Lemma 2.2 holds.</p>
+<p>So \(a\text{ is odd}\implies a^2\text{ is odd}\) holds, so Lemma 2.2 holds.</p>
 
 <h2 id="note-3">Note 3</h2>
 
-<p><strong>1.</strong> We proceed by induction on $n$.</p>
+<p><strong>1.</strong> We proceed by induction on \(n\).</p>
 
-<p><em>Base Case:</em> When $n=1$, $\mathrm{LHS}=\mathrm{RHS}=1$. So base case Holds.</p>
+<p><em>Base Case:</em> When \(n=1\), \(\mathrm{LHS}=\mathrm{RHS}=1\). So base case Holds.</p>
 
-<p><em>Induction Hypothesis:</em> Assume that $\sum_{i=1}^{k} i = \frac{1}{6}k(k+1)(2k+1)$.</p>
+<p><em>Induction Hypothesis:</em> Assume that \(\sum_{i=1}^{k} i = \frac{1}{6}k(k+1)(2k+1)\).</p>
 
-<p><em>Induction Step:</em> When $n=k+1$,
+<p><em>Induction Step:</em> When \(n=k+1\),
 \(\begin{aligned}
 \sum_{i=1}^{k+1}i&amp;=(k+1)+\sum_{i=1}^{k} i\\
 &amp;=\frac{1}{6}k(k+1)(2k+1)+k+1\\
@@ -417,15 +417,15 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 &amp;=\frac{1}{6}(k+1)(k+2)(2k+3)
 \end{aligned}\)</p>
 
-<p>Thus, $\forall n\in\N$, $\sum_{i=1}^{n} i = \frac{1}{6}n(n+1)(2n+1)$ holds.</p>
+<p>Thus, \(\forall n\in\N\), \(\sum_{i=1}^{n} i = \frac{1}{6}n(n+1)(2n+1)\) holds.</p>
 
-<p><strong>2.</strong> We proceed by induction on $n$.</p>
+<p><strong>2.</strong> We proceed by induction on \(n\).</p>
 
-<p><em>Base Case:</em> When $n=1$, $\mathrm{LHS}=\mathrm{RHS}=1+x$. So base case Holds.</p>
+<p><em>Base Case:</em> When \(n=1\), \(\mathrm{LHS}=\mathrm{RHS}=1+x\). So base case Holds.</p>
 
-<p><em>Induction Hypothesis:</em> Assume that $(1+x)^k\ge 1+kx$, for $k\in \N$.</p>
+<p><em>Induction Hypothesis:</em> Assume that \((1+x)^k\ge 1+kx\), for \(k\in \N\).</p>
 
-<p><em>Induction Step:</em> When $n=k+1$,
+<p><em>Induction Step:</em> When \(n=k+1\),
 \(\begin{aligned}
 (1+x)^{k+1}&amp;=(1+x)\cdot(1+x)^k\\
 &amp;\ge(1+x)\cdot(1+kx)\\
@@ -433,15 +433,15 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 &amp;\ge 1+(k+1)\cdot x
 \end{aligned}\)</p>
 
-<p>Thus, $\forall n\in\N, x&gt;-1, \ (1+x)^n\ge 1+nx$ holds.</p>
+<p>Thus, \(\forall n\in\N, x&gt;-1, \ (1+x)^n\ge 1+nx\) holds.</p>
 
-<p><strong>3.</strong> We proceed by induction on $n$.</p>
+<p><strong>3.</strong> We proceed by induction on \(n\).</p>
 
-<p><em>Base Case:</em> When $n=2$, $\mathrm{LHS}=2&lt;4=\mathrm{RHS}$. So base case Holds.</p>
+<p><em>Base Case:</em> When \(n=2\), \(\mathrm{LHS}=2&lt;4=\mathrm{RHS}\). So base case Holds.</p>
 
-<p><em>Induction Hypothesis:</em> Assume that $k!&lt;k^k$, for $k\in \N, k&gt;1$.</p>
+<p><em>Induction Hypothesis:</em> Assume that \(k!&lt;k^k\), for \(k\in \N, k&gt;1\).</p>
 
-<p><em>Induction Step:</em> When $n=k+1$,
+<p><em>Induction Step:</em> When \(n=k+1\),
 \(\begin{aligned}
 (k+1)!&amp;=(k+1)\cdot k!\\
 &amp;&lt;(k+1)\cdot k^k\\
@@ -449,23 +449,23 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 &amp;=(k+1)^{k+1}
 \end{aligned}\)</p>
 
-<p>Thus, $\forall n\in\N, n&gt;1, \ n!&lt;n^n$ holds.</p>
+<p>Thus, \(\forall n\in\N, n&gt;1, \ n!&lt;n^n\) holds.</p>
 
-<p><strong>4.</strong> We define an ask $A\to B$ means asking A if he know B. And we define $f(n)$ be the times of asking.</p>
+<p><strong>4.</strong> We define an ask \(A\to B\) means asking A if he know B. And we define \(f(n)\) be the times of asking.</p>
 
-<p><em>Base Case:</em> When $n=2$, there are just two people A and B. We could ask $A\to B$ and $B\to A$. And now we know everything and it is easy for us to find the answer. We asked $3n-4=2$ times. So $f(n)\le 3n-4$ holds for $n=1$.</p>
+<p><em>Base Case:</em> When \(n=2\), there are just two people A and B. We could ask \(A\to B\) and \(B\to A\). And now we know everything and it is easy for us to find the answer. We asked \(3n-4=2\) times. So \(f(n)\le 3n-4\) holds for \(n=1\).</p>
 
-<p><em>Induction Hypothesis:</em> Assume that if there are $k$ people, we could use $3k-4$ asks to find the answer.</p>
+<p><em>Induction Hypothesis:</em> Assume that if there are \(k\) people, we could use \(3k-4\) asks to find the answer.</p>
 
-<p><em>Induction Step:</em> When $n=k+1$, we could randomly choose two people A and B, asking $A\to B$.</p>
+<p><em>Induction Step:</em> When \(n=k+1\), we could randomly choose two people A and B, asking \(A\to B\).</p>
 
 <p>Now there are two cases:</p>
 <ol>
-  <li>If A don’t know B. Then we could know that B is not celebrity. So we could just firstly remove B and solve the remaining $k$ people to find the “celebrity” for these $k$ people, which is C. (If now found, just return “not found”.) And after that, we should check if B knows C and C doesn’t know B. It cost $f(k + 1)=3+f(k)\le 3+(3k-4)=3(k+1)-4$.</li>
+  <li>If A don’t know B. Then we could know that B is not celebrity. So we could just firstly remove B and solve the remaining \(k\) people to find the “celebrity” for these \(k\) people, which is C. (If now found, just return “not found”.) And after that, we should check if B knows C and C doesn’t know B. It cost \(f(k + 1)=3+f(k)\le 3+(3k-4)=3(k+1)-4\).</li>
   <li>If A knows B. Then we could know that A is not celebrity. Then we can prove as in the first case, changing B to A.</li>
 </ol>
 
-<p>So $f(k+1)\le 3(k+1)-4$. And as a conclusion, $f(n)\le 3n-4$ holds for all $n\in\N, n\ge 2$.</p>
+<p>So \(f(k+1)\le 3(k+1)-4\). And as a conclusion, \(f(n)\le 3n-4\) holds for all \(n\in\N, n\ge 2\).</p>
 
 <p><strong>5.</strong> The python code shows below:</p>
 
@@ -474,7 +474,7 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
     <span class="k">return</span> <span class="n">base_case</span><span class="p">[</span><span class="n">n</span> <span class="o">%</span> <span class="mi">4</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">12</span><span class="p">)</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">base_case</span><span class="p">[</span><span class="n">n</span> <span class="o">%</span> <span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div></div>
 
-<p>The largest number of 5c stamps my algorithm will ever use is $3$.</p>
+<p>The largest number of 5c stamps my algorithm will ever use is \(3\).</p>
 
 <h2 id="discussion-1a">Discussion 1A</h2>
 
@@ -488,26 +488,26 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <h3 id="2-numbers-of-friends">2 Numbers of Friends</h3>
 
-<p>We let the $i$-th person have $a_i$ friends. We have $a_i\in[0, n-1]\cap \Z$.</p>
+<p>We let the \(i\)-th person have \(a_i\) friends. We have \(a_i\in[0, n-1]\cap \Z\).</p>
 
-<p>Then we check if there exist $k\in [0, n-1]\cap\Z$, $\forall i, a_i\neq k$.</p>
+<p>Then we check if there exist \(k\in [0, n-1]\cap\Z\), \(\forall i, a_i\neq k\).</p>
 
 <ol>
   <li>
     <table>
       <tbody>
         <tr>
-          <td>$\exist k\in [0, n-1]\cap\Z, \forall i, a_i\neq k$. Which means, $\forall i, a_i\in [0, n-1]\cap\Z\backslash{k}$. And since $\left</td>
+          <td>\(\exist k\in [0, n-1]\cap\Z, \forall i, a_i\neq k\). Which means, \(\forall i, a_i\in [0, n-1]\cap\Z\backslash\{k\}\). And since $$\left</td>
           <td>[0, n-1]\cap\Z\backslash{k}\right</td>
-          <td>=n-1$, and there are $n$ numbers. Due to the Pigeonhole Principle, there must be $2$ of them have the same number.</td>
+          <td>=n-1\(, and there are\)n\(numbers. Due to the Pigeonhole Principle, there must be\)2$$ of them have the same number.</td>
         </tr>
       </tbody>
     </table>
   </li>
-  <li>If $\forall k\in [0, n-1]\cap\Z, \exist i, a_i=k$, there must be some one with $0$ friends (name A) and some one with $n-1$ friends (name B). A have $0$ friends shows that A and B are not friends, but B have $n-1$ friends shows that A and B are friends. This forms a contradiction, so this case is impossible.</li>
+  <li>If \(\forall k\in [0, n-1]\cap\Z, \exist i, a_i=k\), there must be some one with \(0\) friends (name A) and some one with \(n-1\) friends (name B). A have \(0\) friends shows that A and B are not friends, but B have \(n-1\) friends shows that A and B are friends. This forms a contradiction, so this case is impossible.</li>
 </ol>
 
-<p>In all, there must be at least $2$ of them have the same number of friends at the party.</p>
+<p>In all, there must be at least \(2\) of them have the same number of friends at the party.</p>
 
 <h3 id="3-pebbles">3 Pebbles</h3>
 
@@ -515,25 +515,25 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <h3 id="4-preserving-set-operations">4 Preserving Set Operations</h3>
 
-<p><strong>(a)</strong> We want to prove $f^{-1}(A\cup B)\subseteq f^{-1}(A)\cup f^{-1}(B)$ and $f^{-1}(A\cup B)\supseteq f^{-1}(A)\cup f^{-1}(B)$.</p>
+<p><strong>(a)</strong> We want to prove \(f^{-1}(A\cup B)\subseteq f^{-1}(A)\cup f^{-1}(B)\) and \(f^{-1}(A\cup B)\supseteq f^{-1}(A)\cup f^{-1}(B)\).</p>
 
-<p>We first show $f^{-1}(A\cup B)\subseteq f^{-1}(A)\cup f^{-1}(B)$.</p>
+<p>We first show \(f^{-1}(A\cup B)\subseteq f^{-1}(A)\cup f^{-1}(B)\).</p>
 
-<p>Let $x\in f^{-1}(A\cup B)$, which means $f(x)\in A\cup B$. So $(f(x)\in A)\lor (f(x)\in B)$. So $\left(x\in f^{-1}(A)\right)\lor \left(x\in f^{-1}(B)\right)$, which means $x\in f^{-1}(A)\cup f^{-1}(B)$. So $f^{-1}(A\cup B)\subseteq f^{-1}(A)\cup f^{-1}(B)$.</p>
+<p>Let \(x\in f^{-1}(A\cup B)\), which means \(f(x)\in A\cup B\). So \((f(x)\in A)\lor (f(x)\in B)\). So \(\left(x\in f^{-1}(A)\right)\lor \left(x\in f^{-1}(B)\right)\), which means \(x\in f^{-1}(A)\cup f^{-1}(B)\). So \(f^{-1}(A\cup B)\subseteq f^{-1}(A)\cup f^{-1}(B)\).</p>
 
-<p>Then let’s prove $f^{-1}(A\cup B)\supseteq f^{-1}(A)\cup f^{-1}(B)$.</p>
+<p>Then let’s prove \(f^{-1}(A\cup B)\supseteq f^{-1}(A)\cup f^{-1}(B)\).</p>
 
-<p>We let $x\in f^{-1}(A)\cup f^{-1}(B)$, which means $x\in f^{-1}(A)$ or $x\in f^{-1}(B)$. So $f(x)\in A$ or $f(x)\in B$, which is $f(x)\in A\cup B$. So $x\in f^{-1}(A\cup B)$. So $f^{-1}(A)\cup f^{-1}(B)\subseteq f^{-1}(A\cup B)$.</p>
+<p>We let \(x\in f^{-1}(A)\cup f^{-1}(B)\), which means \(x\in f^{-1}(A)\) or \(x\in f^{-1}(B)\). So \(f(x)\in A\) or \(f(x)\in B\), which is \(f(x)\in A\cup B\). So \(x\in f^{-1}(A\cup B)\). So \(f^{-1}(A)\cup f^{-1}(B)\subseteq f^{-1}(A\cup B)\).</p>
 
-<p>In all, $f^{-1}(A\cup B)=f^{-1}(A)\cup f^{-1}(B)$.</p>
+<p>In all, \(f^{-1}(A\cup B)=f^{-1}(A)\cup f^{-1}(B)\).</p>
 
-<p><strong>(b)</strong> We want to prove $f(A\cup B)\subseteq f(A)\cup f(B)$ and $f(A\cup B)\supseteq f(A)\cup f(B)$.</p>
+<p><strong>(b)</strong> We want to prove \(f(A\cup B)\subseteq f(A)\cup f(B)\) and \(f(A\cup B)\supseteq f(A)\cup f(B)\).</p>
 
-<p>We firstly prove $f(A\cup B)\subseteq f(A)\cup f(B)$. Let $x\in f(A\cup B)$, which is $\exist y\in A\cup B, f(y)=x$. So $\exist y\in A, f(y)=x$ or $\exist y\in B, f(y)=x$. So $x\in f(A)$ or $x\in f(B)$. So $x\in f(A)\cup f(B)$. So $f(A\cup B)\subseteq f(A)\cup f(B)$.</p>
+<p>We firstly prove \(f(A\cup B)\subseteq f(A)\cup f(B)\). Let \(x\in f(A\cup B)\), which is \(\exist y\in A\cup B, f(y)=x\). So \(\exist y\in A, f(y)=x\) or \(\exist y\in B, f(y)=x\). So \(x\in f(A)\) or \(x\in f(B)\). So \(x\in f(A)\cup f(B)\). So \(f(A\cup B)\subseteq f(A)\cup f(B)\).</p>
 
-<p>Then we want to prove $f(A\cup B)\supseteq f(A)\cup f(B)$. Let $x\in f(A)\cup f(B)$, which is $x\in f(A)$ or $x\in f(B)$. So $\exist y\in A, x=f(y)$ or $\exist y\in B, x = f(y)$. So $\exist y\in A\cup B, x = f(y)$. So $x\in f(A\cup B)$. So $f(A)\cup f(B)\subseteq f(A\cup B)$.</p>
+<p>Then we want to prove \(f(A\cup B)\supseteq f(A)\cup f(B)\). Let \(x\in f(A)\cup f(B)\), which is \(x\in f(A)\) or \(x\in f(B)\). So \(\exist y\in A, x=f(y)\) or \(\exist y\in B, x = f(y)\). So \(\exist y\in A\cup B, x = f(y)\). So \(x\in f(A\cup B)\). So \(f(A)\cup f(B)\subseteq f(A\cup B)\).</p>
 
-<p>In all $f(A\cup B)=f(A)\cup f(B)$.</p>
+<p>In all \(f(A\cup B)=f(A)\cup f(B)\).</p>
 
 <h2 id="discussion-1b">Discussion 1B</h2>
 
@@ -541,13 +541,13 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><em>The same as Note 3 Question 2.</em></p>
 
-<p>We proceed by induction on $n$.</p>
+<p>We proceed by induction on \(n\).</p>
 
-<p><em>Base Case:</em> When $n=1$, $\mathrm{LHS}=\mathrm{RHS}=1+x$. So base case Holds.</p>
+<p><em>Base Case:</em> When \(n=1\), \(\mathrm{LHS}=\mathrm{RHS}=1+x\). So base case Holds.</p>
 
-<p><em>Induction Hypothesis:</em> Assume that $(1+x)^k\ge 1+kx$, for $k\in \N$.</p>
+<p><em>Induction Hypothesis:</em> Assume that \((1+x)^k\ge 1+kx\), for \(k\in \N\).</p>
 
-<p><em>Induction Step:</em> When $n=k+1$,
+<p><em>Induction Step:</em> When \(n=k+1\),
 \(\begin{aligned}
 (1+x)^{k+1}&amp;=(1+x)\cdot(1+x)^k\\
 &amp;\ge(1+x)\cdot(1+kx)\\
@@ -555,48 +555,48 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 &amp;\ge 1+(k+1)\cdot x
 \end{aligned}\)</p>
 
-<p>Thus, $\forall n\in\N, x&gt;0, \ (1+x)^n\ge 1+nx$ holds.</p>
+<p>Thus, \(\forall n\in\N, x&gt;0, \ (1+x)^n\ge 1+nx\) holds.</p>
 
 <h3 id="2-make-it-stronger">2 Make It Stronger</h3>
 
-<p><strong>(a)</strong> No. If we let $a_n\le 3^{2^n}$, $a_{n+1}=3a_n^2\le 3\cdot\left(3^{2^n}\right)^2=3^{2^{n+1}+1}$. But $3^{2^{n+1}+1}\ge 3^{2^{n+1}}$, so it doesn’t work.</p>
+<p><strong>(a)</strong> No. If we let \(a_n\le 3^{2^n}\), \(a_{n+1}=3a_n^2\le 3\cdot\left(3^{2^n}\right)^2=3^{2^{n+1}+1}\). But \(3^{2^{n+1}+1}\ge 3^{2^{n+1}}\), so it doesn’t work.</p>
 
 <p><strong>(b)</strong> Let’s prove by induction.</p>
 
-<p><em>Base Case:</em> When $n=1$, $a_1=1$, $3^{2^n-1}=3$. So $a_n\le 3^{2^n-1}$ holds for $n=1$.</p>
+<p><em>Base Case:</em> When \(n=1\), \(a_1=1\), \(3^{2^n-1}=3\). So \(a_n\le 3^{2^n-1}\) holds for \(n=1\).</p>
 
-<p><em>Induction Hypothesis:</em> Assume that $a_k\le 3^{2^k-1}$, for $k\in \N$.</p>
+<p><em>Induction Hypothesis:</em> Assume that \(a_k\le 3^{2^k-1}\), for \(k\in \N\).</p>
 
-<p><em>Induction Step:</em> When $n=k+1$:
+<p><em>Induction Step:</em> When \(n=k+1\):
 \(a_{k+1}=3a_{k}^2\le 3\cdot \left(3^{2^k-1}\right)^2=3^{2^{k+1}-1}.\)</p>
 
-<p>So for all $n\in\N^+$, $a_n\le 3^{2^n-1}$.</p>
+<p>So for all \(n\in\N^+\), \(a_n\le 3^{2^n-1}\).</p>
 
-<p><strong>(c)</strong> For $n\in\N$, $a_n\le 3^{2^n-1}=\frac{1}{3}\cdot 3^{2^n}\le 3^{2^n}$.</p>
+<p><strong>(c)</strong> For \(n\in\N\), \(a_n\le 3^{2^n-1}=\frac{1}{3}\cdot 3^{2^n}\le 3^{2^n}\).</p>
 
 <h3 id="3-binary-numbers">3 Binary Numbers</h3>
 
-<p>We proceed by induction on $n$.</p>
+<p>We proceed by induction on \(n\).</p>
 
-<p><em>Base Case:</em> When $n=1$, let $c_0=1$, $n=1\cdot 2^0$. So the assumption holds when $n=1$.</p>
+<p><em>Base Case:</em> When \(n=1\), let \(c_0=1\), \(n=1\cdot 2^0\). So the assumption holds when \(n=1\).</p>
 
-<p><em>Induction Hypothesis:</em> We assume that the proposition holds for $n\le t$.</p>
+<p><em>Induction Hypothesis:</em> We assume that the proposition holds for \(n\le t\).</p>
 
 <p><em>Induction Step:</em> We use the parity of t+1 for discussion.</p>
 
-<p>If $t + 1$ is an odd number. Let $\frac{t}{2}=\sum_{i=0}^k c_k\cdot 2^k$, then $t + 1=2\cdot \frac{t}{2}+1=2\sum_{i=0}^k c_i\cdot 2^i+1=\sum_{i=1}^{k+1}c_{i-1}\cdot 2^i+1\cdot 2^0$.</p>
+<p>If \(t + 1\) is an odd number. Let \(\frac{t}{2}=\sum_{i=0}^k c_k\cdot 2^k\), then \(t + 1=2\cdot \frac{t}{2}+1=2\sum_{i=0}^k c_i\cdot 2^i+1=\sum_{i=1}^{k+1}c_{i-1}\cdot 2^i+1\cdot 2^0\).</p>
 
-<p>If $t+1$ is an even number. Let $\frac{t + 1}{2}=\sum_{i=0}^k c_i\cdot 2^i$, then $t+1=2\cdot\frac{t+1}{2}=2\sum_{i=0}^k c_i\cdot 2^i=\sum_{i=1}^{k+1} c_i\cdot 2^i+0\cdot 2^0$.</p>
+<p>If \(t+1\) is an even number. Let \(\frac{t + 1}{2}=\sum_{i=0}^k c_i\cdot 2^i\), then \(t+1=2\cdot\frac{t+1}{2}=2\sum_{i=0}^k c_i\cdot 2^i=\sum_{i=1}^{k+1} c_i\cdot 2^i+0\cdot 2^0\).</p>
 
 <p>In all, the proposition holds.</p>
 
 <h3 id="4-fibonacci-for-home">4 Fibonacci for Home</h3>
 
-<p>Let $P(n)$ be the proposition that $2\mid F_{3n}$. Let’s prove it by induction.</p>
+<p>Let \(P(n)\) be the proposition that \(2\mid F_{3n}\). Let’s prove it by induction.</p>
 
-<p><em>Base Case:</em> When $n=1$, $F_{3n}=2$ so $2\mid F_{3n}$.</p>
+<p><em>Base Case:</em> When \(n=1\), \(F_{3n}=2\) so \(2\mid F_{3n}\).</p>
 
-<p><em>Induction Hypothesis:</em> We assume that $2\mid F_{3k}$ when $k\in\N$.</p>
+<p><em>Induction Hypothesis:</em> We assume that \(2\mid F_{3k}\) when \(k\in\N\).</p>
 
 <p><em>Induction Step:</em>
 \(\begin{aligned}
@@ -607,15 +607,15 @@ F_{3(k+1)}&amp;\equiv F_{3k+3}\pmod 2\\
 &amp;\equiv 0\pmod 2
 \end{aligned}\)</p>
 
-<p>So $2\mid F_{3(k+1)}$.</p>
+<p>So \(2\mid F_{3(k+1)}\).</p>
 
-<p>In all, $\forall n\in \N, 2\mid F_{3n}$.</p>
+<p>In all, \(\forall n\in \N, 2\mid F_{3n}\).</p>
 
 <h2 id="homework-1">Homework 1</h2>
 
 <h3 id="1-solving-a-system-of-equations">1 Solving a System of Equations</h3>
 
-<p>Let the prices for an apple, for a beet, and for a carrot be $a, b, c$ separately. Then we have:
+<p>Let the prices for an apple, for a beet, and for a carrot be \(a, b, c\) separately. Then we have:
 \(\begin{bmatrix}
     1   &amp;   1   &amp;   1   \\
     2   &amp;   3   &amp;   0   \\
@@ -640,7 +640,7 @@ x = inv(A) * b;
 disp(x);
 </code></pre>
 
-<p>Solving this equation, we get $x=\begin{bmatrix}4&amp;5&amp;7\end{bmatrix}^{\mathrm{T}}$. So $a=4, b=5, c=7$.</p>
+<p>Solving this equation, we get \(x=\begin{bmatrix}4&amp;5&amp;7\end{bmatrix}^{\mathrm{T}}\). So \(a=4, b=5, c=7\).</p>
 
 <h3 id="2-calculus-review">2 Calculus Review</h3>
 
@@ -668,9 +668,9 @@ disp(int(sin(x) * exp(-x), 0, inf));
 <p><strong>(b)</strong>
 \(f'(x)=2x\cdot e^{-x^4}\)</p>
 
-<p>Since $e^{-x^4}&gt;0$, $f’(x)&lt;0$ when $x&lt;0$ and $f’(x)&gt;0$ when $x&gt;0$.</p>
+<p>Since \(e^{-x^4}&gt;0\), \(f'(x)&lt;0\) when \(x&lt;0\) and \(f'(x)&gt;0\) when \(x&gt;0\).</p>
 
-<p>So when $x=0$, the minimum value of $f(x)$ is $0$.</p>
+<p>So when \(x=0\), the minimum value of \(f(x)\) is \(0\).</p>
 
 <p><strong>(c)</strong>
 \(\begin{aligned}
@@ -684,9 +684,9 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <p><strong>(a)</strong> True.</p>
 
-<p><strong>(b)</strong> False. Let $Q(x, y)$ be $x=y$.</p>
+<p><strong>(b)</strong> False. Let \(Q(x, y)\) be \(x=y\).</p>
 
-<p><strong>(c)</strong> True. For all $y$, we just choose the $x$ previously selected.</p>
+<p><strong>(c)</strong> True. For all \(y\), we just choose the \(x\) previously selected.</p>
 
 <p><strong>(d)</strong> True.</p>
 
@@ -700,7 +700,7 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <p><strong>(b)</strong> False.</p>
 
-<p>Let $P(x)=(x&gt;0), Q(x)=(x\le 0)$. $\forall x\ (P(x)\land Q(x))$ is true but $\left(\forall x\ P(x)\right)\lor\left(\forall x\ Q(x)\right)$ is false.</p>
+<p>Let \(P(x)=(x&gt;0), Q(x)=(x\le 0)\). \(\forall x\ (P(x)\land Q(x))\) is true but \(\left(\forall x\ P(x)\right)\lor\left(\forall x\ Q(x)\right)\) is false.</p>
 
 <p><strong>(c)</strong> True.</p>
 
@@ -711,7 +711,7 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <p><strong>(d)</strong> False.</p>
 
-<p>Let $P(x)=(x=2)$ and $Q(x)=(x=3)$. $\mathrm{LHS}$ is false but $\mathrm{RHS}$ is true.</p>
+<p>Let \(P(x)=(x=2)\) and \(Q(x)=(x=3)\). \(\mathrm{LHS}\) is false but \(\mathrm{RHS}\) is true.</p>
 
 <h3 id="5-preserving-set-operations">5 Preserving Set Operations</h3>
 
@@ -725,7 +725,7 @@ disp(int(sin(x) * exp(-x), 0, inf));
 \Longleftrightarrow\ &amp;x\in f^{-1}(A)\cap f^{-1}(B)
 \end{aligned}\]
 
-<p>So $f^{-1}(A\cap B)=f^{-1}(A)\cap f^{-1}(B)$.</p>
+<p>So \(f^{-1}(A\cap B)=f^{-1}(A)\cap f^{-1}(B)\).</p>
 
 <p><strong>(b)</strong></p>
 
@@ -737,7 +737,7 @@ disp(int(sin(x) * exp(-x), 0, inf));
 \Longleftrightarrow\ &amp;x\in f^{-1}(A)\setminus f^{-1}(B)
 \end{aligned}\]
 
-<p>So $f^{-1}(A\setminus B)=f^{-1}(A)\setminus f^{-1}(B)$.</p>
+<p>So \(f^{-1}(A\setminus B)=f^{-1}(A)\setminus f^{-1}(B)\).</p>
 
 <p><strong>(c)</strong></p>
 
@@ -749,9 +749,9 @@ disp(int(sin(x) * exp(-x), 0, inf));
 \Longleftrightarrow\ &amp;y\in f(A)\cap f(B)
 \end{aligned}\]
 
-<p>So $f(A\cap B)\subseteq f(A)\cap f(B)$.</p>
+<p>So \(f(A\cap B)\subseteq f(A)\cap f(B)\).</p>
 
-<p>The counterexample for $f(A\cap B)= f(A)\cap f(B)$ is when $A={2}$ and $B = {-2}$, and we let $f(x)=x^2$. $f(A\cap B)=\emptyset$ but $f(A)\cap f(B)={4}$.</p>
+<p>The counterexample for \(f(A\cap B)= f(A)\cap f(B)\) is when \(A=\{2\}\) and \(B = \{-2\}\), and we let \(f(x)=x^2\). \(f(A\cap B)=\emptyset\) but \(f(A)\cap f(B)=\{4\}\).</p>
 
 <p><strong>(d)</strong></p>
 
@@ -763,13 +763,13 @@ disp(int(sin(x) * exp(-x), 0, inf));
 \Longleftrightarrow\ &amp;y\in f(A)\setminus f(B)
 \end{aligned}\]
 
-<p>So $f(A\setminus B)\supseteq f(A)\setminus f(B)$.</p>
+<p>So \(f(A\setminus B)\supseteq f(A)\setminus f(B)\).</p>
 
-<p>The counterexample for $f(A\setminus B)= f(A)\setminus f(B)$ is when $A={-2, 2}$ and $B = {-2}$, and we let $f(x)=x^2$. $f(A\setminus B)={4}$ but $f(A)\cap f(B)=\emptyset$.</p>
+<p>The counterexample for \(f(A\setminus B)= f(A)\setminus f(B)\) is when \(A=\{-2, 2\}\) and \(B = \{-2\}\), and we let \(f(x)=x^2\). \(f(A\setminus B)=\{4\}\) but \(f(A)\cap f(B)=\emptyset\).</p>
 
 <h3 id="6-prove-or-disprove">6 Prove or Disprove</h3>
 
-<p><strong>(a)</strong> True. Let $n=2k+1$, $k\in \Z$. $n^2+4n=4k^2+12k+5$ is an odd number.</p>
+<p><strong>(a)</strong> True. Let \(n=2k+1\), \(k\in \Z\). \(n^2+4n=4k^2+12k+5\) is an odd number.</p>
 
 <p><strong>(b)</strong> True.</p>
 
@@ -790,7 +790,7 @@ disp(int(sin(x) * exp(-x), 0, inf));
 \in \mathbb{Q}\implies r^2\in \mathbb{Q}
 \end{aligned}\]
 
-<p>Let $r=\frac{p}{q}$, where $p, q\in \Z$ and $\gcd(p, q) = 1$. $r^2=\frac{p^2}{q^2}\in\mathbb{Q}$.</p>
+<p>Let \(r=\frac{p}{q}\), where \(p, q\in \Z\) and \(\gcd(p, q) = 1\). \(r^2=\frac{p^2}{q^2}\in\mathbb{Q}\).</p>
 
 <p><strong>(d)</strong> False.</p>
 
@@ -802,20 +802,20 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <h3 id="7-rationals-and-irrationals">7 Rationals and Irrationals</h3>
 
-<p>We use proof by contradiction. Let $x\in \mathbb{Q}, y\in\mathbb{R}\setminus\mathbb{Q}, z\in\mathbb{Q}$ and $z=xy$.</p>
+<p>We use proof by contradiction. Let \(x\in \mathbb{Q}, y\in\mathbb{R}\setminus\mathbb{Q}, z\in\mathbb{Q}\) and \(z=xy\).</p>
 
-<p>But $y = \frac{z}{x}\in \mathbb{Q}$, which conflicts with $y\in \R\setminus\mathbb{Q}$, so $z$ must be irrational.</p>
+<p>But \(y = \frac{z}{x}\in \mathbb{Q}\), which conflicts with \(y\in \R\setminus\mathbb{Q}\), so \(z\) must be irrational.</p>
 
 <h3 id="8-twin-primes">8 Twin Primes</h3>
 
-<p><strong>(a)</strong> If $3\mid p$, $p$ is not a prime number. So $3\nmid p$. So $p\equiv 1\pmod 3$ or $p\equiv 2\equiv -1\pmod 3$.</p>
+<p><strong>(a)</strong> If \(3\mid p\), \(p\) is not a prime number. So \(3\nmid p\). So \(p\equiv 1\pmod 3\) or \(p\equiv 2\equiv -1\pmod 3\).</p>
 
-<p>So $p$ is of the form $3k + 1$ or $3k - 1$ for some integer $k$.</p>
+<p>So \(p\) is of the form \(3k + 1\) or \(3k - 1\) for some integer \(k\).</p>
 
-<p><strong>(b)</strong> If the three prime numbers are $p, p + 2, p + 4\ (p&gt;3)$, we could let $p=3k\pm 1$.</p>
+<p><strong>(b)</strong> If the three prime numbers are \(p, p + 2, p + 4\ (p&gt;3)\), we could let \(p=3k\pm 1\).</p>
 
-<p>If $p=3k + 1$, we have $p + 2=3k + 3 = 3(k + 1)$ is not a prime number.</p>
+<p>If \(p=3k + 1\), we have \(p + 2=3k + 3 = 3(k + 1)\) is not a prime number.</p>
 
-<p>If $p=3k - 1$, we have $p + 4 = 3k + 3 = 3(k + 1)$.</p>
+<p>If \(p=3k - 1\), we have \(p + 4 = 3k + 3 = 3(k + 1)\).</p>
 
-<p>So $5$ is the only prime number that takes part in two different twin prime pairs.</p>]]></content><author><name></name></author><category term="Notes" /><category term="Discrete Mathematics" /><category term="Probability Theory" /><summary type="html"><![CDATA[My answer for the UCB EECS 70 Discrete Mathematics and Probability Theory course.]]></summary></entry><entry><title type="html">Hello World!</title><link href="https://pufanyi.github.io/blog/HelloWorld/" rel="alternate" type="text/html" title="Hello World!" /><published>2023-06-01T00:00:00+00:00</published><updated>2023-06-01T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/HelloWorld</id><content type="html" xml:base="https://pufanyi.github.io/blog/HelloWorld/"><![CDATA[<p>Welcome to the debut post on this blog! Previously, I maintained a <a href="https://pufanyi.github.io/oi-blog/">blog</a> primarily in Chinese, where I shared my experiences in competitive programming. As I continue my journey through university, I am excited to create a new blog in English, where I will be sharing my experiences and adventures.</p>]]></content><author><name></name></author><category term="announcements" /><category term="announcements" /><summary type="html"><![CDATA[the first post on this blog]]></summary></entry></feed>
+<p>So \(5\) is the only prime number that takes part in two different twin prime pairs.</p>]]></content><author><name></name></author><category term="Notes" /><category term="Discrete Mathematics" /><category term="Probability Theory" /><summary type="html"><![CDATA[My answer for the UCB EECS 70 Discrete Mathematics and Probability Theory course.]]></summary></entry><entry><title type="html">Hello World!</title><link href="https://pufanyi.github.io/blog/HelloWorld/" rel="alternate" type="text/html" title="Hello World!" /><published>2023-06-01T00:00:00+00:00</published><updated>2023-06-01T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/HelloWorld</id><content type="html" xml:base="https://pufanyi.github.io/blog/HelloWorld/"><![CDATA[<p>Welcome to the debut post on this blog! Previously, I maintained a <a href="https://pufanyi.github.io/oi-blog/">blog</a> primarily in Chinese, where I shared my experiences in competitive programming. As I continue my journey through university, I am excited to create a new blog in English, where I will be sharing my experiences and adventures.</p>]]></content><author><name></name></author><category term="announcements" /><category term="announcements" /><summary type="html"><![CDATA[the first post on this blog]]></summary></entry></feed>
