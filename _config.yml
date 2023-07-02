@@ -138,7 +138,7 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
 giscus:
-  repo: alshedivat/al-folio      # <your-github-user-name>/<your-github-repo-name>
+  repo: pufanyi/pufanyi.github.io      # <your-github-user-name>/<your-github-repo-name>
   repo_id: R_kgDOJnYv-A
   category: Comments             # name of the category under which discussions will be created
   category_id: DIC_kwDOJnYv-M4CW4n7
