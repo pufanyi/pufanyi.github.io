@@ -563,14 +563,15 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><em>Induction Hypothesis:</em> Assume that \(\sum_{i=1}^{k} i = \frac{1}{6}k(k+1)(2k+1)\).</p>
 
-<p><em>Induction Step:</em> When \(n=k+1\),
-\(\begin{aligned}
+<p><em>Induction Step:</em> When \(n=k+1\),</p>
+
+\[\begin{aligned}
 \sum_{i=1}^{k+1}i&amp;=(k+1)+\sum_{i=1}^{k} i\\
 &amp;=\frac{1}{6}k(k+1)(2k+1)+k+1\\
 &amp;=\frac{1}{6}(k+1)(2k^2+k+6k+6)\\
 &amp;=\frac{1}{6}(k+1)(2k^2+7k+6)\\
 &amp;=\frac{1}{6}(k+1)(k+2)(2k+3)
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>Thus, \(\forall n\in\mathbb{N}\), \(\sum_{i=1}^{n} i = \frac{1}{6}n(n+1)(2n+1)\) holds.</p>
 
@@ -580,13 +581,14 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><em>Induction Hypothesis:</em> Assume that \((1+x)^k\ge 1+kx\), for \(k\in \mathbb{N}\).</p>
 
-<p><em>Induction Step:</em> When \(n=k+1\),
-\(\begin{aligned}
+<p><em>Induction Step:</em> When \(n=k+1\),</p>
+
+\[\begin{aligned}
 (1+x)^{k+1}&amp;=(1+x)\cdot(1+x)^k\\
 &amp;\ge(1+x)\cdot(1+kx)\\
 &amp;=1+(k+1)\cdot x+kx^2\\
 &amp;\ge 1+(k+1)\cdot x
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>Thus, \(\forall n\in\mathbb{N}, x&gt;-1, \ (1+x)^n\ge 1+nx\) holds.</p>
 
@@ -596,13 +598,14 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 
 <p><em>Induction Hypothesis:</em> Assume that \(k!&lt;k^k\), for \(k\in \mathbb{N}, k&gt;1\).</p>
 
-<p><em>Induction Step:</em> When \(n=k+1\),
-\(\begin{aligned}
+<p><em>Induction Step:</em> When \(n=k+1\),</p>
+
+\[\begin{aligned}
 (k+1)!&amp;=(k+1)\cdot k!\\
 &amp;&lt;(k+1)\cdot k^k\\
 &amp;&lt;(k+1)\cdot (k+1)^k\\
 &amp;=(k+1)^{k+1}
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>Thus, \(\forall n\in\mathbb{N}, n&gt;1, \ n!&lt;n^n\) holds.</p>
 
@@ -615,6 +618,7 @@ n&amp;\equiv\sum_{i=0}^{k-1}\left(a_i\cdot 10^i\right)\pmod 9\\
 <p><em>Induction Step:</em> When \(n=k+1\), we could randomly choose two people A and B, asking \(A\to B\).</p>
 
 <p>Now there are two cases:</p>
+
 <ol>
   <li>If A don’t know B. Then we could know that B is not celebrity. So we could just firstly remove B and solve the remaining \(k\) people to find the “celebrity” for these \(k\) people, which is C. (If now found, just return “not found”.) And after that, we should check if B knows C and C doesn’t know B. It cost \(f(k + 1)=3+f(k)\le 3+(3k-4)=3(k+1)-4\).</li>
   <li>If A knows B. Then we could know that A is not celebrity. Then we can prove as in the first case, changing B to A.</li>
