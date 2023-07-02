@@ -796,8 +796,9 @@ disp(x);
 
 <h3 id="2-calculus-review">2 Calculus Review</h3>
 
-<p><strong>(a)</strong>
-\(\begin{aligned}
+<p><strong>(a)</strong></p>
+
+\[\begin{aligned}
 \int_{0}^{\infty}e^{-t}\sin t\ \mathrm{d}t&amp;=-\int_{0}^{\infty}\sin t\ \mathrm{d}\left(e^{-t}\right)\\
 &amp;=-\left(\left(\sin(t)\cdot e^{-t}\right)_0^{\infty}-\int_{0}^\infty e^{-t}\ \mathrm{d}(\sin t)\right)\\
 &amp;=\int_{0}^{\infty}e^{-t}\cos t\ \mathrm{d}t\\
@@ -805,7 +806,7 @@ disp(x);
 &amp;=-\left(\left(e^{-t}\cos t\right)_{0}^{\infty}-\int_{0}^{\infty}e^{-t}\ \mathrm{d}(\cos t)\right)\\
 &amp;=\int_{0}^{\infty}e^{-t}\ \mathrm{d}(\cos t)-\left(e^{-t}\cos t\right)_{0}^{\infty}\\
 &amp;=-\int^\infty_0e^{-t}\sin t\ \mathrm{d}t+1
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>So,
 \(\int_{0}^{\infty}e^{-t}\sin t\ \mathrm{d}t=-\int_{0}^{\infty}e^{-t}\sin t\ \mathrm{d}t+1.\)</p>
@@ -824,13 +825,14 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <p>So when \(x=0\), the minimum value of \(f(x)\) is \(0\).</p>
 
-<p><strong>(c)</strong>
-\(\begin{aligned}
+<p><strong>(c)</strong></p>
+
+\[\begin{aligned}
 \iint_R 2x+y\ \mathrm{d}A&amp;=\int_0^1\mathrm{d}x\int_{0}^{x}2x+y\ \mathrm{d}y\\
 &amp;=\int_{0}^{1}\left(2xy+\frac{1}{2}y^2\right)_{y=0}^{y=x}\mathrm{d}x\\
 &amp;=\int_{0}^{1}\frac{5}{2}x^2\ \mathrm{d}x\\
 &amp;=\frac{5}{6}
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <h3 id="3-implication">3 Implication</h3>
 

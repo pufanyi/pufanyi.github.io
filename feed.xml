@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-02T13:12:42+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-02T13:13:40+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">UCB EECS 70 Discrete Mathematics and Probability Theory</title><link href="https://pufanyi.github.io/blog/UCBCS70/" rel="alternate" type="text/html" title="UCB EECS 70 Discrete Mathematics and Probability Theory" /><published>2023-07-02T00:00:00+00:00</published><updated>2023-07-02T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/UCBCS70</id><content type="html" xml:base="https://pufanyi.github.io/blog/UCBCS70/"><![CDATA[<p>Here is my answer for the <a href="https://fa22.eecs70.org/">UCB EECS 70 Discrete Mathematics and Probability Theory</a> course.</p>
 
 <p>Due to the absence of official answers, some of the answers to the questions may be incorrect, and we also welcome everyone to point them out.</p>
@@ -648,8 +648,9 @@ disp(x);
 
 <h3 id="2-calculus-review">2 Calculus Review</h3>
 
-<p><strong>(a)</strong>
-\(\begin{aligned}
+<p><strong>(a)</strong></p>
+
+\[\begin{aligned}
 \int_{0}^{\infty}e^{-t}\sin t\ \mathrm{d}t&amp;=-\int_{0}^{\infty}\sin t\ \mathrm{d}\left(e^{-t}\right)\\
 &amp;=-\left(\left(\sin(t)\cdot e^{-t}\right)_0^{\infty}-\int_{0}^\infty e^{-t}\ \mathrm{d}(\sin t)\right)\\
 &amp;=\int_{0}^{\infty}e^{-t}\cos t\ \mathrm{d}t\\
@@ -657,7 +658,7 @@ disp(x);
 &amp;=-\left(\left(e^{-t}\cos t\right)_{0}^{\infty}-\int_{0}^{\infty}e^{-t}\ \mathrm{d}(\cos t)\right)\\
 &amp;=\int_{0}^{\infty}e^{-t}\ \mathrm{d}(\cos t)-\left(e^{-t}\cos t\right)_{0}^{\infty}\\
 &amp;=-\int^\infty_0e^{-t}\sin t\ \mathrm{d}t+1
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <p>So,
 \(\int_{0}^{\infty}e^{-t}\sin t\ \mathrm{d}t=-\int_{0}^{\infty}e^{-t}\sin t\ \mathrm{d}t+1.\)</p>
@@ -676,13 +677,14 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <p>So when \(x=0\), the minimum value of \(f(x)\) is \(0\).</p>
 
-<p><strong>(c)</strong>
-\(\begin{aligned}
+<p><strong>(c)</strong></p>
+
+\[\begin{aligned}
 \iint_R 2x+y\ \mathrm{d}A&amp;=\int_0^1\mathrm{d}x\int_{0}^{x}2x+y\ \mathrm{d}y\\
 &amp;=\int_{0}^{1}\left(2xy+\frac{1}{2}y^2\right)_{y=0}^{y=x}\mathrm{d}x\\
 &amp;=\int_{0}^{1}\frac{5}{2}x^2\ \mathrm{d}x\\
 &amp;=\frac{5}{6}
-\end{aligned}\)</p>
+\end{aligned}\]
 
 <h3 id="3-implication">3 Implication</h3>
 
