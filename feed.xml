@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-02T12:56:46+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-02T12:57:10+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">UCB EECS 70 Discrete Mathematics and Probability Theory</title><link href="https://pufanyi.github.io/blog/UCBCS70/" rel="alternate" type="text/html" title="UCB EECS 70 Discrete Mathematics and Probability Theory" /><published>2023-07-02T00:00:00+00:00</published><updated>2023-07-02T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/UCBCS70</id><content type="html" xml:base="https://pufanyi.github.io/blog/UCBCS70/"><![CDATA[<p>Here is my answer for the <a href="https://fa22.eecs70.org/">UCB EECS 70 Discrete Mathematics and Probability Theory</a> course.</p>
 
 <p>Due to the absence of official answers, some of the answers to the questions may be incorrect, and we also welcome everyone to point them out.</p>
@@ -280,7 +280,7 @@
 <h3 id="2-propositional-practice">2 Propositional Practice</h3>
 
 <p><strong>(a)</strong>
-\(\exists x\in\R, x\not\in\mathbb{Q}.\)</p>
+\(\exists x\in\mathbb{R}, x\not\in\mathbb{Q}.\)</p>
 
 <p><strong>(b)</strong>
 \(\forall n\in \mathbb{Z},\left((n\in\mathbb{N})\lor(n&lt;0)\right)\land\lnot\left((n\in\mathbb{N})\land(n&lt;0)\right).\)</p>
@@ -364,7 +364,7 @@
 <h3 id="5-propositional-practice">5 Propositional Practice</h3>
 
 <p><strong>(a)</strong>
-\(\exists x\in\R\ ((x^2=0)\land(\forall y\in\R\ ((y^2=0)\implies (x=y)))).\)</p>
+\(\exists x\in\mathbb{R}\ ((x^2=0)\land(\forall y\in\mathbb{R}\ ((y^2=0)\implies (x=y)))).\)</p>
 
 <p><strong>(b)</strong>
 \(\forall x\in\mathbb{Q}\ \forall y\in\mathbb{Q}\ \exists z\in \mathbb{Q}\ ((x=y)\lor (x&lt;y&lt;z)\lor(x&gt;y&gt;z)).\)</p>
@@ -804,7 +804,7 @@ disp(int(sin(x) * exp(-x), 0, inf));
 
 <p>We use proof by contradiction. Let \(x\in \mathbb{Q}, y\in\mathbb{R}\setminus\mathbb{Q}, z\in\mathbb{Q}\) and \(z=xy\).</p>
 
-<p>But \(y = \frac{z}{x}\in \mathbb{Q}\), which conflicts with \(y\in \R\setminus\mathbb{Q}\), so \(z\) must be irrational.</p>
+<p>But \(y = \frac{z}{x}\in \mathbb{Q}\), which conflicts with \(y\in \mathbb{R}\setminus\mathbb{Q}\), so \(z\) must be irrational.</p>
 
 <h3 id="8-twin-primes">8 Twin Primes</h3>
 
