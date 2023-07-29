@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 description: * means equal contribution
 years: [2023]
-nav: true
+nav: false
 nav_order: 1
 ---
 <!-- _pages/publications.md -->
