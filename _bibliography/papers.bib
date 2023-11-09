@@ -1,6 +1,20 @@
 ---
 ---
 
+@misc{li2023otterhd,
+    title={OtterHD: A High-Resolution Multi-modality Model},
+    author={Bo Li* and Peiyuan Zhang* and Jingkang Yang<sup>†</sup> and Yuanhan Zhang<sup>†</sup> and Fanyi Pu<sup>†</sup> and Ziwei Liu},
+    year={2023},
+    eprint={2311.04219},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    preview={OtterHD.png},
+    arxiv={2311.04219},
+    pdf={https://arxiv.org/pdf/2311.04219.pdf},
+    code={https://github.com/Luodian/Otter},
+    abstract={In this paper, we present OtterHD-8B, an innovative multimodal model evolved from Fuyu-8B, specifically engineered to interpret high-resolution visual inputs with granular precision. Unlike conventional models that are constrained by fixed-size vision encoders, OtterHD-8B boasts the ability to handle flexible input dimensions, ensuring its versatility across various inference requirements. Alongside this model, we introduce MagnifierBench, an evaluation framework designed to scrutinize models' ability to discern minute details and spatial relationships of small objects. Our comparative analysis reveals that while current leading models falter on this benchmark, OtterHD-8B, particularly when directly processing high-resolution inputs, outperforms its counterparts by a substantial margin. The findings illuminate the structural variances in visual information processing among different models and the influence that the vision encoders' pre-training resolution disparities have on model effectiveness within such benchmarks. Our study highlights the critical role of flexibility and high-resolution input capabilities in large multimodal models and also exemplifies the potential inherent in the Fuyu architecture's simplicity for handling complex visual data.}
+}
+
 @article{li2023mimicit,
     title={MIMIC-IT: Multi-Modal In-Context Instruction Tuning},
     author={Bo Li* and Yuanhan Zhang* and Liangyu Chen* and Jinghao Wang* and Fanyi Pu* and Jingkang Yang and Chunyuan Li and Ziwei Liu},
@@ -12,7 +26,7 @@
     pdf={https://arxiv.org/pdf/2306.05425.pdf},
     website={https://otter-ntu.github.io/index.html},
     code={https://github.com/Luodian/Otter},
-    preview={https://otter-ntu.github.io/assets/images/logo/otter_logo.png},
+    preview={MIMICIT.png},
     selected={true},
     dimensions={true},
     abstract={High-quality instructions and responses are essential for the
@@ -42,18 +56,4 @@ multi-modal perception, reasoning, and in-context learning. Human
 evaluation reveals it effectively aligns with the user's intentions. We
 release the MIMIC-IT dataset, instruction-response collection pipeline,
 benchmarks, and the Otter model.}
-}
-
-@misc{li2023otterhd,
-    title={OtterHD: A High-Resolution Multi-modality Model},
-    author={Bo Li* and Peiyuan Zhang* and Jingkang Yang<sup>†</sup> and Yuanhan Zhang<sup>†</sup> and Fanyi Pu<sup>†</sup> and Ziwei Liu},
-    year={2023},
-    eprint={2311.04219},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    preview={OtterHD.png},
-    arxiv={2311.04219},
-    pdf={https://arxiv.org/pdf/2311.04219.pdf},
-    code={https://github.com/Luodian/Otter},
-    abstract={In this paper, we present OtterHD-8B, an innovative multimodal model evolved from Fuyu-8B, specifically engineered to interpret high-resolution visual inputs with granular precision. Unlike conventional models that are constrained by fixed-size vision encoders, OtterHD-8B boasts the ability to handle flexible input dimensions, ensuring its versatility across various inference requirements. Alongside this model, we introduce MagnifierBench, an evaluation framework designed to scrutinize models' ability to discern minute details and spatial relationships of small objects. Our comparative analysis reveals that while current leading models falter on this benchmark, OtterHD-8B, particularly when directly processing high-resolution inputs, outperforms its counterparts by a substantial margin. The findings illuminate the structural variances in visual information processing among different models and the influence that the vision encoders' pre-training resolution disparities have on model effectiveness within such benchmarks. Our study highlights the critical role of flexibility and high-resolution input capabilities in large multimodal models and also exemplifies the potential inherent in the Fuyu architecture's simplicity for handling complex visual data.}
 }
