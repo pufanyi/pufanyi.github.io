@@ -137,7 +137,85 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 preview"><img class="preview z-depth-1 rounded" src="https://otter-ntu.github.io/assets/images/logo/otter_logo.png"></div>
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/OtterHD-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/OtterHD-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/OtterHD-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/OtterHD.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="OtterHD.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="li2023otterhd" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">OtterHD: A High-Resolution Multi-modality Model</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <a href="https://brianboli.com/" rel="external nofollow noopener" target="_blank">Bo Li*</a>, <a href="https://veiled-texture-20c.notion.site/Peiyuan-Zhang-ab24b48621c9491db767a76df860873a" rel="external nofollow noopener" target="_blank">Peiyuan Zhang*</a>, <a href="https://jingkang50.github.io/" rel="external nofollow noopener" target="_blank">Jingkang Yang<sup>†</sup></a>, <a href="https://zhangyuanhan-ai.github.io/" rel="external nofollow noopener" target="_blank">Yuanhan Zhang<sup>†</sup></a>, <em>Fanyi Pu<sup>†</sup></em>, and <a href="https://liuziwei7.github.io/" rel="external nofollow noopener" target="_blank">Ziwei Liu</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2311.04219" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://arxiv.org/pdf/2311.04219.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://github.com/Luodian/Otter" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2311.04219"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In this paper, we present OtterHD-8B, an innovative multimodal model evolved from Fuyu-8B, specifically engineered to interpret high-resolution visual inputs with granular precision. Unlike conventional models that are constrained by fixed-size vision encoders, OtterHD-8B boasts the ability to handle flexible input dimensions, ensuring its versatility across various inference requirements. Alongside this model, we introduce MagnifierBench, an evaluation framework designed to scrutinize models’ ability to discern minute details and spatial relationships of small objects. Our comparative analysis reveals that while current leading models falter on this benchmark, OtterHD-8B, particularly when directly processing high-resolution inputs, outperforms its counterparts by a substantial margin. The findings illuminate the structural variances in visual information processing among different models and the influence that the vision encoders’ pre-training resolution disparities have on model effectiveness within such benchmarks. Our study highlights the critical role of flexibility and high-resolution input capabilities in large multimodal models and also exemplifies the potential inherent in the Fuyu architecture’s simplicity for handling complex visual data.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/MIMICIT-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/MIMICIT-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/MIMICIT-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/MIMICIT.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="MIMICIT.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
 
         <!-- Entry bib key -->
         <div id="li2023mimicit" class="col-sm-8">
@@ -203,68 +281,6 @@ multi-modal perception, reasoning, and in-context learning. Human
 evaluation reveals it effectively aligns with the user’s intentions. We
 release the MIMIC-IT dataset, instruction-response collection pipeline,
 benchmarks, and the Otter model.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/OtterHD-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/OtterHD-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/OtterHD-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/OtterHD.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="OtterHD.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-</div>
-
-        <!-- Entry bib key -->
-        <div id="li2023otterhd" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">OtterHD: A High-Resolution Multi-modality Model</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <a href="https://brianboli.com/" rel="external nofollow noopener" target="_blank">Bo Li*</a>, <a href="https://veiled-texture-20c.notion.site/Peiyuan-Zhang-ab24b48621c9491db767a76df860873a" rel="external nofollow noopener" target="_blank">Peiyuan Zhang*</a>, <a href="https://jingkang50.github.io/" rel="external nofollow noopener" target="_blank">Jingkang Yang<sup>†</sup></a>, <a href="https://zhangyuanhan-ai.github.io/" rel="external nofollow noopener" target="_blank">Yuanhan Zhang<sup>†</sup></a>, <em>Fanyi Pu<sup>†</sup></em>, and <a href="https://liuziwei7.github.io/" rel="external nofollow noopener" target="_blank">Ziwei Liu</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2311.04219" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://arxiv.org/pdf/2311.04219.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <a href="https://github.com/Luodian/Otter" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-arxiv-id="2311.04219"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>In this paper, we present OtterHD-8B, an innovative multimodal model evolved from Fuyu-8B, specifically engineered to interpret high-resolution visual inputs with granular precision. Unlike conventional models that are constrained by fixed-size vision encoders, OtterHD-8B boasts the ability to handle flexible input dimensions, ensuring its versatility across various inference requirements. Alongside this model, we introduce MagnifierBench, an evaluation framework designed to scrutinize models’ ability to discern minute details and spatial relationships of small objects. Our comparative analysis reveals that while current leading models falter on this benchmark, OtterHD-8B, particularly when directly processing high-resolution inputs, outperforms its counterparts by a substantial margin. The findings illuminate the structural variances in visual information processing among different models and the influence that the vision encoders’ pre-training resolution disparities have on model effectiveness within such benchmarks. Our study highlights the critical role of flexibility and high-resolution input capabilities in large multimodal models and also exemplifies the potential inherent in the Fuyu architecture’s simplicity for handling complex visual data.</p>
           </div>
         </div>
       </div>
