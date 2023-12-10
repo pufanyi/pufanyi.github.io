@@ -34,62 +34,64 @@
 - title: Competition Experience
   type: time_table
   contents:
+    - title: Ranked 14th in ICPC Asia-Jakarta Regional Contest
+      year: 2023
     - title: Ranked 6th in ICPC Asia-Manila Regional Contest
-      institution: Nanyang Technological University, Singapore
+      # institution: Nanyang Technological University, Singapore
       year: 2022
-      description:
-        - Solved 8 out of 13 algorithm problems within 5 hours.
-        - Managed the team and designed/implemented algorithms.
-        - Improved leadership skills and gained confidence for future competitions.
+      # description:
+      #   - Solved 8 out of 13 algorithm problems within 5 hours.
+      #   - Managed the team and designed/implemented algorithms.
+      #   - Improved leadership skills and gained confidence for future competitions.
     - title: Gold Medal in the 2021 ICPC Asia Kunming Regional Contest
-      institution: Dalian University of Technology, Dalian, China
+      # institution: Dalian University of Technology, Dalian, China
       year: 2022
-      description:
-        - Solved 5 out of 13 algorithm problems in 5 hours.
-        - Focused on solving dynamic programming problems.
-        - Teamed up with experienced seniors and enhanced leadership ability.
-        - Learned strategies and knowledge from teammates.
+      # description:
+      #   - Solved 5 out of 13 algorithm problems in 5 hours.
+      #   - Focused on solving dynamic programming problems.
+      #   - Teamed up with experienced seniors and enhanced leadership ability.
+      #   - Learned strategies and knowledge from teammates.
 
     - title: Silver Medal of the 2021 ICPC Asia Nanjing Regional Contest
-      institution: Dalian University of Technology, Dalian, China
+      # institution: Dalian University of Technology, Dalian, China
       year: 2021
-      description:
-        - Solved 6 out of 13 algorithm problems in 5 hours.
-        - Managed the team and implemented algorithms.
-        - Teamed up with freshmen with Olympiad in Informatics experience.
-        - Adopted cooperative thinking strategy and reversed unfavourable situations.
+      # description:
+      #   - Solved 6 out of 13 algorithm problems in 5 hours.
+      #   - Managed the team and implemented algorithms.
+      #   - Teamed up with freshmen with Olympiad in Informatics experience.
+      #   - Adopted cooperative thinking strategy and reversed unfavourable situations.
 
     - title: Silver Medal of 2021 China Collegiate Programming Contest, Harbin Site
-      institution: Dalian University of Technology, Dalian, China
+      # institution: Dalian University of Technology, Dalian, China
       year: 2021
-      description:
-        - Solved 6 out of 13 algorithm problems in 5 hours.
-        - Focused on solving dynamic programming problems and debugging.
-        - Teamed up with experienced seniors and learned leadership skills.
+      # description:
+      #   - Solved 6 out of 13 algorithm problems in 5 hours.
+      #   - Focused on solving dynamic programming problems and debugging.
+      #   - Teamed up with experienced seniors and learned leadership skills.
 
     - title: Best-in-University Prize in Simon Marais Mathematics Competition
-      institution: Nanyang Technological University, Singapore
+      # institution: Nanyang Technological University, Singapore
       year: 2022
-      description:
-        - Attempted 8 challenging mathematical problems within a 6-hour time frame.
-        - The problems covered various topics such as number theory, game theory, and calculus.
-        - This experience improved my teamwork and problem-solving skills.
-        - Gained valuable experience in applying mathematical concepts to real-world problems.
+      # description:
+      #   - Attempted 8 challenging mathematical problems within a 6-hour time frame.
+      #   - The problems covered various topics such as number theory, game theory, and calculus.
+      #   - This experience improved my teamwork and problem-solving skills.
+      #   - Gained valuable experience in applying mathematical concepts to real-world problems.
     - title: 1st Place in the IET-CUP Hackathon
-      institution: Nanyang Technological University, Singapore
+      # institution: Nanyang Technological University, Singapore
       year: 2022
-      description:
-        - Organized by IET-NTU, mainly for all NTU undergraduates.
-        - Successfully solved 9 out of 10 algorithmic problems in the competition.
-        - Participated as an individual, which tested my mental resilience and problem-solving skills under pressure.
-        - Improved my thinking ability and mental endurance in unfavourable competition conditions.
+      # description:
+      #   - Organized by IET-NTU, mainly for all NTU undergraduates.
+      #   - Successfully solved 9 out of 10 algorithmic problems in the competition.
+      #   - Participated as an individual, which tested my mental resilience and problem-solving skills under pressure.
+      #   - Improved my thinking ability and mental endurance in unfavourable competition conditions.
     - title: First Prize in the 2020 National Olympiad in Informatics in Provinces (Zhejiang)
-      institution: Shaoxing No.1 High School, Shaoxing, China
+      # institution: Shaoxing No.1 High School, Shaoxing, China
       year: 2020
-      description:
-        - Solved 4 challenging algorithmic problems within a 4.5-hour time frame, including topics such as dynamic programming, greedy algorithms, game theory, and mathematics.
-        - Enhanced coding and problem-solving skills through the competition.
-        - Developed critical thinking and algorithmic design abilities.
+      # description:
+      #   - Solved 4 challenging algorithmic problems within a 4.5-hour time frame, including topics such as dynamic programming, greedy algorithms, game theory, and mathematics.
+      #   - Enhanced coding and problem-solving skills through the competition.
+      #   - Developed critical thinking and algorithmic design abilities.
 
 - title: Co-Curricular Activities
   type: time_table
