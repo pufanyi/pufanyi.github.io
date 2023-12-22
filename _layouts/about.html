@@ -9,7 +9,7 @@ layout: default
             {% if site.title == "blank" -%}
               <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
               {% if site.title == "blank" and site.chinese_name %}
-                \t<span style="font-size: smaller;">{{ site.chinese_name }}</span>
+                <span style="font-size: smaller; margin-left: 10px;">{{ site.chinese_name }}</span>
               {% endif %}
             {%- else -%}
               {{ site.title }}
