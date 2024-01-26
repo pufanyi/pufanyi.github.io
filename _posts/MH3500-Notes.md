@@ -1,0 +1,51 @@
+---
+layout: distill
+title: NTU MH3500 Statistics
+categories: Notes
+date: 2024-01-26
+description: Notes for NTU MH3500 Statistics.
+tags:
+- Discrete Mathematics
+- Probability Theory
+giscus_comments: true
+related_posts: false
+
+authors:
+  - name: Pu Fanyi
+    url: "https://pufanyi.github.io"
+    affiliations:
+      name: NTU, Singapore
+      url: "https://www.ntu.edu.sg/"
+
+toc:
+  - name: Discussion 0A
+  - name: Homework 0
+  - name: Note 2
+  - name: Note 3
+  - name: Discussion 1A
+  - name: Discussion 1B
+  - name: Homework 1
+---
+
+这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。
+
+***
+
+## Moments & MGF
+
+首先一件事情是 moment，我们定义随机变量 $$X$$ 的 $n$-th moment 为 $$\mathbb{E}[X^n]$$，$$n$$-th central moment 为 $$\mathbb{E}[(X-\mathbb{E}[X])^n]$$
+
+我们定义 $$X$$ 的 Moment Generating Function (MGF) 为 $$M_X(t)=\mathbb{E}[e^{tX}], t\in\mathbb{R}$$。
+
+关于 MGF 的表格，列一张：
+
+|Distribution|MGF|
+|:-:|:-:|
+|$$\mathrm{Bernoulli}(p)$$|$$1-p+pe^t$$|
+|$$\mathrm{Geo}(p)$$|$$\frac{pe^t}{1-(1-p)e^t}$$|
+|$$\mathrm{Binomial}(n,p)$$|$$(1-p+pe^t)^n$$|
+|$$\mathrm{Poisson}(\lambda)$$|$$e^{\lambda(e^t-1)}$$|
+|$$\mathrm{Uniform}(a,b)$$|$$\begin{cases}\frac{e^{tb}-e^{ta}}{t(b-a)}&t\neq0\\1&t=0\end{cases}$$|
+|$$\mathrm{Exp}(\lambda)$$|$$\frac{\lambda}{\lambda-t},t<\lambda$$|
+|$$\mathrm{Gamma}(\alpha,\lambda)$$|$$\left(\frac{\lambda}{\lambda-t}\right)^\alpha,t<\lambda$$|
+|$$\mathrm{N}(\mu,\sigma^2)$$|$$e^{\mu t+\frac{1}{2}\sigma^2t^2}$$|
