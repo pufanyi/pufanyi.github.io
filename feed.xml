@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-26T17:38:32+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-26T18:44:33+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <hr />
@@ -18,7 +18,7 @@
 <p>Sample mean 是 \(\overline{X} = \frac{1}{n} \sum_{i=1}^n X_i\)，sample variance 是 \(S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2\)。</p>
 
 <details><summary>为什么是 \(\frac{1}{n-1}\)</summary>
-<p>感性理解是，你这 \(n\) 个东西的平均值，事实上是根据这 \(n\) 个东西的“趋向”有一定偏移的。就比如说我现在有一个 \(N(0, 1)\)，我去两个 sample，假设拿到了 \(x_1=-1, x_2=2\)，这个时候他的 $\overline{X}$ 其实不是 \(0\)，而是 \(\frac{1}{2}\)，也就是被往右边拉过去了一点的。这时候如果我们用 \(\frac{1}{n}\) 计算，那事实上算出来的值应该是偏小的（因为这里的 \(\overline{X}\) 根据样本的抽取结果“调整”了一下）。而 \(\frac{1}{n-1}\) 正好抵消了这一点。</p>
+<p>感性理解是，你这 \(n\) 个东西的平均值，事实上是根据这 \(n\) 个东西的“趋向”有一定偏移的。就比如说我现在有一个 \(N(0, 1)\)，我取两个 sample，假设拿到了 \(x_1=-1, x_2=2\)，这个时候他的 $\overline{X}$ 其实不是 \(0\)，而是 \(\frac{1}{2}\)，也就是被往右边拉过去了一点的。这时候如果我们用 \(\frac{1}{n}\) 计算，那事实上算出来的值应该是偏小的（因为这里的 \(\overline{X}\) 根据样本的抽取结果“调整”了一下）。而 \(\frac{1}{n-1}\) 正好抵消了这一点。</p>
 
 <p>下面是严格的数学证明。</p>
 
