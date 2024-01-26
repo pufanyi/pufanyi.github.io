@@ -182,13 +182,7 @@
         <d-contents>
           <nav class="l-text figcaption">
           <h3>Contents</h3>
-            <div><a href="#discussion-0a">Discussion 0A</a></div>
-            <div><a href="#homework-0">Homework 0</a></div>
-            <div><a href="#note-2">Note 2</a></div>
-            <div><a href="#note-3">Note 3</a></div>
-            <div><a href="#discussion-1a">Discussion 1A</a></div>
-            <div><a href="#discussion-1b">Discussion 1B</a></div>
-            <div><a href="#homework-1">Homework 1</a></div>
+            <div><a href="#%E4%BB%80%E4%B9%88%E6%98%AF-statistics">什么是 statistics</a></div>
             
           </nav>
         </d-contents>
@@ -197,55 +191,24 @@
 
 <hr>
 
-<h2 id="moments--mgf">Moments &amp; MGF</h2>
+<h2 id="什么是-statistics">什么是 statistics</h2>
 
-<p>首先一件事情是 moment，我们定义随机变量 \(X\) 的 $n$-th moment 为 \(\mathbb{E}[X^n]\)，\(n\)-th central moment 为 \(\mathbb{E}[(X-\mathbb{E}[X])^n]\)</p>
+<p>首先是 population, property, population distribution, random sample 这些名词，应该不用咋写。</p>
 
-<p>我们定义 \(X\) 的 Moment Generating Function (MGF) 为 \(M_X(t)=\mathbb{E}[e^{tX}], t\in\mathbb{R}\)。</p>
+<p>Static inference 是指用 sample 来推断整个 population 的性质。</p>
 
-<details><summary>各个 distribution 的 MGF</summary>
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Distribution</th>
-      <th style="text-align: center">MGF</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Bernoulli}(p)\)</td>
-      <td style="text-align: center">\(1-p+pe^t\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Geo}(p)\)</td>
-      <td style="text-align: center">\(\frac{pe^t}{1-(1-p)e^t}\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Binomial}(n,p)\)</td>
-      <td style="text-align: center">\((1-p+pe^t)^n\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Poisson}(\lambda)\)</td>
-      <td style="text-align: center">\(e^{\lambda(e^t-1)}\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Uniform}(a,b)\)</td>
-      <td style="text-align: center">\(\begin{cases}\frac{e^{tb}-e^{ta}}{t(b-a)}&amp;t\neq0\\1&amp;t=0\end{cases}\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Exp}(\lambda)\)</td>
-      <td style="text-align: center">\(\frac{\lambda}{\lambda-t},t&lt;\lambda\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{Gamma}(\alpha,\lambda)\)</td>
-      <td style="text-align: center">\(\left(\frac{\lambda}{\lambda-t}\right)^\alpha,t&lt;\lambda\)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">\(\mathrm{N}(\mu,\sigma^2)\)</td>
-      <td style="text-align: center">\(e^{\mu t+\frac{1}{2}\sigma^2t^2}\)</td>
-    </tr>
-  </tbody>
-</table>
+<p>就是假设我们随机抽取了 \(n\) 个 sample \(x_1, x_2, \dots, x_n\)，我们称 \(x_1, x_2, \dots, x_n\) are the realizations of i.i.d. random variables \(X_1, X_2, \dots, X_n\)。也称 \(x_1, x_2, \dots, x_n\) are observations of \(X_1, X_2, \dots, X_n\)。</p>
+
+<p>而 statistic 事实上指的是 a real valued function, \(T(X_1, X_2, \dots, X_n)\)。需要注意的是，这个 function 之和 \(X_1, X_2, \dots, X_n\) 有关，而不是 \(x_1, x_2, \dots, x_n\)。</p>
+
+<p>然后 the distribution of a statistic is called a sampling distribution。也就是说，sampling distribution 是很多变量的 distribution，而 population 只是一个变量的 distribution。</p>
+
+<p>Sample mean 是 \(\bar{X} = \frac{1}{n} \sum_{i=1}^n X_i\)，sample variance 是 \(S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \bar{X})^2\)。</p>
+
+<details><summary>为什么是 \(\frac{1}{n-1}\)</summary>
+<p>我们有 \(\mathbb{E}(S^2)=\sigma^2\)。</p>
+
+<p>我们考虑 \(\mathbb{E}(S^2)=\frac{1}{n-1}\sum_{i-1}^n\mathbb{E}(X_i-\bar{X})^2\)</p>
 </details>
 
       </d-article>
