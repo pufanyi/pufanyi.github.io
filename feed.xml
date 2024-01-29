@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-26T18:44:33+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-29T07:06:20+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <hr />
@@ -39,7 +39,13 @@
 
 <p>于是我们有 \(\mathbb{E}(S^2)=\frac{1}{n-1}\sum_{i-1}^n\mathbb{E}\left[(X_i-\overline{X})^2\right]=\frac{1}{n-1}\sum_{i-1}^n\frac{n-1}{n}\sigma^2=\sigma^2\)。</p>
 
-</details>]]></content><author><name>Pu Fanyi</name></author><category term="Notes" /><category term="Statistics" /><category term="Probability Theory" /><summary type="html"><![CDATA[Notes for NTU MH3500 Statistics.]]></summary></entry><entry><title type="html">UCB EECS 70 Discrete Mathematics and Probability Theory</title><link href="https://pufanyi.github.io/blog/UCBCS70/" rel="alternate" type="text/html" title="UCB EECS 70 Discrete Mathematics and Probability Theory" /><published>2023-07-02T00:00:00+00:00</published><updated>2023-07-02T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/UCBCS70</id><content type="html" xml:base="https://pufanyi.github.io/blog/UCBCS70/"><![CDATA[<p>Here is my answer for the <a href="https://fa22.eecs70.org/">UCB EECS 70 Discrete Mathematics and Probability Theory</a> course.</p>
+</details>
+
+<hr />
+
+<h2 id="chi2-t-f-distribution">\(\chi^2\), \(t\), \(F\) Distribution</h2>
+
+<!-- 接下来我们需要讨论的是 distribution of sample mean for normally distributed population。我们考虑 $$X_1, \dots X_n\sim N(\mu, \sigma^2)$$，我们很容易证明 $$\overline{X}\sim N\left(\mu, \frac{\sigma^2}{n}\right)$$，也就是 $$\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim N(0, 1)$$ -->]]></content><author><name>Pu Fanyi</name></author><category term="Notes" /><category term="Statistics" /><category term="Probability Theory" /><summary type="html"><![CDATA[Notes for NTU MH3500 Statistics.]]></summary></entry><entry><title type="html">UCB EECS 70 Discrete Mathematics and Probability Theory</title><link href="https://pufanyi.github.io/blog/UCBCS70/" rel="alternate" type="text/html" title="UCB EECS 70 Discrete Mathematics and Probability Theory" /><published>2023-07-02T00:00:00+00:00</published><updated>2023-07-02T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/UCBCS70</id><content type="html" xml:base="https://pufanyi.github.io/blog/UCBCS70/"><![CDATA[<p>Here is my answer for the <a href="https://fa22.eecs70.org/">UCB EECS 70 Discrete Mathematics and Probability Theory</a> course.</p>
 
 <p>Due to the absence of official answers, some of the answers to the questions may be incorrect, and we also welcome everyone to point them out.</p>
 
