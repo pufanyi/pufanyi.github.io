@@ -183,7 +183,7 @@
           <nav class="l-text figcaption">
           <h3>Contents</h3>
             <div><a href="#%E4%BB%80%E4%B9%88%E6%98%AF-statistics">什么是 statistics</a></div>
-            <div><a href="#chi-2-t-f-distribution">$$\chi^2$$, $$t$$, $$F$$ Distribution</a></div>
+            <div><a href="#from-normal-distribution">From Normal Distribution</a></div>
             
           </nav>
         </d-contents>
@@ -230,9 +230,22 @@
 
 </details>
 
+<p>有一个好玩的性质是 \(\overline{X}\) 和 \(S^2\) 是独立的，其实是证明比较好玩。</p>
+
+<details><summary>证明 \(\overline{X}\) 和 \(S^2\) 是独立的</summary>
+<p>一开始其实我没想明白一件事情。考虑一个 joint moment generating function，\(M_{X, Y}(s, t)=\mathbb{E}\left[e^{sX+tY}\right]\)，假设我们能推出 \(M_{X, Y}(s, t)=M_X(s)M_Y(t)\)，那么我们就能说明 \(X, Y\) 独立的。</p>
+
+<p>这个命题反过来是很显然的，但是正过来感觉有点神奇。但仔细思考发现其实就是 \(\mathbb{E}\left[e^{sX+tY}\right]=\mathbb{E}\left[e^{sX}\right]\cdot\mathbb{E}\left[e^{sY}\right]\)。也就是说 \(e^{sX}\) 和 \(e^{tY}\) 是独立的，那很显然 \(X, Y\) 也是独立的了。</p>
+
+<p>\(M_{\overline{X}, X_1-\overline{X}, \dots, X_n-\overline{X}}(s, t_1, \dots, t_n)\)，</p>
+
+</details>
+
 <hr>
 
-<h2 id="chi2-t-f-distribution">\(\chi^2\), \(t\), \(F\) Distribution</h2>
+<h2 id="from-normal-distribution">From Normal Distribution</h2>
+
+<p>接下来我们讨论的是</p>
 
 <!-- 接下来我们需要讨论的是 distribution of sample mean for normally distributed population。我们考虑 $$X_1, \dots X_n\sim N(\mu, \sigma^2)$$，我们很容易证明 $$\overline{X}\sim N\left(\mu, \frac{\sigma^2}{n}\right)$$，也就是 $$\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim N(0, 1)$$ -->
 
