@@ -140,15 +140,15 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: pufanyi/pufanyi.github.io      # <your-github-user-name>/<your-github-repo-name>
+  repo: pufanyi/pufanyi.github.io # <your-github-user-name>/<your-github-repo-name>
   repo_id: R_kgDOJnYv-A
   category: General # name of the category under which discussions will be created
   category_id: DIC_kwDOJnYv-M4CW4n7
-  mapping: title                 # identify discussions by post title
-  strict: 1                      # use strict identification mode
-  reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
-  input_position: bottom         # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme  # name of the color scheme (preferred works well with al-folio light/dark mode)
+  mapping: title # identify discussions by post title
+  strict: 1 # use strict identification mode
+  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
+  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
+  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata: 0
   lang: en
 
@@ -285,7 +285,6 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: [Pu]
   first_name: [Fanyi, F., Fanyi Pu, Fanyi Pu*]
 
@@ -320,8 +319,8 @@ filtered_bibtex_keywords:
   [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 20  # leave blank to always show all authors
-more_authors_animation_delay: 100  # more authors are revealed on click using animation; smaller delay means faster animation
+max_author_limit: 20 # leave blank to always show all authors
+more_authors_animation_delay: 100 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
