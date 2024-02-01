@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-01T14:53:31+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-01T15:00:00+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <p>除了上课听到的，应该还会记一些书里看到的和自己想到的。</p>
@@ -48,7 +48,21 @@
 <p>有一个好玩的性质是 如果 \(X_i\sim N(\mu, \sigma^2)\) 的话，\(\overline{X}\) 和 \(S^2\) 是独立的。上课老师讲了中方法但我有点没搞懂，Rice 书里有一个证法，感觉清楚一些。</p>
 
 <details><summary>上课老师讲的证法</summary>
-<p>其实我至今没搞懂他到底是咋搞的。因为他用了一个结论，就是两个协方差为 \(0\) 的 normal distribution 是相互独立的。不是很清楚不用 mgf 这玩意儿还能咋证。</p>
+<p>其实我至今没搞懂他到底是咋搞的。因为他用了一个结论，就是两个协方差为 \(0\) 的 normal distribution 是相互独立的。不是很清楚不用 MGF 这玩意儿还能咋证（用 MGF 的话，那还不如 Rice 的证法呢）。</p>
+
+<p>当然如果这玩意儿是成立的，那就好办了。就是毕竟我们是知道 \(\overline{X}\sim N\left(\mu, \frac{\sigma^2}{n}\right)\)，然后 \(X_i-\overline{X}\sim N\left(0, \sigma^2\right)\) 的。那我们只要搞出他俩的 covariance 就行了。</p>
+
+<p>那我们算算：</p>
+
+\[\begin{aligned}
+\mathrm{Cov}\left(\overline{X}, X_i-\overline{X}\right)&amp;=\mathrm{Cov}\left(\overline{X},X_i\right)-\mathrm{Cov}\left(\overline{X},\overline{X}\right)\\
+&amp;=\mathrm{Cov}\left(\frac{1}{n}\sum_{j=1}^nX_j,X_i\right)-\frac{\sigma^2}{n}\\
+&amp;=\frac{1}{n}\mathrm{Cov}\left(X_i, X_i\right)-\frac{\sigma^2}{n}\\
+&amp;=\frac{\sigma^2}{n}-\frac{\sigma^2}{n}\\
+&amp;=0
+\end{aligned}\]
+
+<p>然后他们就独立了。</p>
 
 </details>
 
