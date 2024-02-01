@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-01T14:08:04+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-01T14:53:31+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <p>除了上课听到的，应该还会记一些书里看到的和自己想到的。</p>
@@ -45,7 +45,7 @@
 
 </details>
 
-<p>有一个好玩的性质是 \(\overline{X}\) 和 \(S^2\) 是独立的。但因为水平原因不太能证。上课老师只讲了当 \(X_i\sim N(\mu, \sigma^2)\) 的时候咋搞。然后他让我们去翻 Rice 的书，哪里讲的是当 \(\boldsymbol{X}\) 是 multivariate normal distribution 的时候咋搞。</p>
+<p>有一个好玩的性质是 如果 \(X_i\sim N(\mu, \sigma^2)\) 的话，\(\overline{X}\) 和 \(S^2\) 是独立的。上课老师讲了中方法但我有点没搞懂，Rice 书里有一个证法，感觉清楚一些。</p>
 
 <details><summary>上课老师讲的证法</summary>
 <p>其实我至今没搞懂他到底是咋搞的。因为他用了一个结论，就是两个协方差为 \(0\) 的 normal distribution 是相互独立的。不是很清楚不用 mgf 这玩意儿还能咋证。</p>
@@ -82,11 +82,13 @@
 
 <p>所以我们令 \(\boldsymbol{\widehat{X}}=\left(\overline X, X_1-\overline{X}, \dots, X_n-\overline{X}\right)\)，\(\boldsymbol{\widehat{t}}=(s, t_1, t_2,\dots, t_n)\)。</p>
 
-<p>其实我们要证明的就是：</p>
+<p>考虑到 \(X_1-\overline{X}, X_2-\overline{X},\dots,X_n-\overline{X}\) 这些玩意儿的独立性是显然的，所以其实我们要证明的就是：</p>
 
-\[M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)=M_{\overline{X}}(s)\cdot M_{X_1-\overline{X}}(t_1)\cdot M_{X_2-\overline{X}}(t_2)\cdots M_{X_n-\overline{X}}(t_n)\]
+\[M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)=M_{\overline{X}}(s, 0, \dots, 0)\cdot M_{\boldsymbol{X}-\overline{X}}(0, t_1, \dots, t_n)\]
 
 <p>然后我们接下来想做的是能不能把 \(M_{\widehat{\boldsymbol{X}}}(\widehat{\boldsymbol{t}})\) 和 \(M_{\boldsymbol{X}}(\boldsymbol{a})\) 联系起来。</p>
+
+<p>为啥要这样转化呢？因为虽然我们现在不知道 \(\widehat{\boldsymbol{X}}\) 的独立性，但是 \(\boldsymbol{X}\) 的精神状态咋样我们是知道的。这样我们就能通过 \(\boldsymbol{X}\) 把整个 MGF 给拆解开来，从而计算这个 MGF 到底是啥。</p>
 
 <p>我们是这样做的：</p>
 
@@ -101,7 +103,40 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\mathbb{E
 
 \[M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)=M_{\boldsymbol{X}}\left(\boldsymbol{a}\right)\]
 
-<p>为啥要这样转化呢？因为虽然我们现在不知道 \(\widehat{\boldsymbol{X}}\) 的独立性，但是 \(\boldsymbol{X}\) 的精神状态咋样我们是知道的。</p>
+<p>然后我们就能根据 \(\boldsymbol{X}\) 的独立性把 \(M_{\boldsymbol{X}}\left(\boldsymbol{a}\right)\) 拆开来了：</p>
+
+\[\begin{aligned}
+M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=M_{\boldsymbol{X}}\left(\boldsymbol{a}\right)\\
+&amp;=\prod_{i=1}^nM_{X_i}\left(a_i\right)\\
+&amp;=\prod_{i = 1}^n\exp\left(\mu a_i+\frac{1}{2}\sigma^2a_i^2\right)\\
+&amp;=\exp\left(\mu\sum_{i=1}^na_i+\frac{\sigma^2}{2}\sum_{i=1}^na_i^2\right)
+\end{aligned}\]
+
+<p>考虑到：</p>
+
+\[\begin{aligned}
+\sum_{i=1}^na_i&amp;=\sum_{i=1}^n\left(\frac{s}{n}+t_i-\overline{t}\right)\\
+&amp;=s+\sum_{i=1}^nt_i-n\overline{t}\\
+&amp;=s\\
+\sum_{i=1}^na_i^2&amp;=\sum_{i=1}^n\left(\frac{s}{n}+t_i-\overline{t}\right)^2\\
+&amp;=\sum_{i=1}^n\left(\left(\frac{s}{n}\right)^2+2\cdot\frac{s}{n}\left(t_i-\overline t\right)+\left(t_i-\overline{t}\right)^2\right)\\
+&amp;=\frac{s^2}{n}+\sum_{i=1}^n\left(t_i-\overline{t}\right)^2
+\end{aligned}\]
+
+<p>于是我们就有：</p>
+
+\[\begin{aligned}
+M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left(\mu\sum_{i=1}^na_i+\frac{\sigma^2}{2}\sum_{i=1}^na_i^2\right)\\
+&amp;=\exp\left(\mu s+\frac{\sigma^2}{2}\left(\frac{s^2}{n}+\sum_{i=1}^n\left(t_i-\overline{t}\right)^2\right)\right)\\
+&amp;=\exp\left(\mu s+\frac{\sigma^2}{2}\frac{s^2}{n}+\frac{\sigma^2}{2}\sum_{i=1}^n\left(t_i-\overline{t}\right)^2\right)\\
+&amp;=\exp\left(\mu s+\frac{1}{2}\cdot\frac{\sigma^2}{n}s^2\right)\cdot\prod_{i=1}^n\exp\left(\frac{\sigma^2}{2}\left(t_i-\overline{t}\right)^2\right)
+\end{aligned}\]
+
+<p>酱紫我们就已经把 \(M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)\) 给算出来了。简单算算就能发现</p>
+
+\[M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)=M_{\overline{X}}(s, 0, \dots, 0)\cdot M_{\boldsymbol{X}-\overline{X}}(0, t_1, \dots, t_n)\]
+
+<p>这玩意儿是成立的。于是我们就证完了。</p>
 
 </details>
 
