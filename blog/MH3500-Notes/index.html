@@ -237,11 +237,7 @@
 <p>有一个好玩的性质是 \(\overline{X}\) 和 \(S^2\) 是独立的，其实是证明比较好玩。</p>
 
 <details><summary>证明 \(\overline{X}\) 和 \(S^2\) 是独立的</summary>
-<p>一开始其实我没想明白一件事情。考虑一个 joint moment generating function \(M_{X, Y}(s, t)=\mathbb{E}\left[e^{sX+tY}\right]\)，假设我们能推出 \(M_{X, Y}(s, t)=M_X(s)M_Y(t)\)，那么我们就能说明 \(X, Y\) 独立的。</p>
-
-<p>这个命题反过来是很显然的，但是正过来感觉有点神奇。但仔细思考发现其实就是 \(\mathbb{E}\left[e^{sX+tY}\right]=\mathbb{E}\left[e^{sX}\right]\cdot\mathbb{E}\left[e^{sY}\right]\)。也就是说 \(e^{sX}\) 和 \(e^{tY}\) 是独立的，那很显然 \(X, Y\) 也是独立的了。</p>
-
-<p>\(M_{\overline{X}, X_1-\overline{X}, \dots, X_n-\overline{X}}(s, t_1, \dots, t_n)\)，</p>
+<p>首先我们需要知道一件事情，就是假设有一个 \(r\)，使得 \(M_{\boldsymbol{X}}(\boldsymbol{t})=M_{\boldsymbol{X}}(t_1, t_2, \dots, t_r, 0, \dots, 0)\cdot M_{\boldsymbol{X}}(0, \dots, 0, t_{r+1}, t_{r+2}, t_n)\)，那么 \((t_1, t_2, \cdots, t_r)\) 和 \((t_{r+1}, t_{r+2}, \dots, t_n)\) 是独立的。</p>
 
 </details>
 
