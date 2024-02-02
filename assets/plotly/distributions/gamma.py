@@ -54,4 +54,4 @@ fig.update_layout(
     sliders=sliders
 )
 
-fig.write_html('gamma_distribution.html', auto_open=True)
+fig.write_html('gamma_distribution_change_alpha.html', auto_open=True)
