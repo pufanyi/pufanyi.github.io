@@ -389,7 +389,7 @@ f_X(x)&amp;=\frac{\mathrm{d}F_X(x)}{\mathrm{d}x}\\
 <details><summary>Gamma Distribution</summary>
 <p>写到这里的时候发现一些 Gamma Distribution 的细节已经给忘光光了。</p>
 
-<p>首先需要复习的是 Gamma Distribution 的引入。他主要是想要推广 exponential distribution。就是我们想知道第 $n$ 次发生事情的时候，我们需要等多久。</p>
+<p>首先需要复习的是 Gamma Distribution 的引入。他主要是想要推广 exponential distribution。就是我们想知道第 \(n\) 次发生事情的时候，我们需要等多久。</p>
 
 <p>我们是通过 Poisson Distribution 推下来的。就是我们考虑这个新 distribution 的 CDF \(F(t)\)，其实表示的是在 \(1\sim t\) 这段时间里要发生大于等于 \(n\) 次。于是我们有：</p>
 
@@ -483,15 +483,17 @@ f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
 
 \[M_W(t)=M_U(t)\cdot M_V(t)\]
 
-<p>那我们很容易解出：
-\(\begin{aligned}
+<p>那我们很容易解出：</p>
+
+\[\begin{aligned}
 M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 &amp;=\frac{(1-2t)^{-\frac{n}{2}}}{(1-2t)^{-\frac{1}{2}}}\\
 &amp;=(1-2t)^{-\frac{n-1}{2}}
-\end{aligned}\)</p>
+\end{aligned}\]
 
-<p>也就是
-\(\frac{(n-1)S^2}{\sigma^2}\sim \chi_{n-1}^2\)</p>
+<p>也就是</p>
+
+\[\frac{(n-1)S^2}{\sigma^2}\sim \chi_{n-1}^2\]
 
 <p>于是就证完了。</p>
 </details>
@@ -508,6 +510,10 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 \(t_k=\frac{C}{\sqrt{D/k}}\)</p>
 
 <p>其中 \(C\sim N(0, 1)\)，\(D\sim \chi_k^2\) 且 \(C\) 和 \(D\) 是独立的。</p>
+
+<p>于是我们有：</p>
+
+\[\frac{\overline{X}-\mu}{S/\sqrt{n}}\sim t_{n-1}\]
 
       </d-article>
 
