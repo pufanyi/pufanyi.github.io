@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-02T02:59:53+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-02T03:46:59+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <p>除了上课听到的，应该还会记一些书里看到的和自己想到的。</p>
@@ -171,7 +171,17 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left
 
 <p>那么我们就能轻松得到他的 PDF：</p>
 
-\[f(t)=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\]
+\[\begin{aligned}
+f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
+&amp;=\sum_{k=n}^{\infty}\frac{k\lambda^kt^{k-1}e^{-\lambda t}-\lambda^{k+1}t^ke^{-\lambda t}}{k!}\\
+&amp;=e^{-\lambda t}\left(\sum_{k=n}^\infty\frac{\lambda^k t^{k-1}}{(k-1)!}-\sum_{k=n}^\infty\frac{\lambda^{k+1}t^k}{k!}\right)\\
+&amp;=e^{-\lambda t}\left(\sum_{k=n-1}^{\infty}\frac{\lambda^{k+1}t^k}{k!}-\sum_{k=n}^\infty\frac{\lambda^{k+1}t^k}{k!}\right)\\
+&amp;=e^{-\lambda t}\cdot\frac{\lambda^nt^{n-1}}{(n-1)!}
+\end{aligned}\]
+
+<p>然后我们将 \((n-1)!\) 推广成 \(\Gamma(n)=\int_{0}^{+\infty} x^{n-1}e^{-x}\mathrm{d}x\)，就得到了 Gamma Distribution 的 PDF：</p>
+
+\[f(t)=\frac{\lambda^n}{\Gamma(n)} t^{n-1}e^{-\lambda t}\]
 
 </details>]]></content><author><name>Pu Fanyi</name></author><category term="Notes" /><category term="Statistics" /><category term="Probability Theory" /><summary type="html"><![CDATA[Notes for NTU MH3500 Statistics.]]></summary></entry><entry><title type="html">UCB EECS 70 Discrete Mathematics and Probability Theory</title><link href="https://pufanyi.github.io/blog/UCBCS70/" rel="alternate" type="text/html" title="UCB EECS 70 Discrete Mathematics and Probability Theory" /><published>2023-07-02T00:00:00+00:00</published><updated>2023-07-02T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/UCBCS70</id><content type="html" xml:base="https://pufanyi.github.io/blog/UCBCS70/"><![CDATA[<p>Here is my answer for the <a href="https://fa22.eecs70.org/">UCB EECS 70 Discrete Mathematics and Probability Theory</a> course.</p>
 

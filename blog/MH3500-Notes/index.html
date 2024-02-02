@@ -360,7 +360,17 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left
 
 <p>那么我们就能轻松得到他的 PDF：</p>
 
-\[f(t)=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\]
+\[\begin{aligned}
+f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
+&amp;=\sum_{k=n}^{\infty}\frac{k\lambda^kt^{k-1}e^{-\lambda t}-\lambda^{k+1}t^ke^{-\lambda t}}{k!}\\
+&amp;=e^{-\lambda t}\left(\sum_{k=n}^\infty\frac{\lambda^k t^{k-1}}{(k-1)!}-\sum_{k=n}^\infty\frac{\lambda^{k+1}t^k}{k!}\right)\\
+&amp;=e^{-\lambda t}\left(\sum_{k=n-1}^{\infty}\frac{\lambda^{k+1}t^k}{k!}-\sum_{k=n}^\infty\frac{\lambda^{k+1}t^k}{k!}\right)\\
+&amp;=e^{-\lambda t}\cdot\frac{\lambda^nt^{n-1}}{(n-1)!}
+\end{aligned}\]
+
+<p>然后我们将 \((n-1)!\) 推广成 \(\Gamma(n)=\int_{0}^{+\infty} x^{n-1}e^{-x}\mathrm{d}x\)，就得到了 Gamma Distribution 的 PDF：</p>
+
+\[f(t)=\frac{\lambda^n}{\Gamma(n)} t^{n-1}e^{-\lambda t}\]
 
 </details>
 
