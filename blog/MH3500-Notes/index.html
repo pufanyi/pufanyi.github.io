@@ -441,8 +441,11 @@ f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
 
 </details>
 
-<p>接着我们要讨论的是当 \(X_1, X_2, \dots, X_n\sim N(\mu, \sigma^2)\) 时，\(S^2\) 的分布和 Chi-Square Distribution 的关系。</p>
+<p>接着我们要讨论的是当 \(X_1, X_2, \dots, X_n\sim N(\mu, \sigma^2)\) 时，\(S^2\) 的分布和 Chi-Square Distribution 的关系：</p>
 
+\[\frac{(n-1)S^2}{\sigma^2}\sim \chi_{n-1}^2\]
+
+<details><summary>证明</summary>
 <p>首先我们需要观察到的是：</p>
 
 \[\sum_{i=1}^n\left(\frac{X_i-\mu}{\sigma}\right)^2\sim\chi^2_n\]
@@ -455,24 +458,21 @@ f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
 =\ &amp;\frac{1}{\sigma^2}\sum_{i=1}^n\left(X_i-\overline{X}\right)^2+\left(\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\right)^2
 \end{aligned}\]
 
-<!-- 然后我们发现其实他是一个 $$W=U+V$$ 的形式，其中 $$W=\sum_{i=1}^n\left(\frac{X_i-\mu}{\sigma}\right)^2\sim \chi_n^2$$，$$V=\left(\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\right)^2\sim \chi_1^2$$，我们唯一不知道也是想要知道的是 $$U=\frac{1}{\sigma^2}\sum_{i=1}^n\left(X_i-\overline{X}\right)^2=\frac{(n-1)S^2}{\sigma^2}$$。
+<p>然后我们发现其实他是一个 \(W=U+V\) 的形式，其中 \(W=\sum_{i=1}^n\left(\frac{X_i-\mu}{\sigma}\right)^2\sim \chi_n^2\)，\(V=\left(\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\right)^2\sim \chi_1^2\)，我们唯一不知道也是想要知道的是 \(U=\frac{1}{\sigma^2}\sum_{i=1}^n\left(X_i-\overline{X}\right)^2=\frac{(n-1)S^2}{\sigma^2}\)。</p>
 
-由于 $$X_i-\overline{X}$$ 和 $$\overline{X}$$ 是独立的，于是 $$U$$ 和 $$V$$ 也是独立的。于是我们有：
+<p>由于 \(X_i-\overline{X}\) 和 \(\overline{X}\) 是独立的，于是 \(U\) 和 \(V\) 也是独立的。于是我们有：</p>
 
-$$
-M_W(t)=M_U(t)\cdot M_V(t)
-$$
+\[M_W(t)=M_U(t)\cdot M_V(t)\]
 
-那我们很容易解出：
-$$
-\begin{aligned}
-M_U(t)&=\frac{M_W(t)}{M_v(t)}\\
-&=\frac{(1-2t)^{-\frac{n}{2}}}{(1-2t)^{-\frac{1}{2}}}\\
-&=(1-2t)^{-\frac{n-1}{2}}
-\end{aligned}
-$$
+<p>那我们很容易解出：
+\(\begin{aligned}
+M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
+&amp;=\frac{(1-2t)^{-\frac{n}{2}}}{(1-2t)^{-\frac{1}{2}}}\\
+&amp;=(1-2t)^{-\frac{n-1}{2}}
+\end{aligned}\)</p>
 
-也就是 $$\frac{(n-1)S^2}{\sigma^2}\sim \chi_{n-1}^2$$。 -->
+<p>也就是 \(\frac{(n-1)S^2}{\sigma^2}\sim \chi_{n-1}^2\)。</p>
+</details>
 
       </d-article>
 
