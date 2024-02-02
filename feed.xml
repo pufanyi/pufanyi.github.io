@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-02T16:58:29+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-02T16:59:32+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <p>除了上课听到的，应该还会记一些书里看到的和自己想到的。</p>
@@ -317,8 +317,9 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 
 <p>我们发现 \(C=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim N(0, 1)\)，\(D=\frac{(n-1)S}{\sigma^2}\sim \chi_{n-1}^2\)，而且 \(C\) 和 \(D\) 是独立的。</p>
 
-<p>于是我们就这样考虑定义一个新的 distribution：
-\(t_k=\frac{C}{\sqrt{D/k}}\)</p>
+<p>于是我们就这样考虑定义一个新的 distribution：</p>
+
+\[t_k=\frac{C}{\sqrt{D/k}}\]
 
 <p>其中 \(C\sim N(0, 1)\)，\(D\sim \chi_k^2\) 且 \(C\) 和 \(D\) 是独立的。</p>
 
