@@ -372,6 +372,26 @@ f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
 
 \[f(t)=\frac{\lambda^n}{\Gamma(n)} t^{n-1}e^{-\lambda t}\]
 
+<p>一个有趣的性质就是 Gamma Distribution 的 \(n\) 阶矩：</p>
+
+\[\begin{aligned}
+\mathbb{E}(X^n)&amp;=\int_{0}^{+\infty}x^nf(x)\mathrm{d}x\\
+&amp;=\int_0^{+\infty}x^n\frac{\lambda^\alpha}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}\mathrm{d}x\\
+&amp;=\frac{\lambda^\alpha}{\Gamma(\alpha)}\int_0^{+\infty}x^{n+\alpha-1}\cdot\frac{1}{-\lambda}\cdot\mathrm{d}\left(e^{-\lambda x}\right)\\
+&amp;=-\frac{\lambda^{\alpha-1}}{\Gamma(\alpha)}\left(\left.x^{n+\alpha-1}e^{-\lambda x}\right|_0^{+\infty}-\int_0^{+\infty}e^{-\lambda x}\cdot\mathrm{d}\left(x^{n+\alpha-1}\right)\right)\\
+&amp;=\frac{\lambda^{\alpha-1}}{\Gamma(\alpha)}\int_0^{+\infty}e^{-\lambda x}\cdot(n+\alpha-1)x^{n+\alpha-2}\mathrm{d}x\\
+&amp;=\frac{n+\alpha-1}{\lambda}\int_{0}^{+\infty}x^{n-1}\frac{\lambda^\alpha}{\Gamma(\alpha)}x^{}e^{-\lambda x}\mathrm{d}x\\
+&amp;=\frac{n+\alpha-1}{\lambda}\mathbb{E}(X^{n-1})
+\end{aligned}\]
+
+<p>而 \(\mathbb{E}(X^{0})=1\)，所以</p>
+
+\[\begin{aligned}
+\mathbb{E}(X^n)&amp;=\frac{1+\alpha-1}{\lambda}\cdot\frac{2+\alpha-1}{\lambda}\cdots\frac{n+\alpha-1}{\lambda}\\
+&amp;=\frac{\alpha^{\overline{n}}}{\lambda^n}\\
+&amp;=\frac{\Gamma(n+\alpha)}{\Gamma(\alpha)\lambda^n}
+\end{aligned}\]
+
 </details>
 
       </d-article>
