@@ -349,6 +349,22 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left
 
 <p>第一个需要讨论的是 Chi Square Distribution。就是我现在有 \(n\) 个 i.i.d. \(N(0, 1)\) 的 random variables，\(X_1, X_2, \dots, X_n\)，我们定义 \(Z=\sum_{i=1}^nX_i^2\) 遵从 \(\chi^2_n\) distribution。</p>
 
+<p>那就是我们咋计算这个 \(\chi^2_n\) 呢，因为显然我们发现 \(\chi^2_n\) 其实是 \(n\) 个 \(\chi^2_1\) 的和，所以我们第一件事就是计算 \(\chi^2_1\)。</p>
+
+<p>这个好算，我们假设 \(Y\sim N(0, 1), X=Y^2\)，那么 \(X\sim \chi_1^2\)：</p>
+
+\[\begin{aligned}
+F_X(x)&amp;=\mathbb{P}(X\leq x)\\
+&amp;=\mathbb{P}(Y^2\leq x)\\
+&amp;=\mathbb{P}(-\sqrt{x}\leq Y\leq\sqrt{x})\\
+&amp;=\Phi(\sqrt{x})-\Phi(-\sqrt{x})\\
+&amp;=2\Phi(\sqrt{x})-1\\
+f_X(x)&amp;=\frac{\mathrm{d}F_X(x)}{\mathrm{d}x}\\
+&amp;=2\phi(\sqrt{x})\cdot\frac{1}{2\sqrt{x}}\\
+&amp;=\frac{1}{\sqrt{x}}\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{x}{2}}\\
+&amp;=\frac{1}{\sqrt{2\pi x}}e^{-\frac{x}{2}}
+\end{aligned}\]
+
 <details><summary>Gamma Distribution</summary>
 <p>写到这里的时候发现一些 Gamma Distribution 的细节已经给忘光光了。</p>
 
@@ -391,6 +407,20 @@ f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
 &amp;=\frac{\alpha^{\overline{n}}}{\lambda^n}
 =\frac{\Gamma(n+\alpha)}{\Gamma(\alpha)\lambda^n}
 \end{aligned}\]
+
+<p>下面是一点小小的想法，就是这个 Gamma Function 是咋来的。其实就是考虑我们要把 \(n\) 拓展到实数 \(\alpha\)，那么我们是必须要保证 \(\int_{0}^{+\infty}e^{-\lambda t}\cdot\frac{\lambda^\alpha t^{\alpha-1}}{\Gamma(\alpha)}=1\)。于是我们就可以得到：</p>
+
+\[\Gamma(\alpha)=\int_{0}^{+\infty}e^{-\lambda t}\lambda^\alpha t^{\alpha-1}\mathrm{d}t\]
+
+<p>而我们要的 \(\Gamma\) 是想和 \(\lambda\) 无关的，这时候我们考虑换元：</p>
+
+\[\begin{aligned}
+\Gamma(\alpha)&amp;=\int_{0}^{+\infty}e^{-\lambda t}\lambda^\alpha t^{\alpha-1}\mathrm{d}t\\
+&amp;=\int_{0}^{+\infty}e^{-(\lambda t)}(\lambda t)^{\alpha-1}\mathrm{d}(\lambda t)\\
+&amp;=\int_{0}^{+\infty}e^{-x}x^{\alpha-1}\mathrm{d}x
+\end{aligned}\]
+
+<p>于是我们就得到了一个能够拟合 \((n-1)!\) 的 Gamma 函数。</p>
 
 </details>
 
