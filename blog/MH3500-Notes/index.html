@@ -358,7 +358,12 @@ F_X(x)&amp;=\mathbb{P}(X\leq x)\\
 &amp;=\mathbb{P}(Y^2\leq x)\\
 &amp;=\mathbb{P}(-\sqrt{x}\leq Y\leq\sqrt{x})\\
 &amp;=\Phi(\sqrt{x})-\Phi(-\sqrt{x})\\
-&amp;=2\Phi(\sqrt{x})-1\\
+&amp;=2\Phi(\sqrt{x})-1
+\end{aligned}\]
+
+<p>然后我们两边求个到得到 PDF：</p>
+
+\[\begin{aligned}
 f_X(x)&amp;=\frac{\mathrm{d}F_X(x)}{\mathrm{d}x}\\
 &amp;=2\phi(\sqrt{x})\cdot\frac{1}{2\sqrt{x}}\\
 &amp;=\frac{1}{\sqrt{x}}\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{x}{2}}\\

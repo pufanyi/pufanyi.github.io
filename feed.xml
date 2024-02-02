@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-02T06:42:33+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-02T06:52:57+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <p>除了上课听到的，应该还会记一些书里看到的和自己想到的。</p>
@@ -169,7 +169,12 @@ F_X(x)&amp;=\mathbb{P}(X\leq x)\\
 &amp;=\mathbb{P}(Y^2\leq x)\\
 &amp;=\mathbb{P}(-\sqrt{x}\leq Y\leq\sqrt{x})\\
 &amp;=\Phi(\sqrt{x})-\Phi(-\sqrt{x})\\
-&amp;=2\Phi(\sqrt{x})-1\\
+&amp;=2\Phi(\sqrt{x})-1
+\end{aligned}\]
+
+<p>然后我们两边求个到得到 PDF：</p>
+
+\[\begin{aligned}
 f_X(x)&amp;=\frac{\mathrm{d}F_X(x)}{\mathrm{d}x}\\
 &amp;=2\phi(\sqrt{x})\cdot\frac{1}{2\sqrt{x}}\\
 &amp;=\frac{1}{\sqrt{x}}\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{x}{2}}\\
