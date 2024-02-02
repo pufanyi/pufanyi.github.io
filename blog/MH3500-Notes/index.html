@@ -505,7 +505,9 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 <p>我们发现 \(C=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim N(0, 1)\)，\(D=\frac{(n-1)S}{\sigma^2}\sim \chi_{n-1}^2\)，而且 \(C\) 和 \(D\) 是独立的。</p>
 
 <p>于是我们就这样考虑定义一个新的 distribution：
-\(t_k=\frac{N(0, 1)}{\sqrt{\chi_k^2/k}}\)</p>
+\(t_k=\frac{C}{\sqrt{D/k}}\)</p>
+
+<p>其中 \(C\sim N(0, 1)\)，\(D\sim \chi_k^2\) 且 \(C\) 和 \(D\) 是独立的。</p>
 
       </d-article>
 
