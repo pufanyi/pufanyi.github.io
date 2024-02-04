@@ -526,6 +526,31 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 
 \[f_T(t)=\frac{\Gamma\left(\frac{n+1}{2}\right)}{\sqrt{n\pi}\cdot\Gamma\left(\frac{n}{2}\right)}\left(1+\frac{t^2}{n}\right)^{-\frac{n+1}{2}}\]
 
+<details><summary>证明</summary>
+<p>首先一个小问题就是我们需要知道俩随机变量是咋除的。</p>
+
+<p>我们考虑现在有俩独立的随机变量 \(X, Y\)，然后我们考虑 \(Z = \frac{X}{Y}\)。</p>
+
+<p>我们考虑：</p>
+
+\[\begin{aligned}
+F_Z(z)&amp;=\mathbb{P}(Z\leq z)\\
+&amp;=\mathbb{P}\left(\frac{X}{Y}\leq z\right)\\
+&amp;=\mathbb{P}\left(X\geq zY\land Y&lt;0\right)+\mathbb{P}\left(X\leq zY\land Y&gt;0\right)\\
+&amp;=\int_{-\infty}^{0}\mathbb{P}(X\ge zy)f_Y(y)\mathrm{d}y+\int_{0}^{+\infty}\mathbb{P}(X\le zy)f_Y(y)\mathrm{d}y\\
+&amp;=\int_{-\infty}^0\left(\int_{zy}^{+\infty}f_X(x)\mathrm{d}x\right)f_{Y}(y)\mathrm{d}y+\int_{0}^{+\infty}\left(\int_{-\infty}^{zy}f_X(x)\mathrm{d}x\right)f_Y(y)\mathrm{d}y
+\end{aligned}\]
+
+<p>于是我们可以通过两边求导得到 \(f_Z(z)\)：</p>
+
+\[\begin{aligned}
+f_Z(z)&amp;=\frac{\mathrm{d}F_Z(z)}{\mathrm{d}z}\\
+&amp;=\int_{-\infty}^0\left(-y\cdot f_{X}(zy)\right)\cdot f_Y(y)\mathrm{d}y+\int_{0}^{+\infty}\left(y\cdot f_{X}(zy)\right)\cdot f_Y(y)\mathrm{d}y\\
+&amp;=\int_{-\infty}^{+\infty}|y|\cdot f_X(zy)\cdot f_Y(y)\mathrm{d}y
+\end{aligned}\]
+
+</details>
+
       </d-article>
 
       <d-appendix>
