@@ -506,9 +506,9 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 
 <p>于是我们就这样考虑定义一个新的 distribution：</p>
 
-\[t_k=\frac{C}{\sqrt{D/k}}\]
+\[t_k=\frac{C}{\sqrt{D_k/k}}\]
 
-<p>其中 \(C\sim N(0, 1)\)，\(D\sim \chi_k^2\) 且 \(C\) 和 \(D\) 是独立的。</p>
+<p>其中 \(C\sim N(0, 1)\)，\(D_k\sim \chi_k^2\) 且 \(C\) 和 \(D_k\) 是独立的。</p>
 
 <p>于是我们有：</p>
 
@@ -554,9 +554,9 @@ f_Z(z)&amp;=\frac{\mathrm{d}F_Z(z)}{\mathrm{d}z}\\
 <p>首先是我们考虑到：</p>
 
 \[\begin{aligned}
-F_{\sqrt{D/n}}(t)&amp;=\mathbb{P}\left(\sqrt{\frac{D}{n}}\leq t\right)\\
-&amp;=\mathbb{P}\left(-nt^2\le D\leq nt^2\right)\\
-&amp;=\int_{-nt^2}^{nt^2}f_D(x)\mathrm{d}x\\
+F_{\sqrt{D_n/n}}(t)&amp;=\mathbb{P}\left(\sqrt{\frac{D_n}{n}}\leq t\right)\\
+&amp;=\mathbb{P}\left(-nt^2\le D_n\leq nt^2\right)\\
+&amp;=\int_{-nt^2}^{nt^2}f_{D_n}(x)\mathrm{d}x\\
 &amp;=\int_{0}^{nt^2}\frac{x^{\frac{n}{2}-1}e^{-\frac{x}{2}}}{2^{\frac{n}{2}}\Gamma\left(\frac{n}{2}\right)}\mathrm{d}x\\
 &amp;=\frac{1}{2^{\frac{n}{2}}\Gamma\left(\frac{n}{2}\right)}\int_{0}^{nt^2}x^{\frac{n}{2}-1}e^{-\frac{x}{2}}\mathrm{d}x
 \end{aligned}\]
@@ -564,9 +564,15 @@ F_{\sqrt{D/n}}(t)&amp;=\mathbb{P}\left(\sqrt{\frac{D}{n}}\leq t\right)\\
 <p>于是乎：</p>
 
 \[\begin{aligned}
-f_{\sqrt{D/n}}(t)&amp;=\frac{\mathrm{d}F_{\sqrt{D/n}}(t)}{\mathrm{d}t}\\
+f_{\sqrt{D_n/n}}(t)&amp;=\frac{\mathrm{d}F_{\sqrt{D_n/n}}(t)}{\mathrm{d}t}\\
 &amp;=\frac{1}{2^{\frac{n}{2}}\Gamma\left(\frac{n}{2}\right)}\cdot 2nt\cdot (nt^2)^{\frac{n}{2}-1}e^{-\frac{nt^2}{2}}\\
 &amp;=\frac{n^{\frac{n}{2}}t^{n-1}e^{-\frac{nt^2}{2}}}{2^{\frac{n}{2}-1}\Gamma\left(\frac{n}{2}\right)}
+\end{aligned}\]
+
+<p>然后我们带入公式得到 \(f_{T}(t)\)：</p>
+
+\[\begin{aligned}
+f_T(t)&amp;=\int_{-\infty}^{+\infty}|y|\cdot f_{C}(t)
 \end{aligned}\]
 
 </details>
