@@ -541,7 +541,7 @@ F_Z(z)&amp;=\mathbb{P}(Z\leq z)\\
 &amp;=\int_{-\infty}^0\left(\int_{zy}^{+\infty}f_X(x)\mathrm{d}x\right)f_{Y}(y)\mathrm{d}y+\int_{0}^{+\infty}\left(\int_{-\infty}^{zy}f_X(x)\mathrm{d}x\right)f_Y(y)\mathrm{d}y
 \end{aligned}\]
 
-<p>于是我们可以通过两边求导得到 PDF：</p>
+<p>于是我们可以通过两边求导得到 \(f_Z(z)\)：</p>
 
 \[\begin{aligned}
 f_Z(z)&amp;=\frac{\mathrm{d}F_Z(z)}{\mathrm{d}z}\\
@@ -549,9 +549,11 @@ f_Z(z)&amp;=\frac{\mathrm{d}F_Z(z)}{\mathrm{d}z}\\
 &amp;=\int_{-\infty}^{+\infty}|y|\cdot f_X(zy)\cdot f_Y(y)\mathrm{d}y
 \end{aligned}\]
 
-<p>于是乎我们就能通过这玩意儿来说明 \(t_n\) 是啥。</p>
+<p>于是乎我们就能通过这玩意儿来说明 \(t_k\) 是啥。</p>
 
-<p>首先是我们考虑到：</p>
+<p>当然在此之前我们先把 \(\sqrt{D_n/n}\) 的 PDF 给求出来。</p>
+
+<p>我们考虑到：</p>
 
 \[\begin{aligned}
 F_{\sqrt{D_n/n}}(t)&amp;=\mathbb{P}\left(\sqrt{\frac{D_n}{n}}\leq t\right)\\
