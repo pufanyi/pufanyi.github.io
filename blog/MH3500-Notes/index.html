@@ -573,7 +573,7 @@ f_{\sqrt{D_n/n}}(t)&amp;=\frac{\mathrm{d}F_{\sqrt{D_n/n}}(t)}{\mathrm{d}t}\\
 
 \[\begin{aligned}
 f_T(t)&amp;=\int_{-\infty}^{+\infty}|y|\cdot f_{C}(ty)\cdot f_{\sqrt{D_k/k}}(y)\mathrm{d}y\\
-&amp;=\int_{-\infty}^{+\infty}|y|\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{(zy)^2}{2}}\cdot\frac{k^{\frac{k}{2}}y^{k-1}e^{-\frac{ky^2}{2}}}{2^{\frac{k}{2}-1}\Gamma\left(\frac{k}{2}\right)}\mathrm{d}y\\
+&amp;=\int_{-\infty}^{+\infty}|y|\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{(zy)^2}{2}}\cdot\frac{k^{\frac{k}{2}}{|y|}^{k-1}e^{-\frac{ky^2}{2}}}{2^{\frac{k}{2}-1}\Gamma\left(\frac{k}{2}\right)}\mathrm{d}y\\
 &amp;=\frac{k^{\frac{k}{2}}}{\sqrt{2\pi}\cdot 2^{\frac{k}{2}-1}\cdot \Gamma\left(\frac{k}{2}\right)}\int_{-\infty}^{+\infty}{|y|}^ke^{-\frac{(k+z^2)y^2}{2}}\mathrm{d}y\\
 &amp;=\frac{k^{\frac{k}{2}}}{\sqrt{2\pi}\cdot 2^{\frac{k}{2}}\cdot \Gamma\left(\frac{k}{2}\right)}\int_{0}^{+\infty}y^ke^{-\frac{(k+z^2)y^2}{2}}\mathrm{d}y
 \end{aligned}\]
@@ -589,6 +589,12 @@ f_T(t)&amp;=\int_{-\infty}^{+\infty}|y|\cdot f_{C}(ty)\cdot f_{\sqrt{D_k/k}}(y)\
 &amp;=\frac{1}{2\alpha^{\frac{k+1}{2}}}\int_0^{+\infty}t^{\frac{k-1}{2}}e^{-t}\mathrm{d}t\\
 &amp;=\frac{1}{2\alpha^{\frac{k+1}{2}}}\int_0^{+\infty}t^{\left(\frac{k+1}{2}\right)-1}e^{-t}\mathrm{d}t\\
 &amp;=\frac{1}{2\alpha^{\frac{k+1}{2}}}\cdot\Gamma\left(\frac{k+1}{2}\right)\\
+\end{aligned}\]
+
+<p>然后我们最后把所有东西一股脑代进去得到答案：</p>
+
+\[\begin{aligned}
+
 \end{aligned}\]
 
 </details>
