@@ -551,6 +551,22 @@ f_Z(z)&amp;=\frac{\mathrm{d}F_Z(z)}{\mathrm{d}z}\\
 
 <p>于是乎我们就能通过这玩意儿来说明 \(t_n\) 是啥。</p>
 
+<p>首先是我们考虑到：</p>
+
+\[\begin{aligned}
+F_{\sqrt{D/n}}(t)&amp;=\mathbb{P}\left(\sqrt{\frac{D}{n}}\leq t\right)\\
+&amp;=\mathbb{P}\left(-nt^2\le D\leq nt^2\right)\\
+&amp;=\int_{-nt^2}^{nt^2}f_D(x)\mathrm{d}x\\
+&amp;=\int_{0}^{nt^2}\frac{x^{\frac{n}{2}-1}e^{-\frac{x}{2}}}{2^{\frac{n}{2}}\Gamma\left(\frac{n}{2}\right)}\mathrm{d}x\\
+&amp;=\frac{1}{2^{\frac{n}{2}}\Gamma\left(\frac{n}{2}\right)}\int_{0}^{nt^2}x^{\frac{n}{2}-1}e^{-\frac{x}{2}}\mathrm{d}x
+\end{aligned}\]
+
+<p>于是乎：</p>
+
+\[\begin{aligned}
+f_{\sqrt{D/n}}(t)&amp;=\frac{\mathrm{d}F_{\sqrt{D/n}}(t)}{\mathrm{d}t}\\
+\end{aligned}\]
+
 </details>
 
       </d-article>
