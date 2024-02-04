@@ -572,7 +572,8 @@ f_{\sqrt{D_n/n}}(t)&amp;=\frac{\mathrm{d}F_{\sqrt{D_n/n}}(t)}{\mathrm{d}t}\\
 <p>然后我们带入公式得到 \(f_{T}(t)\)：</p>
 
 \[\begin{aligned}
-f_T(t)&amp;=\int_{-\infty}^{+\infty}|y|\cdot f_{C}(t)
+f_T(t)&amp;=\int_{-\infty}^{+\infty}|y|\cdot f_{C}(ty)\cdot f_{\sqrt{D_k/k}}(y)\mathrm{d}y\\
+&amp;=\int_{-\infty}^{+\infty}|y|\cdot\frac{1}{\sqrt{2\pi}}e^{-\frac{(zy)^2}{2}}\cdot\frac{k^{\frac{k}{2}}y^{k-1}e^{-\frac{ky^2}{2}}}{2^{\frac{k}{2}-1}\Gamma\left(\frac{k}{2}\right)}\mathrm{d}y\\
 \end{aligned}\]
 
 </details>
