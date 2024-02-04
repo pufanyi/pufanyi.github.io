@@ -527,7 +527,7 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 \[f_T(t)=\frac{\Gamma\left(\frac{n+1}{2}\right)}{\sqrt{n\pi}\cdot\Gamma\left(\frac{n}{2}\right)}\left(1+\frac{t^2}{n}\right)^{-\frac{n+1}{2}}\]
 
 <details><summary>证明</summary>
-<p>首先一个小问题就是我们需要知道俩随机变量是咋除的。</p>
+<p>首先一个需要解决的小问题就是我们需要知道俩随机变量是咋除的。</p>
 
 <p>我们考虑现在有俩独立的随机变量 \(X, Y\)，然后我们考虑 \(Z = \frac{X}{Y}\)。</p>
 
@@ -541,7 +541,7 @@ F_Z(z)&amp;=\mathbb{P}(Z\leq z)\\
 &amp;=\int_{-\infty}^0\left(\int_{zy}^{+\infty}f_X(x)\mathrm{d}x\right)f_{Y}(y)\mathrm{d}y+\int_{0}^{+\infty}\left(\int_{-\infty}^{zy}f_X(x)\mathrm{d}x\right)f_Y(y)\mathrm{d}y
 \end{aligned}\]
 
-<p>于是我们可以通过两边求导得到 \(f_Z(z)\)：</p>
+<p>于是我们可以通过两边求导得到 PDF：</p>
 
 \[\begin{aligned}
 f_Z(z)&amp;=\frac{\mathrm{d}F_Z(z)}{\mathrm{d}z}\\
