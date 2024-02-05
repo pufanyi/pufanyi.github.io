@@ -28,10 +28,10 @@ def normal_distribution(x):
 
 fig = go.Figure()
 
-Ns = [1, 2, 3, 4, 5, 10, 30, 100]
+Ns = [1, 2, 3, 4, 5, 10, 30, 50, 100]
 
 for step in Ns:
-    x = np.arange(-5, 5, 0.005)
+    x = np.arange(-5, 5, 0.001)
     y = [distribution(i, step) for i in x]
     fig.add_trace(
         go.Scatter(

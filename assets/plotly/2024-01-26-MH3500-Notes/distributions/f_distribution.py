@@ -9,12 +9,12 @@ def F_distribution(w, m, n):
     return math.gamma((m + n) / 2) / (math.gamma(m / 2) * math.gamma(n / 2)) * math.pow(m / n, m / 2) * math.pow(w, m / 2 - 1) * math.pow(1 + m / n * w, -(m + n) / 2)
 
 
-fig = go.Figure()
+fig = go.Figure(layout_yaxis_range=[0, 1])
 
 Ms = [1, 2, 3, 4, 5, 10, 20, 50, 100]
 
 for step in Ms:
-    x = np.arange(0, 10, 0.01)
+    x = np.arange(0, 10, 0.001)
     y = [F_distribution(i, step, 10) for i in x]
     fig.add_trace(
         go.Scatter(
@@ -54,7 +54,7 @@ sliders = [
                 method="update",
                 args=[
                     {"visible": [m == step for step in Ms]},
-                    {"title": f"F({m + 1}, 10) Distribution"},
+                    {"title": f"F({m}, 10) Distribution"},
                 ],
             )
             for m in Ms
@@ -66,12 +66,12 @@ fig.update_layout(sliders=sliders)
 
 fig.write_html("F_distribution_change_M.html", auto_open=True)
 
-fig = go.Figure()
+fig = go.Figure(layout_yaxis_range=[0, 1])
 
 Ns = [1, 2, 3, 4, 5, 10, 20, 50, 100]
 
 for step in Ns:
-    x = np.arange(0, 10, 0.01)
+    x = np.arange(0, 10, 0.001)
     y = [F_distribution(i, 10, step) for i in x]
     fig.add_trace(
         go.Scatter(

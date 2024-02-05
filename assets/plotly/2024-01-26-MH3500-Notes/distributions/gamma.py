@@ -12,12 +12,12 @@ def gamma_distribution(x, alpha=2, beta=1):
         )
 
 
-fig = go.Figure()
+fig = go.Figure(layout_yaxis_range=[0, 1])
 
 alphas = np.arange(0.5, 5, 0.1)
 
 for step in alphas:
-    x = np.arange(0, 10, 0.01)
+    x = np.arange(0, 10, 0.001)
     y = [gamma_distribution(i, step, 1) for i in x]
     fig.add_trace(
         go.Scatter(
@@ -69,12 +69,12 @@ fig.update_layout(sliders=sliders)
 
 fig.write_html("gamma_distribution_change_alpha.html", auto_open=True)
 
-fig = go.Figure()
+fig = go.Figure(layout_yaxis_range=[0, 0.8])
 
 betas = np.arange(0.5, 5, 0.1)
 
 for step in betas:
-    x = np.arange(0, 10, 0.01)
+    x = np.arange(0, 10, 0.001)
     y = [gamma_distribution(i, 2, step) for i in x]
     fig.add_trace(
         go.Scatter(
