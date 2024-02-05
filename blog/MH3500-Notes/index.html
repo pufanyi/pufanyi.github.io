@@ -634,7 +634,7 @@ F_{U_m/m}(t)&amp;=\mathbb{P}\left(\frac{U_m}{m}\leq t\right)\\
 \[\begin{aligned}
 f_{U_m/m}(t)&amp;=\frac{\mathrm{d}F_{U_m/m}(t)}{\mathrm{d}t}\\
 &amp;=f_{U_m}(mt)\cdot m\\
-&amp;=\frac{m\cdot t^{\frac{n}{2}-1}\cdot e^{-\frac{t}{2}}}{2^{\frac{n}{2}}\cdot \Gamma\left(\frac{n}{2}\right)}\\
+&amp;=\frac{m\cdot t^{\frac{m}{2}-1}\cdot e^{-\frac{t}{2}}}{2^{\frac{m}{2}}\cdot \Gamma\left(\frac{m}{2}\right)}\\
 \end{aligned}\]
 
 <p>于是我们也有：</p>
@@ -645,6 +645,7 @@ f_{U_m/m}(t)&amp;=\frac{\mathrm{d}F_{U_m/m}(t)}{\mathrm{d}t}\\
 
 \[\begin{aligned}
 f_F(w)&amp;=\int_{-\infty}^{+\infty}|t|\cdot f_{U_m/m}(tw)\cdot f_{V_n/n}(t)\mathrm{d}t\\
+&amp;=\int_{0}^{+\infty}t\cdot f_{U_m/m}(tw)\cdot f_{V_n/n}(t)\mathrm{d}t\\
 \end{aligned}\]
 
 </details>
