@@ -39,7 +39,7 @@ for i in range(len(fig.data)):
         method="update",
         args=[
             {"visible": [False] * len(fig.data)},
-            {"title": f"F({i + 1}, 10) Distribution"},
+            {"title": f"F({Ms[i]}, 10) Distribution"},
         ],  # layout attribute
     )
     step["args"][0]["visible"][i] = True  # Toggle i'th trace to "visible"
