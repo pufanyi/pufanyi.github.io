@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-05T06:27:45+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://pufanyi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pufanyi.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-05T06:39:01+00:00</updated><id>https://pufanyi.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">NTU MH3500 Statistics</title><link href="https://pufanyi.github.io/blog/MH3500-Notes/" rel="alternate" type="text/html" title="NTU MH3500 Statistics" /><published>2024-01-26T00:00:00+00:00</published><updated>2024-01-26T00:00:00+00:00</updated><id>https://pufanyi.github.io/blog/MH3500-Notes</id><content type="html" xml:base="https://pufanyi.github.io/blog/MH3500-Notes/"><![CDATA[<p>这学期学了门叫做 Statistics 的课，然后发现有点学不明白，所以记点笔记。</p>
 
 <p>除了上课听到的，应该还会记一些书里看到的和自己想到的。</p>
@@ -457,20 +457,20 @@ f_{U_m/m}(t)&amp;=\frac{\mathrm{d}F_{U_m/m}(t)}{\mathrm{d}t}\\
 \[\begin{aligned}
 f_F(w)&amp;=\int_{-\infty}^{+\infty}|t|\cdot f_{U_m/m}(tw)\cdot f_{V_n/n}(t)\mathrm{d}t\\
 &amp;=\int_{0}^{+\infty}t\cdot f_{U_m/m}(tw)\cdot f_{V_n/n}(t)\mathrm{d}t\\
-&amp;=\int_0^{+\infty}t\cdot\frac{m\cdot (tw)^{\frac{m}{2}-1}\cdot e^{-\frac{tw}{2}}}{2^{\frac{m}{2}}\cdot \Gamma\left(\frac{m}{2}\right)}\cdot\frac{n\cdot t^{\frac{n}{2}-1}\cdot e^{-\frac{t}{2}}}{2^{\frac{n}{2}}\cdot \Gamma\left(\frac{n}{2}\right)}\mathrm{d}t\\
-&amp;=\frac{mn\cdot w^{\frac{w}{2}-1}}{2^{\frac{m+n}{2}}\cdot \Gamma\left(\frac{m}{2}\right)\cdot \Gamma\left(\frac{n}{2}\right)}\int_0^{+\infty}t^{\frac{m+n}{2}-1}\cdot e^{-\frac{(w+1)\cdot t}{2}}\mathrm{d}t\\
+&amp;=\int_0^{+\infty}t\cdot\frac{m^{\frac{m}{2}}\cdot (tw)^{\frac{m}{2}-1}\cdot e^{-\frac{mtw}{2}}}{2^{\frac{m}{2}}\cdot \Gamma\left(\frac{m}{2}\right)}\cdot\frac{n^{\frac{n}{2}}\cdot t^{\frac{n}{2}-1}\cdot e^{-\frac{nt}{2}}}{2^{\frac{n}{2}}\cdot \Gamma\left(\frac{n}{2}\right)}\mathrm{d}t\\
+&amp;=\frac{m^\frac{m}{2}n^\frac{n}{2}\cdot w^{\frac{w}{2}-1}}{2^{\frac{m+n}{2}}\cdot \Gamma\left(\frac{m}{2}\right)\cdot \Gamma\left(\frac{n}{2}\right)}\int_0^{+\infty}t^{\frac{m+n}{2}-1}\cdot e^{-\frac{(mw+n)\cdot t}{2}}\mathrm{d}t\\
 \end{aligned}\]
 
 <p>故技重施换个元：</p>
 
-\[u=\frac{(w+1)}{2}t\]
+\[u=\frac{(mw+n)}{2}t\]
 
 <p>于是我们整理一下就可以了！</p>
 
 \[\begin{aligned}
-f_F(w)&amp;=\frac{mn\cdot w^{\frac{w}{2}-1}}{2^{\frac{m+n}{2}}\cdot \Gamma\left(\frac{m}{2}\right)\cdot \Gamma\left(\frac{n}{2}\right)}\int_0^{+\infty}t^{\frac{m+n}{2}-1}\cdot e^{-\frac{(w+1)\cdot t}{2}}\mathrm{d}t\\
-&amp;=\frac{mn\cdot w^{\frac{m}{2}-1}}{2^{\frac{m+n}{2}}\Gamma\left(\frac{m}{2}\right)\Gamma\left(\frac{n}{2}\right)}\int_{0}^{+\infty}\left(\frac{2u}{w+1}\right)^{\frac{m + n}{2} - 1}e^{-u}\cdot\frac{2}{w+1}\mathrm{d}u\\
-&amp;=\frac{mn\cdot w^{\frac{m}{2}-1}}{(w+1)^{\frac{m + n}{2}}\Gamma\left(\frac{m}{2}\right)\Gamma\left(\frac{n}{2}\right)}\int_{0}^{+\infty}u^{\frac{m+n}{2}-1}e^{-u}\mathrm{d}u\\ 
+f_F(w)&amp;=\frac{m^\frac{m}{2}n^\frac{n}{2}\cdot w^{\frac{w}{2}-1}}{2^{\frac{m+n}{2}}\cdot \Gamma\left(\frac{m}{2}\right)\cdot \Gamma\left(\frac{n}{2}\right)}\int_0^{+\infty}t^{\frac{m+n}{2}-1}\cdot e^{-\frac{(mw+n)\cdot t}{2}}\mathrm{d}t\\
+&amp;=\frac{m^{\frac{m}{2}}n^{\frac{n}{2}}\cdot w^{\frac{m}{2}-1}}{2^{\frac{m+n}{2}}\Gamma\left(\frac{m}{2}\right)\Gamma\left(\frac{n}{2}\right)}\int_{0}^{+\infty}\left(\frac{2u}{mw+n}\right)^{\frac{m + n}{2} - 1}e^{-u}\cdot\frac{2}{mw+n}\mathrm{d}u\\
+&amp;=\frac{m^{\frac{m}{2}}n^{\frac{n}{2}}\cdot w^{\frac{m}{2}-1}}{(mw+n)^{\frac{m + n}{2}}\Gamma\left(\frac{m}{2}\right)\Gamma\left(\frac{n}{2}\right)}\int_{0}^{+\infty}u^{\frac{m+n}{2}-1}e^{-u}\mathrm{d}u\\
 \end{aligned}\]
 
 </details>
