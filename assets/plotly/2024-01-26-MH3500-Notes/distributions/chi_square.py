@@ -16,7 +16,7 @@ def chi_square_distribution(x, n):
     return gamma_distribution(x, n / 2, 2)
 
 
-fig = go.Figure()
+fig = go.Figure(layout_yaxis_range=[0, 1])
 
 Ns = np.arange(1, 10, 1)
 
