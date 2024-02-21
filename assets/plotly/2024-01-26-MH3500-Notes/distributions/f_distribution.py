@@ -6,7 +6,13 @@ import math
 def F_distribution(w, m, n):
     if w <= 0:
         return 0
-    return math.gamma((m + n) / 2) / (math.gamma(m / 2) * math.gamma(n / 2)) * math.pow(m / n, m / 2) * math.pow(w, m / 2 - 1) * math.pow(1 + m / n * w, -(m + n) / 2)
+    return (
+        math.gamma((m + n) / 2)
+        / (math.gamma(m / 2) * math.gamma(n / 2))
+        * math.pow(m / n, m / 2)
+        * math.pow(w, m / 2 - 1)
+        * math.pow(1 + m / n * w, -(m + n) / 2)
+    )
 
 
 fig = go.Figure(layout_yaxis_range=[0, 1])
@@ -77,7 +83,7 @@ for step in Ns:
         go.Scatter(
             visible=False,
             # line=dict(color="#00CED1", width=6),
-            name = f"n = {step}",
+            name=f"n = {step}",
             x=x,
             y=y,
         )
@@ -86,7 +92,7 @@ for step in Ns:
 # Make 10th trace visible
 fig.data[3].visible = True
 fig.update_layout(
-    title = "F(10, 4) Distribution",
+    title="F(10, 4) Distribution",
 )
 
 # Create and add slider
