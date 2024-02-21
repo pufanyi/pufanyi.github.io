@@ -68,7 +68,7 @@ sliders = [
         active=9,
         steps=[
             dict(
-                label="skewness = %.2f" % data[i]["skewness"],
+                label=get_title(data[n]),
                 method="update",
                 args=[
                     {"visible": [n == i for i in range(len(data))]},
