@@ -385,6 +385,8 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left
 
 <p>其中尾巴在左边的（\(\gamma_1&lt;0\)）就叫 left-skewed，尾巴在右边的（\(\gamma_1&gt;0\)）就叫 right-skewed。</p>
 
+<p>接着是 trimmed mean，就是我们比赛的时候看到的那种去掉最高分最低分的感觉。为啥要用 trimmed mean 捏？感性来讲的话，就是我们考虑到 mean 是很容易受到极端情况影响的，而 median 不会。但是 median 又没法反应整体情况。那办法就是去掉一些极端情况，因为其实 median 就是 <code class="language-plaintext highlighter-rouge">mean(data, trim=0.5)</code> 嘛。</p>
+
 <hr>
 
 <h2 id="from-normal-distribution">From Normal Distribution</h2>
