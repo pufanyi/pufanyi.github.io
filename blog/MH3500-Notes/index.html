@@ -217,7 +217,7 @@
 <p>Sample mean 是 \(\overline{X} = \frac{1}{n} \sum_{i=1}^n X_i\)，sample variance 是 \(S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2\)。</p>
 
 <details><summary>为什么是 \(\frac{1}{n-1}\)</summary>
-<p>感性理解是，你这 \(n\) 个东西的平均值，事实上是根据这 \(n\) 个东西的“趋向”有一定偏移的。就比如说我现在有一个 \(N(0, 1)\)，我取两个 sample，假设拿到了 \(x_1=-1, x_2=2\)，这个时候他的 $\overline{X}$ 其实不是 \(0\)，而是 \(\frac{1}{2}\)，也就是被往右边拉过去了一点的。这时候如果我们用 \(\frac{1}{n}\) 计算，那事实上算出来的值应该是偏小的（因为这里的 \(\overline{X}\) 根据样本的抽取结果“调整”了一下）。而 \(\frac{1}{n-1}\) 正好抵消了这一点。</p>
+<p>感性理解是，你这 \(n\) 个东西的平均值，事实上是根据这 \(n\) 个东西的“趋向”有一定偏移的。就比如说我现在有一个 \(\mathcal{N}(0, 1)\)，我取两个 sample，假设拿到了 \(x_1=-1, x_2=2\)，这个时候他的 $\overline{X}$ 其实不是 \(0\)，而是 \(\frac{1}{2}\)，也就是被往右边拉过去了一点的。这时候如果我们用 \(\frac{1}{n}\) 计算，那事实上算出来的值应该是偏小的（因为这里的 \(\overline{X}\) 根据样本的抽取结果“调整”了一下）。而 \(\frac{1}{n-1}\) 正好抵消了这一点。</p>
 
 <p>下面是严格的数学证明。</p>
 
@@ -240,7 +240,7 @@
 
 </details>
 
-<p>有一个好玩的性质是 如果 \(X_i\sim N(\mu, \sigma^2)\) 的话，\(\overline{X}\) 和 \(S^2\) 是独立的。上课老师讲了中方法但我有点没搞懂，Rice 书里有一个证法，感觉清楚一些。</p>
+<p>有一个好玩的性质是 如果 \(X_i\sim \mathcal{N}(\mu, \sigma^2)\) 的话，\(\overline{X}\) 和 \(S^2\) 是独立的。上课老师讲了中方法但我有点没搞懂，Rice 书里有一个证法，感觉清楚一些。</p>
 
 <details><summary>上课老师讲的证法</summary>
 <p>其实我至今没搞懂他到底是咋搞的。因为他用了一个结论，就是两个协方差为 \(0\) 的 normal distribution 是相互独立的。不是很清楚不用 MGF 这玩意儿还能咋证（用 MGF 的话，那还不如 Rice 的证法呢）。</p>
@@ -349,7 +349,7 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left
 
 </details>
 
-<p>接下来我们讨论的是数据的分类。对于一个 variable，根据一下的方式分个类：</p>
+<p>接下来我们讨论的是数据的分类。对于一个 variable，根据以下的方式分个类：</p>
 
 <figure>
 
@@ -385,17 +385,19 @@ M_{\boldsymbol{\widehat{X}}}\left(\boldsymbol{\widehat{t}}\right)&amp;=\exp\left
 
 <p>其中尾巴在左边的（\(\gamma_1&lt;0\)）就叫 left-skewed，尾巴在右边的（\(\gamma_1&gt;0\)）就叫 right-skewed。</p>
 
-<p>接着是 trimmed mean，就是我们比赛的时候看到的那种去掉最高分最低分的感觉。为啥要用 trimmed mean 捏？感性来讲的话，就是我们考虑到 mean 是很容易受到极端情况影响的，而 median 不会。但是 median 又没法反应整体情况。那办法就是去掉一些极端情况，因为其实 median 就是 <code class="language-plaintext highlighter-rouge">mean(data, trim=0.5)</code> 嘛。</p>
+<p>接着是 trimmed mean，就是我们比赛的时候看到的那种去掉最高分最低分的感觉。为啥要用 trimmed mean 捏？感性来讲的话，就是我们考虑到 mean 是很容易受到极端情况影响的，而 median 不会。但是 median 又没法反应整体情况。那办法就是去掉一些极端情况，因为其实 median 就是 trim 掉 \(0.5\) 的 mean 嘛。</p>
+
+<p>如果想更理性一点说的话。就是我们要考虑一个叫做 standard error 的东西。就是为啥咱有些时候不去 trim 捏？因为假设这个 distribution 是 normal distribution 的话，其实 trim 掉是比较亏的。就是我们考虑在做 normal distribution 的时候，所观测到 mean 和 median 的 standard error 是多少。考虑到 mean 其实就是 \(\mathcal{N}(\mu, \frac{\sigma^2}{n})\)，而 median 其实是 \(\mathcal{N}(\mu, \frac{\pi}{2}\sigma^2/n)\)。所以其实我们是可以通过 mean 和 median 的 standard error 来判断我们是不是要 trim 的。</p>
 
 <hr>
 
 <h2 id="from-normal-distribution">From Normal Distribution</h2>
 
-<p>第一个需要讨论的是 Chi Square Distribution。就是我现在有 \(n\) 个 i.i.d. \(N(0, 1)\) 的 random variables，\(X_1, X_2, \dots, X_n\)，我们定义 \(Z=\sum_{i=1}^nX_i^2 \sim \chi^2_n\)。</p>
+<p>第一个需要讨论的是 Chi Square Distribution。就是我现在有 \(n\) 个 i.i.d. \(\mathcal{N}(0, 1)\) 的 random variables，\(X_1, X_2, \dots, X_n\)，我们定义 \(Z=\sum_{i=1}^nX_i^2 \sim \chi^2_n\)。</p>
 
 <p>那就是我们咋计算这个 \(\chi^2_n\) 呢，因为显然我们发现 \(\chi^2_n\) 其实是 \(n\) 个 \(\chi^2_1\) 的和，所以我们第一件事就是计算 \(\chi^2_1\)。</p>
 
-<p>这个好算，我们假设 \(Y\sim N(0, 1), X=Y^2\)，那么 \(X\sim \chi_1^2\)：</p>
+<p>这个好算，我们假设 \(Y\sim \mathcal{N}(0, 1), X=Y^2\)，那么 \(X\sim \chi_1^2\)：</p>
 
 \[\begin{aligned}
 F_X(x)&amp;=\mathbb{P}(X\leq x)\\
@@ -497,7 +499,7 @@ f(t)&amp;=\frac{\mathrm{d}F(t)}{\mathrm{d}t}\\
 
 </details>
 
-<p>接着我们要讨论的是当 \(X_1, X_2, \dots, X_n\sim N(\mu, \sigma^2)\) 时，\(S^2\) 的分布和 Chi-Square Distribution 的关系：</p>
+<p>接着我们要讨论的是当 \(X_1, X_2, \dots, X_n\sim \mathcal{N}(\mu, \sigma^2)\) 时，\(S^2\) 的分布和 Chi-Square Distribution 的关系：</p>
 
 \[\frac{(n-1)S^2}{\sigma^2}\sim \chi_{n-1}^2\]
 
@@ -536,25 +538,25 @@ M_U(t)&amp;=\frac{M_W(t)}{M_v(t)}\\
 <p>于是就证完了。</p>
 </details>
 
-<p>接下来是 \(t\) distribution。Motivation 是这样的，我们现在还是有 \(n\) 个 i.i.d. \(N(\mu, \sigma^2)\) 的 random variables，\(X_1, X_2, \dots, X_n\)。我们知道 \(\frac{\left(\overline{X}-\mu\right)}{\sigma/\sqrt{n}}\sim N(0, 1)\) 我们现在想知道的是 \(Z=\frac{\overline{X}-\mu}{S/\sqrt{n}}\) 的 distribution 长啥样。</p>
+<p>接下来是 \(t\) distribution。Motivation 是这样的，我们现在还是有 \(n\) 个 i.i.d. \(\mathcal{N}(\mu, \sigma^2)\) 的 random variables，\(X_1, X_2, \dots, X_n\)。我们知道 \(\frac{\left(\overline{X}-\mu\right)}{\sigma/\sqrt{n}}\sim \mathcal{N}(0, 1)\) 我们现在想知道的是 \(Z=\frac{\overline{X}-\mu}{S/\sqrt{n}}\) 的 distribution 长啥样。</p>
 
 <p>我们考虑：</p>
 
 \[Z=\frac{\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}}{\sqrt{\frac{(n-1)S/\sigma^2}{n-1}}}=\frac{C}{\sqrt{D/(n-1)}}\]
 
-<p>我们发现 \(C=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim N(0, 1)\)，\(D=\frac{(n-1)S}{\sigma^2}\sim \chi_{n-1}^2\)，而且 \(C\) 和 \(D\) 是独立的。</p>
+<p>我们发现 \(C=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}\sim \mathcal{N}(0, 1)\)，\(D=\frac{(n-1)S}{\sigma^2}\sim \chi_{n-1}^2\)，而且 \(C\) 和 \(D\) 是独立的。</p>
 
 <p>于是我们就这样考虑定义一个新的 distribution：</p>
 
 \[t_k=\frac{C}{\sqrt{D_k/k}}\]
 
-<p>其中 \(C\sim N(0, 1)\)，\(D_k\sim \chi_k^2\) 且 \(C\) 和 \(D_k\) 是独立的。</p>
+<p>其中 \(C\sim \mathcal{N}(0, 1)\)，\(D_k\sim \chi_k^2\) 且 \(C\) 和 \(D_k\) 是独立的。</p>
 
 <p>于是我们有：</p>
 
 \[\frac{\overline{X}-\mu}{S/\sqrt{n}}\sim t_{n-1}\]
 
-<p>而我们知道在 \(n\) 越来越大的时候，\(S\) 是越来越趋向于 \(\sigma\) 的，也就是说当 \(n\) 变大的时候，\(t_{n}\) 会越来越像 \(N(0, 1)\)。</p>
+<p>而我们知道在 \(n\) 越来越大的时候，\(S\) 是越来越趋向于 \(\sigma\) 的，也就是说当 \(n\) 变大的时候，\(t_{n}\) 会越来越像 \(\mathcal{N}(0, 1)\)。</p>
 
 <details><summary>不同自由度的 \(t\) Distribution</summary>
 <div class="l-page">
@@ -724,7 +726,7 @@ f_F(w)&amp;=\frac{m^\frac{m}{2}n^\frac{n}{2}\cdot w^{\frac{w}{2}-1}}{2^{\frac{m+
 
 <p>关于 \(t\) distribution 和 \(F\) distribution 有一定联系：</p>
 
-\[t_n^2\sim \frac{N(0, 1)^2}{\chi_n^2/n}\sim \frac{\chi_1^2/1}{\chi_n^2/n}\sim F(1, n)\]
+\[t_n^2\sim \frac{\mathcal{N}(0, 1)^2}{\chi_n^2/n}\sim \frac{\chi_1^2/1}{\chi_n^2/n}\sim F(1, n)\]
 
 <hr>
 
