@@ -744,14 +744,27 @@ f_F(w)&amp;=\frac{m^\frac{m}{2}n^\frac{n}{2}\cdot w^{\frac{w}{2}-1}}{2^{\frac{m+
 
 <p>第一个是 Markov Inequality，就是假设有一个非负的随机变量 \(X\)，我们可以预测其尾部事件发生的概率上界：</p>
 
+\[\mathrm{P}(X\ge c)\le\frac{\mathbb{E}(X)}{c}\]
+
+<p>当然也有教材（比如 Hogg 那本 <d-cite key="hogg2019introduction"></d-cite>）说的是随便一个随机变量 \(X\)，然后如果 \(u(X)\) 为非负函数，那么：</p>
+
 \[\mathrm{P}(u(X)\ge c)\le\frac{\mathbb{E}(u(X))}{c}\]
+
+<p>不过反正都是一样的其实。</p>
 
 <p>一个简单的理解方式就是，“不超过 \(\frac{1}{n}\) 的人拥有超过平均 \(n\) 倍的工资”。</p>
 
 <details><summary>证明</summary>
 <p>其实证明是很简都嘟，我们首先考虑“不超过 \(\frac{1}{n}\) 的人拥有超过平均 \(n\) 倍的工资”这个命题。因为如果超过 \(\frac{1}{n}\) 了，那么就算其他人啥都没有（也就是 \(0\)），那平均也已经超过 \(\frac{1}{n}\times n\times \mathbb{E}(x)\) 了，那显然是だめ的。</p>
 
-<p>那我们照猫画虎证明一下尊命题。</p>
+<p>那我们照猫画虎证明一下尊命题。就是因为我们考虑到 \(X&gt;0\) 所以说 \(x\cdot f(x)&gt;0\)。那么很显然的</p>
+
+\[\begin{aligned}
+\mathbb{E}(X)&amp;=\int_0^\infty x\cdot f(x)\mathrm{d}x\\
+&amp;\ge \int_{c}^\infty x\cdot f(x)\mathrm{d}x\\
+&amp;\ge c\int_{c}^\infty f(x)\mathrm{d}x\\
+&amp;=c\cdot \mathbb{P}(X\ge c)
+\end{aligned}\]
 
 </details>
 
