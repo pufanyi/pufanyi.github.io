@@ -62,4 +62,9 @@ $(document).ready(function () {
     selectedIds = [];
     document.getElementById("selectedModels").textContent = "";
   });
+
+  $('input[aria-label="model_args"]').on("input", function () {
+    var modelArgs = $(this).val();
+    document.getElementById("modelArgs").textContent = modelArgs;
+  });
 });

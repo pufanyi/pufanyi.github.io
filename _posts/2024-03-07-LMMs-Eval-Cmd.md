@@ -32,6 +32,8 @@ pretty_table: true
   </thead>
 </table>
 
+***
+
 ## Select Tasks
 
 <table
@@ -51,8 +53,19 @@ pretty_table: true
   </thead>
 </table>
 
+***
+
+## Enter Model Args
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Model Args</span>
+  <input type="text" class="form-control" placeholder="pretrained=liuhaotian/llava-v1.5-7b" aria-label="model_args" aria-describedby="basic-addon1">
+</div>
+
+***
+
 ## Get Command
 
-<figure class="highlight"><div class="code-display-wrapper"><pre><code class="language-bash" data-lang="bash">accelerate launch <span class="nt">-m</span> lmms_eval <span class="nt">--model</span><span class="o">=</span><span id="selectedModels"></span> <span class="nt">--model_args</span><span class="o">=</span><span class="nv">pretrained</span><span class="o">=</span>liuhaotian/llava-v1.5-7b <span class="nt">--tasks</span><span class="o">=</span><span id="selectedTasks"></span> <span class="nt">--batch_size</span><span class="o">=</span>1 <span class="nt">--log_samples</span> <span class="nt">--output_path</span><span class="o">=</span>./logs/</code></pre><button class="copy" type="button" aria-label="Copy code to clipboard"><i class="fa-solid fa-clipboard"></i></button></div></figure>
+<figure class="highlight"><div class="code-display-wrapper"><pre><code class="language-bash" data-lang="bash">accelerate launch <span class="nt">-m</span> lmms_eval <span class="nt">--model</span><span class="o">=</span><span id="selectedModels"></span> <span class="nt">--model_args</span><span class="o">=</span><span id="modelArgs"></span> <span class="nt">--tasks</span><span class="o">=</span><span id="selectedTasks"></span> <span class="nt">--batch_size</span><span class="o">=</span>1 <span class="nt">--log_samples</span> <span class="nt">--output_path</span><span class="o">=</span>./logs/</code></pre><button class="copy" type="button" aria-label="Copy code to clipboard"><i class="fa-solid fa-clipboard"></i></button></div></figure>
 
 <script src="{{ 'assets/js/2024-03-08-LMMs-Eval-Cmd/script.js' | relative_url }}"></script>
