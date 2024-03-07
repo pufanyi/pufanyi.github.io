@@ -57,7 +57,7 @@
           </li>
 
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+                    {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
@@ -93,6 +93,15 @@
                       {% endif %}
                     {% endfor %}
                   </div>
+                </li>
+              {% elsif p.direct_link %}
+                <li class="nav-item {% if page.url == p.direct_link %}active{% endif %}">
+                  <a class="nav-link" href="{{ p.direct_link }}">
+                    {{- p.title }}
+                    {% if page.url == p.direct_link %}
+                      <span class="sr-only">(current)</span>
+                    {% endif %}
+                  </a>
                 </li>
               {% else %}
                 <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">

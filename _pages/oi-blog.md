@@ -1,7 +1,7 @@
 ---
 layout: default
 title: oi-blog
-permalink: /
+direct_link: /oi-blog/
 nav: true
 nav_order: 3
 ---
