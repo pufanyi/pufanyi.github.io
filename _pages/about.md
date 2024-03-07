@@ -6,7 +6,7 @@ subtitle: Student from <a href="https://ntu.edu.sg">Nanyang Technological Univer
 
 profile:
   align: right
-  image: me.webp
+  image: me.png
   image_circular: false # crops the image to make it circular
   more_info: >
     # <p>555 your office number</p>
