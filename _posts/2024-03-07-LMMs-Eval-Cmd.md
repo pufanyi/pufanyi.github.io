@@ -11,6 +11,8 @@ related_posts: false
 pretty_table: true
 ---
 
+{% include scripts/jquery.liquid %}
+
 ## Select Models
 
 <table
@@ -49,76 +51,10 @@ pretty_table: true
   </thead>
 </table>
 
-<div id="selectedModels"></div>
+## Get Command
 
-<div id="selectedTasks"></div>
+{% highlight bash %}
+accelerate launch -m lmms_eval --model=<div id="selectedModels"></div> --model_args=pretrained=liuhaotian/llava-v1.5-7b --tasks=<div id="selectedTasks"></div> --batch_size=1 --log_samples --output_path=./logs/
+{% endhighlight %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>
-  $(document).ready(function () {
-  var selectedIds = [];
-
-  $("#tasks").on("check.bs.table uncheck.bs.table", function (e, row) {
-    var id = row.ID;
-    if (e.type === "check") {
-      if (!selectedIds.includes(id)) {
-        selectedIds.push(id);
-      }
-    } else {
-      selectedIds = selectedIds.filter(function (value) {
-        return value !== id;
-      });
-    }
-    document.getElementById("selectedTasks").textContent = selectedIds.join(",");
-  });
-
-  // Handle check-all and uncheck-all separately
-  $("#tasks").on("check-all.bs.table", function (e) {
-    // Assuming getSelections is a method to get all selected rows. This might vary based on the actual table library you're using.
-    var allRows = $("#tasks").bootstrapTable("getSelections");
-    selectedIds = allRows.map(function (row) {
-      return row.ID;
-    });
-    document.getElementById("selectedTasks").textContent = selectedIds.join(",");
-  });
-
-  $("#tasks").on("uncheck-all.bs.table", function (e) {
-    selectedIds = [];
-    document.getElementById("selectedTasks").textContent = "";
-  });
-});
-
-$(document).ready(function () {
-  var selectedIds = [];
-
-  $("#models").on("check.bs.table uncheck.bs.table", function (e, row) {
-    var id = row.ID;
-    if (e.type === "check") {
-      if (!selectedIds.includes(id)) {
-        selectedIds.push(id);
-      }
-    } else {
-      selectedIds = selectedIds.filter(function (value) {
-        return value !== id;
-      });
-    }
-    document.getElementById("selectedModels").textContent = selectedIds.join(",");
-  });
-
-  // Handle check-all and uncheck-all separately
-  $("#models").on("check-all.bs.table", function (e) {
-    // Assuming getSelections is a method to get all selected rows. This might vary based on the actual table library you're using.
-    var allRows = $("#models").bootstrapTable("getSelections");
-    selectedIds = allRows.map(function (row) {
-      return row.ID;
-    });
-    document.getElementById("selectedModels").textContent = selectedIds.join(",");
-  });
-
-  $("#models").on("uncheck-all.bs.table", function (e) {
-    selectedIds = [];
-    document.getElementById("selectedModels").textContent = "";
-  });
-});
-</script>
+<script src="{{ 'assets/js/2024-03-08-LMMs-Eval-Cmd/script.js' | relative_url }}"></script>
