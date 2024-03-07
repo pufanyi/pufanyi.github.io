@@ -1,93 +1,59 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@misc{li2023otterhd,
+    title={OtterHD: A High-Resolution Multi-modality Model},
+    author={Bo Li* and Peiyuan Zhang* and Jingkang Yang<sup>†</sup> and Yuanhan Zhang<sup>†</sup> and Fanyi Pu<sup>†</sup> and Ziwei Liu},
+    year={2023},
+    eprint={2311.04219},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    preview={OtterHD.png},
+    arxiv={2311.04219},
+    selected={true},
+    pdf={https://arxiv.org/pdf/2311.04219.pdf},
+    code={https://github.com/Luodian/Otter},
+    abstract={In this paper, we present OtterHD-8B, an innovative multimodal model evolved from Fuyu-8B, specifically engineered to interpret high-resolution visual inputs with granular precision. Unlike conventional models that are constrained by fixed-size vision encoders, OtterHD-8B boasts the ability to handle flexible input dimensions, ensuring its versatility across various inference requirements. Alongside this model, we introduce MagnifierBench, an evaluation framework designed to scrutinize models' ability to discern minute details and spatial relationships of small objects. Our comparative analysis reveals that while current leading models falter on this benchmark, OtterHD-8B, particularly when directly processing high-resolution inputs, outperforms its counterparts by a substantial margin. The findings illuminate the structural variances in visual information processing among different models and the influence that the vision encoders' pre-training resolution disparities have on model effectiveness within such benchmarks. Our study highlights the critical role of flexibility and high-resolution input capabilities in large multimodal models and also exemplifies the potential inherent in the Fuyu architecture's simplicity for handling complex visual data.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{li2023mimicit,
+    title={MIMIC-IT: Multi-Modal In-Context Instruction Tuning},
+    author={Bo Li* and Yuanhan Zhang* and Liangyu Chen* and Jinghao Wang* and Fanyi Pu* and Jingkang Yang and Chunyuan Li and Ziwei Liu},
+    year={2023},
+    eprint={2306.05425},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    arXiv={2306.05425},
+    pdf={https://arxiv.org/pdf/2306.05425.pdf},
+    code={https://github.com/Luodian/Otter},
+    preview={MIMICIT.png},
+    selected={true},
+    dimensions={true},
+    abstract={High-quality instructions and responses are essential for the
+zero-shot performance of large language models on interactive natural
+language tasks. For interactive vision-language tasks involving
+intricate visual scenes, a large quantity of diverse and creative
+instruction-response pairs should be imperative to tune vision-language
+models (VLMs). Nevertheless, the current availability of vision-language
+instruction-response pairs in terms of quantity, diversity, and
+creativity remains limited, posing challenges to the generalization of
+interactive VLMs. Here we present
+<strong>M</strong>ult<strong>I</strong>-<strong>M</strong>odal
+<strong>I</strong>n-<strong>C</strong>ontext
+<strong>I</strong>nstruction <strong>T</strong>uning
+(<strong>MIMIC-IT</strong>), a dataset comprising 2.8 million multimodal
+instruction-response pairs, with 2.2 million unique instructions derived
+from images and videos. Each pair is accompanied by multi-modal
+in-context information, forming conversational contexts aimed at
+empowering VLMs in perception, reasoning, and planning. The
+instruction-response collection process, dubbed as
+<strong>Syphus</strong>, is scaled using an automatic annotation
+pipeline that combines human expertise with GPT's capabilities. Using
+the MIMIC-IT dataset, we train a large VLM named <strong>Otter</strong>.
+Based on extensive evaluations conducted on vision-language benchmarks,
+it has been observed that Otter demonstrates remarkable proficiency in
+multi-modal perception, reasoning, and in-context learning. Human
+evaluation reveals it effectively aligns with the user's intentions. We
+release the MIMIC-IT dataset, instruction-response collection pipeline,
+benchmarks, and the Otter model.}
 }
