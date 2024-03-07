@@ -7,6 +7,7 @@ tags:
   - tools
 description: a simple tool to generate commands for LMMs-Eval
 giscus_comments: true
+related_posts: false
 pretty_table: true
 ---
 
