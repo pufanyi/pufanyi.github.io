@@ -285,7 +285,7 @@ display_categories: # these categories will be displayed on the front page of yo
 
 scholar:
   last_name: [Pu]
-  first_name: [Fanyi, F., Fanyi Pu, Fanyi Pu*]
+  first_name: [Fanyi, F.]
 
   style: apa
   locale: en
