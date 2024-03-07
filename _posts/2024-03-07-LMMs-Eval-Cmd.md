@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LMMs Eval Command Generator
-date: 2024-03-08
+date: 2024-03-07
 categories: Tools
 tags:
   - tools
