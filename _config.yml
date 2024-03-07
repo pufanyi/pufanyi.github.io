@@ -161,8 +161,8 @@ disqus_shortname: pufanyi # put your disqus shortname
 external_sources:
   - name: LMMs-Eval Blog
     rss_url: https://lmms-lab.github.io/lmms-eval-blog/feed
-  - name: OI Blog
-    rss_url: https://pufanyi.github.io/oi-blog/atom.xml
+  # - name: OI Blog
+  #   rss_url: https://pufanyi.github.io/oi-blog/atom.xml
 
 # -----------------------------------------------------------------------------
 # Collections
