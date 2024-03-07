@@ -2,6 +2,9 @@
 layout: post
 title: LMMs Eval Command Generator
 date: 2024-03-08
+categories: Tools
+tags:
+  - tools
 description: a simple tool to generate commands for LMMs-Eval
 giscus_comments: true
 pretty_table: true
