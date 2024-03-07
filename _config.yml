@@ -475,3 +475,8 @@ jsonresume:
   - languages
   - interests
   - references
+
+# -----------------------------------------------------------------------------
+# OI Blog
+# -----------------------------------------------------------------------------
+oi_blog_nav_title: oi-blog # your blog must have a title for it to be displayed in the nav bar
