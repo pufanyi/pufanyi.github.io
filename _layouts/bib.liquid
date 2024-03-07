@@ -62,6 +62,11 @@
           | remove: '<sup>'
           | remove: '</sup>'
         -%}
+
+        <div>
+          ==={{site.scholar.last_name}}===
+        </div>
+
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
@@ -90,11 +95,11 @@
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
-              {{- author.first }} |
+              {{- author.first }}
               {{ author.last -}}
             </a>
           {%- else -%}
-            {{ author.first }} |
+            {{ author.first }}
             {{ author.last }}
           {% endif %}
         {%- endif -%}
