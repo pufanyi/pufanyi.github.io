@@ -63,9 +63,7 @@
           | remove: '</sup>'
         -%}
 
-        <div>
-          ==={{site.scholar.last_name}}===
-        </div>
+        <div>==={{ site.data.coauthors }}===</div>
 
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
