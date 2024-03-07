@@ -32,7 +32,7 @@ pretty_table: true
   </thead>
 </table>
 
-***
+---
 
 ## Select Tasks
 
@@ -53,7 +53,7 @@ pretty_table: true
   </thead>
 </table>
 
-***
+---
 
 ## Enter Model Args
 
@@ -62,7 +62,7 @@ pretty_table: true
   <input type="text" class="form-control" placeholder="pretrained=liuhaotian/llava-v1.5-7b" aria-label="model_args" aria-describedby="basic-addon1">
 </div>
 
-***
+---
 
 ## Get Command
 
