@@ -20,14 +20,14 @@ pretty_table: true
   class="table align-middle mb-0 bg-white"
   data-toggle="table"
   data-height="460"
-  data-pagination="true"
+  data-search="true"
   data-click-to-select="true"
   data-url="{{ 'assets/json/2024-03-08-LMMs-Eval-Cmd/models.json' | relative_url }}">
   <thead>
     <tr>
       <th data-field="state" data-checkbox="true"></th>
-      <th data-field="Name">Name</th>
-      <th data-field="ID">ID</th>
+      <th data-field="Name" data-sortable="true">Name</th>
+      <th data-field="ID" data-sortable="true">ID</th>
     </tr>
   </thead>
 </table>
@@ -36,8 +36,8 @@ pretty_table: true
 
 <table
   id="tasks"
+  data-search="true"
   data-toggle="table"
-  data-pagination="true"
   class="table align-middle mb-0 bg-white"
   data-height="460"
   data-click-to-select="true"
@@ -45,8 +45,8 @@ pretty_table: true
   <thead>
     <tr>
       <th data-field="state" data-checkbox="true"></th>
-      <th data-field="Name">Name</th>
-      <th data-field="ID">ID</th>
+      <th data-field="Name" data-sortable="true">Name</th>
+      <th data-field="ID" data-sortable="true">ID</th>
     </tr>
   </thead>
 </table>
