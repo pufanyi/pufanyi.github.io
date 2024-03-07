@@ -54,7 +54,7 @@ pretty_table: true
 ## Get Command
 
 {% highlight bash %}
-accelerate launch -m lmms_eval --model=<div id="selectedModels"></div> --model_args=pretrained=liuhaotian/llava-v1.5-7b --tasks=<div id="selectedTasks"></div> --batch_size=1 --log_samples --output_path=./logs/
+accelerate launch -m lmms_eval --model=llava --model_args=pretrained=liuhaotian/llava-v1.5-7b --tasks=mmbench --batch_size=1 --log_samples --output_path=./logs/
 {% endhighlight %}
 
 <script src="{{ 'assets/js/2024-03-08-LMMs-Eval-Cmd/script.js' | relative_url }}"></script>
