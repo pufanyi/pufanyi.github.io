@@ -53,7 +53,7 @@ pretty_table: true
 
 <div id="selectedTasks"></div>
 
-<!-- <script src="{{ 'assets/js/2024-03-08-LMMs-Eval-Cmd/script.js' | relative_url }}"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
   $(document).ready(function () {
