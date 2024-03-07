@@ -8,23 +8,20 @@ profile:
   align: right
   image: me.webp
   image_circular: false # crops the image to make it circular
-  # address: >
-  #   <p>
-  #     <a href="https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-science-in-data-science-artificial-intelligence">Data Science and Artificial Intelligence</a>
-  #   </p>
-  #   <p>
-  #     <a href="https://www.ntu.edu.sg">Nanyang Technological University</a>
-  #   </p>
+  more_info: >
+    # <p>555 your office number</p>
+    # <p>123 your address street</p>
+    # <p>Your City, State 12345</p>
 
-news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+news: false # includes a list of news items
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I am currently a second-year student at [Nanyang Technological University](https://www.ntu.edu.sg/), specializing in [Data Science and Artificial Intelligence](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-science-in-data-science-artificial-intelligence).
 
-I am currently a [URECA](https://www.ntu.edu.sg/education/undergraduate-research-experience-on-campus-(ureca)) student at [MMLab@NTU](https://www.mmlab-ntu.com/). I am fortunate to be supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Bo Li](https://brianboli.com/). My research interests currently lie in large-scale multi-modality models.
+I am currently a [URECA](<https://www.ntu.edu.sg/education/undergraduate-research-experience-on-campus-(ureca)>) student at [MMLab@NTU](https://www.mmlab-ntu.com/). I am fortunate to be supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/) and [Bo Li](https://brianboli.com/). My research interests currently lie in large-scale multi-modality models.
 
 At the same time, I am currently pursuing a [minor in applied physics](https://www.ntu.edu.sg/spms/about-us/physics/undergrad/minor).
 

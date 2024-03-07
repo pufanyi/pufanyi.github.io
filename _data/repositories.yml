@@ -1,7 +1,12 @@
 github_users:
-  - pufanyi
+  - torvalds
+  - alshedivat
 
 github_repos:
-  - Luodian/Otter
-  - pufanyi/GenderRecognitionByVoice
-  - pufanyi/FYPMS
+  - alshedivat/al-folio
+  - twbs/bootstrap
+  - jekyll/jekyll
+  - jquery/jquery
+  - FortAwesome/Font-Awesome
+  - jpswalsh/academicons
+  - mathjax/MathJax
