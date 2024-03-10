@@ -70,7 +70,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: pufanyi # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: # your X handle
+x_username: pufanyi # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: fanyi-pu-99430823a # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -102,6 +102,7 @@ facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
+codeforces_id: pufanyi # your codeforces id
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
