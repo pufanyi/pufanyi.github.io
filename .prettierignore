@@ -3,3 +3,4 @@
 assets/css/main.scss
 assets/plotly/**
 lighthouse_results/**
+.venv/**
