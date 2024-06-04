@@ -2,7 +2,7 @@
 layout: distill
 title: Classical Mechanics
 categories: Notes
-date: 2024-03-05
+date: 2024-06-03
 description: 学点好玩的
 tags:
   - Classical Mechanics
