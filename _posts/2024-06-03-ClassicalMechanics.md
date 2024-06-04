@@ -19,7 +19,7 @@ authors:
 
 toc:
   - name: State diagrams and the nature of physical laws
-#   - name: Summarizing Data
+  - name: Newton's law, phase space, momentum and energy
 #   - name: From Normal Distribution
 #   - name: Limit Theorems
 #   - name: Parameter Estimation
@@ -62,3 +62,7 @@ $$
 \vec{a} &= \ddot{\vec{x}} = \begin{bmatrix}-r\cos\theta\\-r\sin\theta\end{bmatrix}\\
 \end{aligned}
 $$
+
+---
+
+# Newton's law, phase space, momentum and energy
