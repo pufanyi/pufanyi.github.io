@@ -45,3 +45,10 @@ toc:
 上课过程中有一个同学问了个问题，就是说按这样的话 classical statistical mechanics 怎么搞。这个是因为在状态中我们认为世界是已知的，但是在经典统计力学中一部分东西是未知的才能导致有概率的引入。我们认为世界是确定的。
 
 一个记号是 $$\dot{f}$$ 表示 $$f$$ 对事件的导数，也就是说 $$\dot{f} = \frac{\mathrm{d}f}{\mathrm{d}t}$$。
+
+$$
+\begin{cases}
+v_i=\dot{x}_i\\
+a_i=\dot{v}_i=\ddot{x}_i
+\end{cases}
+$$
