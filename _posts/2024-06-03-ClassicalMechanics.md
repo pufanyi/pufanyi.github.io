@@ -48,7 +48,7 @@ toc:
 
 $$
 \begin{cases}
-v_i=\dot{x}_i\\
-a_i=\dot{v}_i=\ddot{x}_i
+\vec{v}=\dot{\vec{x}}\\
+\vec{a}=\dot{\vec{v}}=\ddot{\vec{x}}
 \end{cases}
 $$
