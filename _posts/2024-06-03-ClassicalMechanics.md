@@ -57,9 +57,9 @@ $$
 
 $$
 \begin{aligned}
-\vec{x} &= \begin{bmatrix}r\cos\theta\\r\sin\theta\end{bmatrix}\\
-\vec{v} &= \dot{\vec{x}} = \begin{bmatrix}-r\sin\theta\\r\cos\theta\end{bmatrix}\\
-\vec{a} &= \ddot{\vec{x}} = \begin{bmatrix}-r\cos\theta\\-r\sin\theta\end{bmatrix}\\
+\vec{x} &= \begin{bmatrix}r\cos\omega\theta\\ r\sin\omega\theta\end{bmatrix}\\
+\vec{v} &= \dot{\vec{x}} = \begin{bmatrix}-\omega r\sin\omega\theta\\ \omega r\cos\omega\theta\end{bmatrix}\\
+\vec{a} &= \ddot{\vec{x}} = \begin{bmatrix}-\omega^2r\cos\omega\theta\\-\omega^2r\sin\omega\theta\end{bmatrix}\\
 \end{aligned}
 $$
 
