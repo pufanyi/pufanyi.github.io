@@ -56,11 +56,11 @@ $$
 然后他举的例子是圆周运动：
 
 $$
-\begin{aligned}
-\vec{x} &= \begin{bmatrix}r\cos\omega\theta\\ r\sin\omega\theta\end{bmatrix}\\
-\vec{v} &= \dot{\vec{x}} = \begin{bmatrix}-\omega r\sin\omega\theta\\ \omega r\cos\omega\theta\end{bmatrix}\\
-\vec{a} &= \ddot{\vec{x}} = \begin{bmatrix}-\omega^2r\cos\omega\theta\\-\omega^2r\sin\omega\theta\end{bmatrix}\\
-\end{aligned}
+\begin{cases}
+\vec{x} = \begin{bmatrix}r\cos\omega\theta\\ r\sin\omega\theta\end{bmatrix}\\
+\vec{v} = \dot{\vec{x}} = \begin{bmatrix}-\omega r\sin\omega\theta\\ \omega r\cos\omega\theta\end{bmatrix}\\
+\vec{a} = \ddot{\vec{x}} = \begin{bmatrix}-\omega^2r\cos\omega\theta\\-\omega^2r\sin\omega\theta\end{bmatrix}\\
+\end{cases}
 $$
 
 ---
