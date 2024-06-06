@@ -1,17 +1,24 @@
 ---
-layout: post
+layout: distill
 title: 2021 Gao Kao Derivative Question
+categories: Notes
 date: 2024-06-06
-description: 要高考去了，临时抱佛脚学一下
-categories: Gao Kao
+description: 明天就要高考去了，今天临时抱个佛脚
 tags:
-- Gao Kao
-- Calculus
+  - Gao Kao
+  - Calculus
 giscus_comments: true
 related_posts: false
+
+authors:
+  - name: Pu Fanyi
+    url: "https://pufanyi.github.io"
+    affiliations:
+      name: NTU, Singapore
+      url: "https://www.ntu.edu.sg/"
 ---
 
-## Question
+# Question
 
 {% details Original Chinese Version %}
 
