@@ -66,3 +66,13 @@ $$
 ---
 
 # Newton's law, phase space, momentum and energy
+
+一个粒子的状态可以被描述为 $$(\vec{x}, \vec{p})$$，即位置与动量。我们称整个空间为 phase space。
+
+根据牛顿第二定律：
+
+$$
+\vec{F}=\dot{\vec{p}}
+$$
+
+我们与 $$\vec{p}=m\doc{\vec{x}}$$ 联立，我们就能解出 $$(\vec{x}, \vec{p})$$ 和 $$t$$ 的关系。因此我们说牛顿力学是可逆的。
