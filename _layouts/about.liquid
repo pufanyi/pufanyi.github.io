@@ -4,7 +4,7 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      {% if site.title == 'blank' -%}
+      {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
         {% if site.title == 'blank' and site.chinese_name %}
@@ -12,7 +12,7 @@ layout: default
         {% endif %}
       {%- else -%}
         {{ site.title }}
-      {%- endif %}
+      {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
@@ -74,6 +74,10 @@ layout: default
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
+    {% endif %}
+
+    {% if site.newsletter.enabled and site.footer_fixed %}
+      {% include scripts/newsletter.liquid center=true %}
     {% endif %}
   </article>
 </div>
