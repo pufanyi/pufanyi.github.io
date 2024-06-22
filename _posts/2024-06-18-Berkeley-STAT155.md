@@ -17,17 +17,9 @@ toc:
 
 ### Preferences
 
-**Consumption Space**:
+**Consumption Space**: $$X\subseteq\mathbb{R}_+^n$$
 
-$$
-X\subseteq\mathbb{R}_+^n
-$$
-
-**Preference Relation**: $$x$$ is as lease as good as $$y$$
-
-$$
-x\succeq y
-$$
+**Preference Relation**: $$x\succeq y$$, $$x$$ is as lease as good as $$y$$
 
 **Indifference**: $$x\sim y \Longleftrightarrow x\succeq y \land y\succeq x$$
 
