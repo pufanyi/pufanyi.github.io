@@ -128,4 +128,6 @@ Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in 
 
 ![](/assets/img/2024-06-17-Berkeley-CS161/convex.svg)
 
+但其实是没关系的，因为我们这边说的是 $$\forall x, y$$，所以我们只要把 $$x$$ 移到 $$t$$ 的位置，条件就不满足了。
+
 {% enddetails %}
