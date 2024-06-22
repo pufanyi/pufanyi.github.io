@@ -25,22 +25,11 @@ toc:
 
 **Strict Preference**: $$x\succ y \Longleftrightarrow x\succeq y \land y\nsucceq x$$
 
-考虑到我们定义的 preferences 很宽泛，通常我们其实会研究一些满足某些假设的 preferences。
+**Rationality Assumption**:  completeness and transitivity。
 
-最常见的假设是 Rationality Assumption，需要满足 completeness 和 transitivity。
+这样不会陷入死循环和一些矛盾的情况。
 
-一个违反的例子是剪刀石头布，我们有
+反例：
 
-$$
-x\succ y\succ z\succ x
-$$
-
-形成了一个环，导致了我们没法做出一个最优的选择。
-
-另一个违反的例子是关于现实生活的，就是在现实生活中其实情况更复杂一些。比如以咖啡为例，一点点糖的变化感觉不出来，也就是：
-
-$$
-c_1\sim c_{0.9}\sim c_{0.8}\sim\cdots\sim c_{0.1}\sim c_0
-$$
-
-但很显然 $$c_1\nsim c_0$$。也就是说是不满足 transitivity 的。
+1. 剪刀石头布：$$x\succ y\succ z\succ x$$，无法做出最优选择
+2. 咖啡加糖：$$c_1\sim c_{0.9}\sim c_{0.8}\sim\cdots\sim c_{0.1}\sim c_0$$，但是$$c_1\nsim c_0$$。需要考虑一些心理的情况。
