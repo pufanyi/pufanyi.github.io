@@ -120,15 +120,14 @@ $$
 
 <!-- prettier-ignore-start -->
 
-> ##### 一些理解
->
-> Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in X$$，我们都有 $$U_z=\{x\in X\mid x\succeq z\}$$ 是 convex preference。
->
-> 如果用 utility function 来表示的话，preference 的 convexity 和 function 的 convexity 是相反的。我的理解是或许定义的时候我们考虑的是 loss function，也就是把 $$x\succeq y$$ 看成是 $$x\le y$$。
->
-> 另外就是我在看定义的时候有的一点小疑惑，就是他为会不会有可能出现这样的形式：
->
-> ![](/assets/img/2024-06-17-Berkeley-CS161/convex.svg)
-{: .block-tip }
+{% details 一些理解 %}
+Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in X$$，我们都有 $$U_z=\{x\in X\mid x\succeq z\}$$ 是 convex preference。
+
+如果用 utility function 来表示的话，preference 的 convexity 和 function 的 convexity 是相反的。我的理解是或许定义的时候我们考虑的是 loss function，也就是把 $$x\succeq y$$ 看成是 $$x\le y$$。
+
+另外就是我在看定义的时候有的一点小疑惑，就是他为会不会有可能出现这样的形式：
+
+![](/assets/img/2024-06-17-Berkeley-CS161/convex.svg)
+{% enddetails %}
 
 <!-- prettier-ignore-end -->
