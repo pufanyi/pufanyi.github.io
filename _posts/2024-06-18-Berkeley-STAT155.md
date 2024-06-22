@@ -128,7 +128,7 @@ $$
 >
 > 另外就是我在看定义的时候有的一点小疑惑，就是他为会不会有可能出现这样的形式：
 >
-> ![](assets/img/2024-06-17-Berkeley-CS161/convex.svg)
+> ![](/assets/img/2024-06-17-Berkeley-CS161/convex.svg)
 {: .block-tip }
 
 <!-- prettier-ignore-end -->
