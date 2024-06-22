@@ -123,6 +123,7 @@ $$
 > ##### 一些理解
 >
 > Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in X$$，我们都有 $$U_z=\{x\in X\mid x\succeq z\}$$ 是 convex preference。
+>
 > 如果用 utility function 来表示的话，preference 的 convexity 和 function 的 convexity 是相反的。我的理解是或许定义的时候我们考虑的是 loss function。
 {: .block-tip }
 
