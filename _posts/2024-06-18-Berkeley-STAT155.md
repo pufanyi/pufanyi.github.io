@@ -53,3 +53,55 @@ f: X\to\mathbb{R}, \forall x, y\in X, \forall\alpha\in[0, 1], f(\alpha x+(1-\alp
 $$
 
 _**Concave Function**_: 反一下变成哭脸
+
+高维空间比大小的一些记号：
+
+$$
+\begin{aligned}
+x\ge y&\Longleftrightarrow \forall i, x_i\ge y_i\\
+x>y&\Longleftrightarrow x\ge y\land x\neq y\\
+x\gg y&\Longleftrightarrow \forall i, x_i>y_i
+\end{aligned}
+$$
+
+_**Strongly Monotone**_:
+
+$$
+x>y\Longrightarrow f(x)>f(y)
+$$
+
+_**Weakly Monotone**_:
+
+$$
+x\gg y\Longrightarrow f(x)> f(y)
+$$
+
+**Locally Satisfied Preference**:
+
+$$
+\forall x\in X, \forall \epsilon>0, \exists y, \lVert x-y\rVert<\epsilon\land y\succeq x
+$$
+
+旁边总有比他好的。
+
+**Weekly Monotone Preference**:
+
+$$
+x\gg y\Longrightarrow x\succ y
+$$
+
+所有东西都来一点更好。
+
+**Strongly Monotone Preference**:
+
+$$
+x>y\Longrightarrow x\succ y
+$$
+
+越多越好。
+
+**Convex Preference**:
+
+$$
+x\succeq z\land y\succeq z\Longrightarrow\forall\alpha\in[0, 1], \alpha x+(1-\alpha)y\succeq z
+$$
