@@ -33,3 +33,23 @@ toc:
 
 1. 剪刀石头布：$$x\succ y\succ z\succ x$$，无法做出最优选择
 2. 咖啡加糖：$$c_1\sim c_{0.9}\sim c_{0.8}\sim\cdots\sim c_{0.1}\sim c_0$$，但是$$c_1\nsim c_0$$。需要考虑一些心理的情况。
+
+_**Convex Combination**_:
+
+$$
+\alpha x+(1-\alpha)y, \alpha\in[0,1]
+$$
+
+_**Convex Set**_:
+
+$$
+\forall x, y\in X\ ,\forall\alpha\in[0, 1], \alpha x+(1-\alpha)y\in X
+$$
+
+_**Convex Function**_:
+
+$$
+f: X\to\mathbb{R}, \forall x, y\in X, \forall\alpha\in[0, 1], f(\alpha x+(1-\alpha)y)\le \alpha f(x)+(1-\alpha)f(y)
+$$
+
+_**Concave Function**_: 反一下变成哭脸
