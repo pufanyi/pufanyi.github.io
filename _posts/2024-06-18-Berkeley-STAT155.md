@@ -25,7 +25,7 @@ toc:
 
 **Strict Preference**: $$x\succ y \Longleftrightarrow x\succeq y \land y\nsucceq x$$
 
-**Rationality Assumption**:  completeness and transitivity。
+**Rationality Assumption**: completeness and transitivity。
 
 这样不会陷入死循环和一些矛盾的情况。
 
