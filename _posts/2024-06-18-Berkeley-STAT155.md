@@ -109,5 +109,11 @@ $$
 **Convex Preference**:
 
 $$
-x\succeq z\land y\succeq z\Longrightarrow\forall\alpha\in[0, 1], \alpha x+(1-\alpha)y\succeq z
+x\succeq z, y\succeq z\Longrightarrow\forall\alpha\in[0, 1], \alpha x+(1-\alpha)y\succeq z
+$$
+
+**Strictly Convex Preference**:
+
+$$
+x\succeq z, y\succeq z, y\neq x\Longrightarrow \forall\alpha\in(0, 1), \alpha x+(1-\alpha)y\succ z
 $$
