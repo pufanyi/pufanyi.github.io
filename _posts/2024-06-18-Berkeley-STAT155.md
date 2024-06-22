@@ -17,7 +17,7 @@ toc:
 
 ### Preferences
 
-一些基础定义和概念：
+#### 一些基础定义和概念
 
 **Consumption Space**: $$X\subseteq\mathbb{R}_+^n$$
 
@@ -26,6 +26,8 @@ toc:
 **Indifference**: $$x\sim y \Longleftrightarrow x\succeq y \land y\succeq x$$
 
 **Strict Preference**: $$x\succ y \Longleftrightarrow x\succeq y \land y\nsucceq x$$
+
+#### 常见的 Assumptions
 
 Preference 这个概念挺大的，通常我们会带着一些 assumption 来研究。下面是一些常见的 assumption。
 
