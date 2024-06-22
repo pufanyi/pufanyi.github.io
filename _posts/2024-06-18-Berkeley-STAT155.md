@@ -131,3 +131,9 @@ Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in 
 但其实是没关系的，因为我们这边说的是 $$\forall x, y$$，所以我们只要把 $$x$$ 移到 $$t$$ 的位置，条件就不满足了。
 
 {% enddetails %}
+
+**Continuous Preference**:
+
+$$
+\forall n\in\mathbb{N}, x_n\succeq y_n, x_n\to x, y_n\to y\Longrightarrow x\succeq y
+$$
