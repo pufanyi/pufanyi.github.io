@@ -144,4 +144,4 @@ $$
 u(x)\ge u(y)\Longleftrightarrow x\succeq y
 $$
 
-我们说是 $$u$$ represents 这个 $$\succeq\subseteq\mathbb{R}\times\mathbb{R}$$
+我们说是 $$u$$ represents $$\succeq$$。
