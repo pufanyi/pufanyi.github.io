@@ -138,10 +138,16 @@ $$
 \forall n\in\mathbb{N}, x_n\succeq y_n, x_n\to x, y_n\to y\Longrightarrow x\succeq y
 $$
 
-**Utility Functions**: 我们定义一个 $$u: X\to \mathbb{R}$$ 使得
+### Utility Functions
+
+我们定义一个 $$u: X\to \mathbb{R}$$ 使得
 
 $$
 u(x)\ge u(y)\Longleftrightarrow x\succeq y
 $$
 
 我们说是 $$u$$ represents $$\succeq$$。
+
+这个 $$u$$ 就是 $$\succeq$$ 的 utility functions。
+
+一个定理是 $$\succeq$$ 是 rational and continuous 的当且仅当存在一个连续的 $$u$$。
