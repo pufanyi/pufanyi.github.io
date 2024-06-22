@@ -137,3 +137,11 @@ Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in 
 $$
 \forall n\in\mathbb{N}, x_n\succeq y_n, x_n\to x, y_n\to y\Longrightarrow x\succeq y
 $$
+
+**Utility Functions**: 我们定义一个 $$u: X\to \mathbb{R}$$ 使得
+
+$$
+u(x)\ge u(y)\Longleftrightarrow x\succeq y
+$$
+
+我们说是 $$u$$ represents 这个 $$\succeq\subseteq\mathbb{R}\times\mathbb{R}$$
