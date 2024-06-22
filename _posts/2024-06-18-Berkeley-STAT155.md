@@ -25,16 +25,9 @@ toc:
 
 **Strict Preference**: $$x\succ y \Longleftrightarrow x\succeq y \land y\nsucceq x$$
 
-考虑到我们定义的 preferences 很宽泛，我们定义两个 assumptions 来限制我们的 preferences。
+考虑到我们定义的 preferences 很宽泛，通常我们其实会研究一些满足某些假设的 preferences。
 
-1. Rationality assumptions
-2. Well-Behaved assumptions
-
-第一个通常是 the bare minimum，第二个是一些更加严格的 assumptions，make the model more tractable。
-
-#### Rationality Assumptions
-
-需要满足 completeness 和 transitivity。
+最常见的假设是 Rationality Assumption，需要满足 completeness 和 transitivity。
 
 一个违反的例子是剪刀石头布，我们有
 
