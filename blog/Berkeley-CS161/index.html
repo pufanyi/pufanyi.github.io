@@ -29,7 +29,12 @@
      0x00000000       +-------------+
                       |&lt;-----------&gt;|
                           4 bytes
-</code></pre> <p>做实验验证：</p> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</code></pre> <p>x86 中都是以 Little-endian 存储的，也就是说比如说一个东西是 <code class="language-plaintext highlighter-rouge">0x0123456789abcdef</code>，那么他在地址中应该存储为：</p> <pre><code class="language-typograms">+---------------------------+
+| 0x67 | 0x45 | 0x23 | 0x01 |
++------+------+------+------+
+| 0xef | 0xcd | 0xab | 0x89 |
++---------------------------+
+</code></pre> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;stdint.h&gt;</span><span class="cp">
 </span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
