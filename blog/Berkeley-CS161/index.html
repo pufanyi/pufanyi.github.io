@@ -94,19 +94,19 @@ pop   %ebp
 </code></pre></div></div> <p><code class="language-plaintext highlighter-rouge">gets</code> 时将 <code class="language-plaintext highlighter-rouge">SHELLCODE</code> 写入内存，然后覆盖 <code class="language-plaintext highlighter-rouge">RIP</code> 使其指向他。</p> <pre><code class="language-typograms">+---------------+              +-------------------------+
 |      ...      |              |          ...            |
 +---------------+              +-------------------------+
-|      RIP      |              |     (RIP)  &amp;SHELLCODE   |
-+---------------+              +-------------------------+
-|      SFP      |              |     (SFP)  "AAAA"       |
-+---------------+              +-------------------------+
-|     name      |     gets     |     (name) "AAAA"       |
-+---------------+   --------&gt;  +-------------------------+
-|     name      |              |     (name) "AAAA"       |
-+---------------+              +-------------------------+
-|     name      |              |     (name) SHELLCODE    |
-+---------------+              +-------------------------+
-|     name      |              |     (name) SHELLCODE    |
-+---------------+              +-------------------------+
-|     name      |              |     (name) SHELLCODE    |
+|      RIP      |              |     (RIP)  &amp;SHELLCODE   |------+
++---------------+              +-------------------------+      |
+|      SFP      |              |     (SFP)  "AAAA"       |      |
++---------------+              +-------------------------+      |
+|     name      |     gets     |     (name) "AAAA"       |      |
++---------------+   --------&gt;  +-------------------------+      |
+|     name      |              |     (name) "AAAA"       |      |
++---------------+              +-------------------------+      |
+|     name      |              |     (name) SHELLCODE    |      |
++---------------+              +-------------------------+      |
+|     name      |              |     (name) SHELLCODE    |      |
++---------------+              +-------------------------+      |
+|     name      |              |     (name) SHELLCODE    |&lt;-----+
 +---------------+              +-------------------------+
 </code></pre> <hr> <h2 id="homework-1">Homework 1</h2> <p>也记录一下做 Homework 时学到的东西。</p> <h3 id="gdb">GDB</h3> <pre><code class="language-gdb">(gdb) info frame
 Stack level 0, frame at 0x5ffe80:
