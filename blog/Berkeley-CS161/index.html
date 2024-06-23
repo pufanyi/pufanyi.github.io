@@ -11,8 +11,9 @@
 \ENDPROCEDURE
 \end{algorithmic}
 \end{algorithm}
-</code></pre> <p>但这个程序事实上有一个巨大的漏洞，就是假设我现在开两个并行程序，两次都取 \(1000\) 块钱，当第一个程序运行到 <code class="language-plaintext highlighter-rouge">(2)</code> 之前时，我让第二个程序运行到 <code class="language-plaintext highlighter-rouge">(1)</code>。这时候我们会发现两个程序都能通过 <code class="language-plaintext highlighter-rouge">(1)</code> 进入 <code class="language-plaintext highlighter-rouge">(2)</code>，钱就会被取两次。这样我们能从 \(1000\) 块钱的账户中取出 \(2000\) 块钱。</p> <hr> <h2 id="lecture-2-x86-assembly-and-call-stack">Lecture 2: x86 Assembly and Call Stack</h2> <h3 id="number-representation">Number Representation</h3> <ul> <li>nibble 是一个十六进制数的大小，1 nibble = 4 bits</li> <li>1 byte = 8 bits</li> <li>word 是指针的大小，32 位下是 32 bits，64 位下是 64 bits</li> </ul> <h3 id="call-compiler-assembler-linker-loader">CALL: Compiler, Assembler, Linker, Loader</h3> <ul> <li> <strong>Compiler</strong>: 高级语言 -&gt; Assembly Code</li> <li> <strong>Assembler</strong>: Assembly Code -&gt; Machine Code</li> <li> <strong>Linker</strong>: Deals with dependencies and libraries</li> <li> <strong>Loader</strong>: Sets up memory space and runs the machine code</li> </ul> <h3 id="c-memory-layout">C Memory Layout</h3> <p>讲课的时候考虑的是 32 位机，也就是 memory 是从 <code class="language-plaintext highlighter-rouge">0x00000000</code> 到 <code class="language-plaintext highlighter-rouge">0xFFFFFFFF</code>。其实可以把内存看作一个一维的数组，当然我们通常将其画成一张 \(n\times 4 \text{ bytes}\) 的表。</p> <pre><code class="language-typograms">     0xFFFFFFFF       +-------------+
---------------------&gt; |             |
+</code></pre> <p>但这个程序事实上有一个巨大的漏洞，就是假设我现在开两个并行程序，两次都取 \(1000\) 块钱，当第一个程序运行到 <code class="language-plaintext highlighter-rouge">(2)</code> 之前时，我让第二个程序运行到 <code class="language-plaintext highlighter-rouge">(1)</code>。这时候我们会发现两个程序都能通过 <code class="language-plaintext highlighter-rouge">(1)</code> 进入 <code class="language-plaintext highlighter-rouge">(2)</code>，钱就会被取两次。这样我们能从 \(1000\) 块钱的账户中取出 \(2000\) 块钱。</p> <hr> <h2 id="lecture-2-x86-assembly-and-call-stack">Lecture 2: x86 Assembly and Call Stack</h2> <h3 id="number-representation">Number Representation</h3> <ul> <li>nibble 是一个十六进制数的大小，1 nibble = 4 bits</li> <li>1 byte = 8 bits</li> <li>word 是指针的大小，32 位下是 32 bits，64 位下是 64 bits</li> </ul> <h3 id="call-compiler-assembler-linker-loader">CALL: Compiler, Assembler, Linker, Loader</h3> <ul> <li> <strong>Compiler</strong>: 高级语言 -&gt; Assembly Code</li> <li> <strong>Assembler</strong>: Assembly Code -&gt; Machine Code</li> <li> <strong>Linker</strong>: Deals with dependencies and libraries</li> <li> <strong>Loader</strong>: Sets up memory space and runs the machine code</li> </ul> <h3 id="c-memory-layout">C Memory Layout</h3> <p>讲课的时候考虑的是 32 位机，也就是 memory 是从 <code class="language-plaintext highlighter-rouge">0x00000000</code> 到 <code class="language-plaintext highlighter-rouge">0xFFFFFFFF</code>。其实可以把内存看作一个一维的数组，当然我们通常将其画成一张 \(n\times 4 \text{ bytes}\) 的表。</p> <script type="text/typogram">
+     0xFFFFFFFF       +-------------+
+--------------------> |             |
                       |             |
    Higher Address     |             |
          ^            |             |
@@ -25,9 +26,9 @@
          v            |             |
     Lower Address     |             |
                       |             |
---------------------&gt; |             |
+--------------------> |             |
      0x00000000       +-------------+
-</code></pre> <h3 id="function-call">Function Call</h3> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
+</script> <h3 id="function-call">Function Call</h3> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
