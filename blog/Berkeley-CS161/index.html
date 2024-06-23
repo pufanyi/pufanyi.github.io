@@ -108,16 +108,9 @@ pop   %ebp
 +---------------+             +-------------------------+      |
 |     name      |             |     (name) SHELLCODE    |&lt;-----+
 +---------------+             +-------------------------+
-</code></pre> <p>当然 SHELLCODE 也可以写在其他地方比如说 <code class="language-plaintext highlighter-rouge">RIP</code> 上面这个随心情而定。</p> <pre><code class="language-diff2html">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
---- a/sample.js
-+++ b/sample.js
-@@ -1 +1 @@
--console.log("Hello World!")
-+console.log("Hello from Diff2Html!")
-</code></pre> <pre><code class="language-diff2html">diff --git vulnerable.c vulnerable.c
---- vulnerable.c
-+++ vulnerable.c
+</code></pre> <p>当然 SHELLCODE 也可以写在其他地方比如说 <code class="language-plaintext highlighter-rouge">RIP</code> 上面这个随心情而定。</p> <pre><code class="language-diff2html">diff --git a/vulnerable.c b/vulnerable.c
+--- a/vulnerable.c
++++ b/vulnerable.c
 @@ -1,4 +1,4 @@
  void vulnerable(void) {
      char name[20];
