@@ -108,7 +108,13 @@ pop   %ebp
 +---------------+             +-------------------------+      |
 |     name      |             |     (name) SHELLCODE    |&lt;-----+
 +---------------+             +-------------------------+
-</code></pre> <p>当然 SHELLCODE 也可以写在其他地方比如说 <code class="language-plaintext highlighter-rouge">RIP</code> 上面这个随心情而定。</p> <hr> <h2 id="homework-1">Homework 1</h2> <p>也记录一下做 Homework 时学到的东西。</p> <h3 id="gdb">GDB</h3> <pre><code class="language-gdb">(gdb) info frame
+</code></pre> <p>当然 SHELLCODE 也可以写在其他地方比如说 <code class="language-plaintext highlighter-rouge">RIP</code> 上面这个随心情而定。</p> <pre><code class="language-diff2html">@@ -1,4 +1,4 @@
+ void vulnerable(void) {
+     char name[20];
+-    gets(name);
++    fgets(name, 20, stdin);
+ }
+</code></pre> <hr> <h2 id="homework-1">Homework 1</h2> <p>也记录一下做 Homework 时学到的东西。</p> <h3 id="gdb">GDB</h3> <pre><code class="language-gdb">(gdb) info frame
 Stack level 0, frame at 0x5ffe80:
  rip = 0x7ff7b2791481 in foo (D:/NTU/Berkeley/CS161/try/a.c:12); saved rip = 0x7ff7b279146c
  called by frame at 0x5ffeb0
