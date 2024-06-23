@@ -50,7 +50,22 @@
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div> <p>输出：</p> <pre><code class="language-plain">ef cd ab 89 67 45 23 01
-</code></pre> <p>但是数组和 <code class="language-plaintext highlighter-rouge">struct</code> 仍然是从小到大的顺序。</p> <h3 id="function-call">Function Call</h3> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
+</code></pre> <p>但是数组和 <code class="language-plaintext highlighter-rouge">struct</code> 仍然是从小到大的顺序。</p> <pre><code class="language-typograms">+-------------------+
+|       Stack       |
++~~~~~~~~~~~~~~~~~~~+
+|         |         |
+|         v         |
+|                   |
+|         ^         |
+|         |         |
++~~~~~~~~~~~~~~~~~~~+
+|       Heap        |
++-------------------+
+|       Data        |
++-------------------+
+|       Code        |
++-------------------+
+</code></pre> <h3 id="function-call">Function Call</h3> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
