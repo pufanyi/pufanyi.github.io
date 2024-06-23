@@ -87,6 +87,27 @@ foo:
   subq  $32, %rsp
 </code></pre> <p><code class="language-plaintext highlighter-rouge">leave</code> 等价于</p> <pre><code class="language-ass">mov   %ebp, %esp
 pop   %ebp
+</code></pre> <hr> <h2 id="lecture-3-memory-safety-vulnerabilities">Lecture 3: Memory Safety Vulnerabilities</h2> <h3 id="buffer-overflow">Buffer Overflow</h3> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">vulnerable</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+    <span class="n">gets</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div> <p><code class="language-plaintext highlighter-rouge">gets</code> 时将 <code class="language-plaintext highlighter-rouge">SHELLCODE</code> 写入内存，然后覆盖 <code class="language-plaintext highlighter-rouge">RIP</code> 使其指向他。</p> <pre><code class="language-typograms">+---------------+              +-------------------------+
+|      ...      |              |          ...            |
++---------------+              +-------------------------+
+|      RIP      |              |     (RIP)  &amp;SHELLCODE   |
++---------------+              +-------------------------+
+|      SFP      |              |     (SFP)  "AAAA"       |
++---------------+              +-------------------------+
+|     name      |     gets     |     (name) "AAAA"       |
++---------------+   --------&gt;  +-------------------------+
+|     name      |              |     (name) "AAAA"       |
++---------------+              +-------------------------+
+|     name      |              |     (name) SHELLCODE    |
++---------------+              +-------------------------+
+|     name      |              |     (name) SHELLCODE    |
++---------------+              +-------------------------+
+|     name      |              |     (name) SHELLCODE    |
++---------------+              +-------------------------+
 </code></pre> <hr> <h2 id="homework-1">Homework 1</h2> <p>也记录一下做 Homework 时学到的东西。</p> <h3 id="gdb">GDB</h3> <pre><code class="language-gdb">(gdb) info frame
 Stack level 0, frame at 0x5ffe80:
  rip = 0x7ff7b2791481 in foo (D:/NTU/Berkeley/CS161/try/a.c:12); saved rip = 0x7ff7b279146c
