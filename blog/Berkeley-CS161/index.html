@@ -138,23 +138,21 @@ Stack level 0, frame at 0x7fffffffd9a0:
   <span class="n">vulnerable</span><span class="p">();</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div> <p>这样允许了我们有一个额外的输入。然而这个输入最多只能覆盖 <code class="language-plaintext highlighter-rouge">SFP</code>，因为 <code class="language-plaintext highlighter-rouge">RIP</code> 在 <code class="language-plaintext highlighter-rouge">SFP</code> 上面。</p> <p>我们需要这样修改：</p> <pre><code class="language-typograms">+-----------------------------+                +---------------------------+
-|            ...              |                |            ...            |
-+-----------------------------+                +---------------------------+
-|         RIP of main         |                |        RIP of main        |
-+-----------------------------+                +---------------------------+
-|         SFP of main         |&lt;---+           |        SFP of main        |
-+-----------------------------+    |           +---------------------------+
-|      RIP of vulnerable      |    |           |     RIP of vulnerable     |
-+-----------------------------+    |           +---------------------------+
-|      SFP of vulnerable      |----+           |   Fake SFP of vulnerable  |----+
-+-----------------------------+                +---------------------------+    |
-|           x[2]              |      gets      |       Garbage bytes       |    |
-+-----------------------------+  -----------&gt;  +---------------------------+    |
-|           x[1]              |                |      Fake RIP of main     |----+---&gt; SHELLCODE
-+-----------------------------+                +---------------------------+    |
-|           x[0]              |                |      Fake SFP of main     |&lt;---+
-+-----------------------------+                +---------------------------+
+</code></pre></div></div> <p>这样允许了我们有一个额外的输入。然而这个输入最多只能覆盖 <code class="language-plaintext highlighter-rouge">SFP</code>，因为 <code class="language-plaintext highlighter-rouge">RIP</code> 在 <code class="language-plaintext highlighter-rouge">SFP</code> 上面。</p> <p>我们需要这样修改：</p> <pre><code class="language-typograms">+--------------------------+                +---------------------------+
+|       RIP of main        |                |        RIP of main        |
++--------------------------+                +---------------------------+
+|       SFP of main        |&lt;---+           |        SFP of main        |
++--------------------------+    |           +---------------------------+
+|    RIP of vulnerable     |    |           |     RIP of vulnerable     |
++--------------------------+    |           +---------------------------+
+|    SFP of vulnerable     |----+           |   Fake SFP of vulnerable  |----+
++--------------------------+                +---------------------------+    |
+|          x[2]            |      gets      |       Garbage bytes       |    |
++--------------------------+  -----------&gt;  +---------------------------+    |
+|          x[1]            |                |      Fake RIP of main     |----+---&gt; SHELLCODE
++--------------------------+                +---------------------------+    |
+|          x[0]            |                |      Fake SFP of main     |&lt;---+
++--------------------------+                +---------------------------+
 </code></pre> <hr> <h2 id="homework-1">Homework 1</h2> <p>也记录一下做 Homework 时学到的东西。</p> <h3 id="gdb">GDB</h3> <pre><code class="language-gdb">(gdb) x/4xw buf
 0xbffffdf8:  0xbffffeac  0xb7ffc165  0x00000000  0x00000000
 </code></pre> <p><code class="language-plaintext highlighter-rouge">0xbffffdf8</code> 是 <code class="language-plaintext highlighter-rouge">buf</code> 的地址，<code class="language-plaintext highlighter-rouge">4xw</code> 显示了 $4$ 个 word 的内容。</p> <pre><code class="language-gdb">(gdb) layout split
