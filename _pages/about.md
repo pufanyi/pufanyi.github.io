@@ -20,4 +20,4 @@ I am currently a second-year student at [Nanyang Technological University](https
 
 I am currently a [URECA](<https://www.ntu.edu.sg/education/undergraduate-research-experience-on-campus-(ureca)>) student at [MMLab@NTU](https://www.mmlab-ntu.com/). I am fortunate to be supervised by [Prof. Ziwei Liu](https://liuziwei7.github.io/), I am also grateful for the extensive help I have received from [Bo Li](https://brianboli.com/). My research interests currently lie in large-scale multi-modality models.
 
-I used to participate in the Olympiad in Informatics at [Shaoxing No.1 High School](http://www.sxyz.net/).
+I used to participate in the Olympiad in Informatics at [Shaoxing No.1 High School](http://www.sxyz.net/). I have also participated in the [ICPC](https://icpc.global/) competition, and have won the gold medal in the 2022 ICPC Asia Kunming Regional Contest.
