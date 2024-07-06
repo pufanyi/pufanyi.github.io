@@ -192,3 +192,5 @@ $$
 - Risk Averse: $$u(\mathbb{E}[L])\ge \mathbb{E}[u(L)]$$
 - Risk Neutral: $$u(\mathbb{E}[L]) = \mathbb{E}[u(L)]$$
 - Risk Loving: $$u(\mathbb{E}[L])\le \mathbb{E}[u(L)]$$
+
+用 Jensen's inequality 很好判断: For a convex function $$f$$, we have $$f(\mathbb{E}[X])\le \mathbb{E}[f(X)]$$.
