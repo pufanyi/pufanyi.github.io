@@ -172,7 +172,7 @@ A lottery is a vector $$L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)$$. $$x_i$$ �
 
 很多时候我们会对 lotteries 做线性叠加，比如一些钱买定期，一些钱买股票。所以其实我们就是在一个 convex set 上做决策。
 
-这时候问题就简化为我们有 $$n$$ 个 realizations $$X = \{x_1, x_2, \cdots, x_n\}$$，将这 $$n$$ 个 realizations 做线性组合，我们将这个 simplex 定义为 $$\mathbb{L}(X)，也就是：
+这时候问题就简化为我们有 $$n$$ 个 realizations $$X = \{x_1, x_2, \cdots, x_n\}$$，将这 $$n$$ 个 realizations 做线性组合，我们将这个 simplex 定义为 $$\mathbb{L}(X)$$，也就是：
 
 $$
 \mathbb{L}(X) = \left\{L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)\mid p_i\ge 0, \sum_{i=1}^n p_i = 1\right\}
