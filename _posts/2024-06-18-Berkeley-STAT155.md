@@ -56,7 +56,7 @@ $$
 f: X\to\mathbb{R}, \forall x, y\in X, \forall\alpha\in[0, 1], f(\alpha x+(1-\alpha)y)\le \alpha f(x)+(1-\alpha)f(y)
 $$
 
-_**Concave Function**_: 反一下变成哭脸
+Convex 是笑脸，concave 是哭脸。
 
 高维空间比大小的一些记号：
 
