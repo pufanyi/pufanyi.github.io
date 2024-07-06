@@ -118,17 +118,13 @@ $$
 x\succeq z, y\succeq z, y\neq x\Longrightarrow \forall\alpha\in(0, 1), \alpha x+(1-\alpha)y\succ z
 $$
 
-{% details 一些理解 %}
+{% details quasi-concave %}
 
-Convex preference 还有一种等价的定义方式，就是对于任意 $$z\in X$$，我们都有 $$U_z=\{x\in X\mid x\succeq z\}$$ 是 convex preference。
+我们称 $$f$$ 是 quasi-concave 的当且仅当
 
-如果用 utility function 来表示的话，preference 的 convexity 和 function 的 convexity 是相反的。我的理解是或许定义的时候我们考虑的是 loss function，也就是把 $$x\succeq y$$ 看成是 $$x\le y$$。
-
-另外就是我在看定义的时候有的一点小疑惑，就是他为会不会有可能出现这样的形式：
-
-![](/assets/img/2024-06-17-Berkeley-CS161/convex.svg)
-
-但其实是没关系的，因为我们这边说的是 $$\forall x, y$$，所以我们只要把 $$x$$ 移到 $$t$$ 的位置，条件就不满足了。
+$$
+f(\lambda x+(1-\lambda)y)\le\max\{f(x), f(y)\}
+$$
 
 {% enddetails %}
 
@@ -151,3 +147,6 @@ $$
 这个 $$u$$ 就是 $$\succeq$$ 的 utility functions。
 
 一个定理是 $$\succeq$$ 是 rational and continuous 的当且仅当存在一个连续的 $$u$$。
+
+- $$\succeq$$ is monotone $$\Longleftrightarrow$$ $$u$$ is monotone
+- $$\succeq$$ is convex $$\Longleftrightarrow$$ $$u$$ is quasi-concave
