@@ -161,3 +161,9 @@ $$
 $$
 
 一般比如说对钱，我们会有 $$\mathrm{MU}(x)$$ 是递减的。给的越多，多一块的价值越小。也就是 $$u''(x)<0$$。
+
+## Decision Making Under Uncertainty
+
+A lottery is a vector $$L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)$$. $$x_i$$ 是 realization，$$p_i$$ 是 probability。
+
+对于某个 realization，我们有其 utility $$u(x_i)$$，然后我们定义整个 lottery 的 utility 为 $$U(L) = \mathbb{E}[u(L)]$$ (Von-Neumann Morgenstern Utility Function)。
