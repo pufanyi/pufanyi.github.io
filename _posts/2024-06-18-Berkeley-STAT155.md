@@ -150,3 +150,12 @@ $$
 
 - $$\succeq$$ is monotone $$\Longleftrightarrow$$ $$u$$ is monotone
 - $$\succeq$$ is convex $$\Longleftrightarrow$$ $$u$$ is quasi-concave
+
+当然很显然地：
+
+$$
+\begin{cases}
+x\sim y&\Longleftrightarrow u(x)=u(y)\\
+x\succ y&\Longleftrightarrow u(x)>u(y)
+\end{cases}
+$$
