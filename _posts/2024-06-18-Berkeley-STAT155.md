@@ -177,3 +177,10 @@ A lottery is a vector $$L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)$$. $$x_i$$ �
 $$
 \mathbb{L}(X) = \left\{L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)\mid p_i\ge 0, \sum_{i=1}^n p_i = 1\right\}
 $$
+
+我们同样可以在 $$\mathbb{L}(X)$$ 上定义 $$\succeq$$，而 $$\succeq$$ 需要满足如下公理：
+
+- Completeness: $$\forall L_1, L_2\in\mathbb{L}(X), L_1\succeq L_2\lor L_2\succeq L_1$$
+- Transitivity: $$L_1\succeq L_2, L_2\succeq L_3\Longrightarrow L_1\succeq L_3$$
+- Continuity: $$L_1\succeq L_2\succeq L_3\Longrightarrow \exists\alpha\in[0, 1], L_2\sim \alpha L_1+(1-\alpha)L_3$$
+- Independence: $$L_1\succeq L_2\Longrightarrow \forall \alpha\in[0, 1], \alpha L_1+(1-\alpha)L_3\succeq \alpha L_2+(1-\alpha)L_3$$
