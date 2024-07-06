@@ -13,11 +13,9 @@ toc:
   sidebar: left
 ---
 
-## Week 1
+## Preferences
 
-### Preferences
-
-#### 一些基础定义和概念
+### 一些基础定义和概念
 
 **Consumption Space**: $$X\subseteq\mathbb{R}_+^n$$
 
@@ -27,7 +25,7 @@ toc:
 
 **Strict Preference**: $$x\succ y \Longleftrightarrow x\succeq y \land y\nsucceq x$$
 
-#### 常见的 Assumptions
+### 常见的 Assumptions
 
 Preference 这个概念挺大的，通常我们会带着一些 assumption 来研究。下面是一些常见的 assumption。
 
@@ -130,7 +128,7 @@ $$
 \forall n\in\mathbb{N}, x_n\succeq y_n, x_n\to x, y_n\to y\Longrightarrow x\succeq y
 $$
 
-### Utility Functions
+## Utility Functions
 
 我们定义一个 $$u: X\to \mathbb{R}$$ 使得
 
@@ -155,3 +153,11 @@ x\sim y\Longleftrightarrow u(x)=u(y)\\
 x\succ y\Longleftrightarrow u(x)>u(y)
 \end{cases}
 $$
+
+## Marginal Utility
+
+$$
+\mathrm{MU}(x)=\frac{\partial u(x)}{\partial x}
+$$
+
+一般比如说对钱，我们会有 $$\mathrm{MU}(x)$$ 是递减的。给的越多，多一块的价值越小。也就是 $$u''(x)<0$$。
