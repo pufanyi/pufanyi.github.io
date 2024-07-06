@@ -118,15 +118,11 @@ $$
 x\succeq z, y\succeq z, y\neq x\Longrightarrow \forall\alpha\in(0, 1), \alpha x+(1-\alpha)y\succ z
 $$
 
-{% details quasi-concave %}
-
 我们称 $$f$$ 是 quasi-concave 的当且仅当
 
 $$
 f(\lambda x+(1-\lambda)y)\le\max\{f(x), f(y)\}
 $$
-
-{% enddetails %}
 
 **Continuous Preference**:
 
