@@ -151,7 +151,7 @@ $$
 
 $$
 \begin{cases}
-x\sim y&\Longleftrightarrow u(x)=u(y)\\
-x\succ y&\Longleftrightarrow u(x)>u(y)
+x\sim y\Longleftrightarrow u(x)=u(y)\\
+x\succ y\Longleftrightarrow u(x)>u(y)
 \end{cases}
 $$
