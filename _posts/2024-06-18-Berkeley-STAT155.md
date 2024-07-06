@@ -184,3 +184,5 @@ $$
 - Transitivity: $$L_1\succeq L_2, L_2\succeq L_3\Longrightarrow L_1\succeq L_3$$
 - Continuity: $$L_1\succeq L_2\succeq L_3\Longrightarrow \exists\alpha\in[0, 1], L_2\sim \alpha L_1+(1-\alpha)L_3$$
 - Independence: $$L_1\succeq L_2\Longrightarrow \forall \alpha\in[0, 1], \alpha L_1+(1-\alpha)L_3\succeq \alpha L_2+(1-\alpha)L_3$$
+
+**Von Neumann–Morgenstern utility theorem**: 上面四条同时 hold，等价于存在一个 $$u$$，并且任何可行的 $$u'$$ 都可以通过一个 affine transformation 得到：$$u' = a+bu, b>0$$。
