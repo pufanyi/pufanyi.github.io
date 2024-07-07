@@ -196,3 +196,9 @@ $$
 - Risk Loving: $$u(\mathbb{E}[L])\le \mathbb{E}[u(L)]$$
 
 用 Jensen's inequality 很好判断: For a convex function $$f$$, we have $$f(\mathbb{E}[X])\le \mathbb{E}[f(X)]$$.
+
+对于一个 Risk Averse 的 agent，会有一个 $$\mathrm{CE}$$ 来表示他愿意用这么多钱来换取一个稳定的状态：
+
+$$
+u(\mathbb{E}[L]-\mathrm{CE}) = \mathbb{E}[u(L)]
+$$
