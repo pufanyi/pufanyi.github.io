@@ -279,3 +279,33 @@ $$
 很显然 $$A\sim B, C\sim D$$。尽管 A 和 B 加起来和 C 和 D 加起来是一样的，但大部分人会认为 $$A\succ C, B\succ D$$。
 
 这是因为人们不喜欢不确定性，也就是 ambiguity aversion。
+
+## Introduction to Game Theory
+
+接下来正是讨论 Game Theory 了。
+
+之前我们考虑的都是一个人的选择，现在是多人的决策问题，也就是说我们要考虑别人的操作。
+
+有 $$N$$ 个 agents，每个 agent 有一个 action set
+
+$$
+S_i = \{s_{1}^i, s_{2}^i, \cdots, s_{N_i}^i\}
+$$
+
+The set of possible strategy profiles is
+
+$$
+S = S_1\times S_2\times\cdots\times S_N
+$$
+
+对于一个游戏，第 $$i$$ 个人选了决策 $$s_i$$，我们有 $$s=(s_1, s_2, \cdots, s_N)$$。
+
+这样子我们可以定义第 $$i$$ 个人的 utility function 为 $$u_i(s)$$，我们也叫做 payoff function。
+
+两个人的时候我们通常写成表格的形式：
+
+|          | Rock        | Paper       | Scissors    |
+| -------- | ----------- | ----------- | ----------- |
+| Rock     | $$(0, 0)$$  | $$(-1, 1)$$ | $$(1, -1)$$ |
+| Paper    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
+| Scissors | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
