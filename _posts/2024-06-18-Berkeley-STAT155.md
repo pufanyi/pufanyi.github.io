@@ -23,7 +23,7 @@ toc:
 
 **Indifference**: $$x\sim y \Longleftrightarrow x\succsim y \land y\succsim x$$
 
-**Strict Preference**: $$x\succ y \Longleftrightarrow x\succsim y \land y\nsim x$$
+**Strict Preference**: $$x\succ y \Longleftrightarrow x\succsim y \land x\nsim y$$
 
 ### 常见的 Assumptions
 
@@ -277,3 +277,5 @@ $$
 - D: 从第二个盒子里随机抽一个球，如果是黑球，拿 100 块钱，否则拿 0 块钱
 
 很显然 $$A\sim B, C\sim D$$。尽管 A 和 B 加起来和 C 和 D 加起来是一样的，但大部分人会认为 $$A\succ C, B\succ D$$。
+
+这是因为人们不喜欢不确定性，也就是 ambiguity aversion。
