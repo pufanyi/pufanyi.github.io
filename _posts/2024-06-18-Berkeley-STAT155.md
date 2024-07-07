@@ -244,3 +244,9 @@ $$
 $$
 u(1)\times 0.11 > u(5)\times 0.1
 $$
+
+两个式子是矛盾的。
+
+这让我们意识到其实在人真正考虑概率的时候，将“小概率发生”和“完全不发生”是分的很明确的。因为上面那个例子很多人时看到 D 项中有 $$1\%$$ 的概率拿不到钱而去选 C 项。解决方法是我们对概率需要加一个修正函数 $$\pi(p)$$，使得我们的 utility function 变为 $$u(x)\times\pi(p)$$。这个 $$\pi$$ 函数在 $$p=0$$ 的时候会有一个陡增。
+
+{% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/allais_paradox_pi.png" class="img-fluid rounded z-depth-1" zoomable=true %}
