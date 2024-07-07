@@ -227,3 +227,20 @@ $$
 - Lottery B: $$\left(\$5\times 10^6, 10\%; \$0, 90\%\right)$$
 - Lottery C: $$\left(\$10^6, 100\%\right)$$
 - Lottery D: $$\left(\$5\times 10^6, 10\%; \$10^6, 89\%, \$0, 1\%\right)$$
+
+A 比 B，C 比 D。几乎大部分人会更喜欢 B 和 C。（虽然其实我上课的时候选了 B 和 D 呃呃呃）
+
+我们令 $$u(x)$$ 表示获得 $$x\times 10^6$$ 块钱，于是我们有：
+
+$$
+\begin{cases}
+u(1)\times 0.11 < u(5)\times 0.1\\
+u(1)>u(5)\times 0.1+u(1)\times 0.89
+\end{cases}
+$$
+
+而下面一个式子化简一下能得到：
+
+$$
+u(1)\times 0.11 > u(5)\times 0.1
+$$
