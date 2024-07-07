@@ -19,7 +19,7 @@ toc:
 
 **Consumption Space**: $$X\subseteq\mathbb{R}_+^n$$
 
-**Preference Relation**: $$x\succsim y$$, $$x$$ is as lease as good as $$y$$
+**Preference Relation**: $$x\succsim y$$ or $$x\succeq y$$, $$x$$ is as lease as good as $$y$$
 
 **Indifference**: $$x\sim y \Longleftrightarrow x\succsim y \land y\succsim x$$
 
