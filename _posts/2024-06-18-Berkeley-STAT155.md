@@ -280,7 +280,7 @@ $$
 
 这是因为人们不喜欢不确定性，也就是 ambiguity aversion。
 
-## Introduction to Game Theory
+## Payoff Functions
 
 接下来正是讨论 Game Theory 了。
 
@@ -291,6 +291,8 @@ $$
 $$
 S_i = \{s_{1}^i, s_{2}^i, \cdots, s_{N_i}^i\}
 $$
+
+当然后面好像也有很多是写成 $$\mathcal{A}_i$$ 的，反正看得懂就行。
 
 The set of possible strategy profiles is
 
@@ -309,3 +311,7 @@ $$
 | Rock     | $$(0, 0)$$  | $$(-1, 1)$$ | $$(1, -1)$$ |
 | Paper    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
 | Scissors | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
+
+## Zero-Sum Games
+
+最先讨论的是零和博弈。
