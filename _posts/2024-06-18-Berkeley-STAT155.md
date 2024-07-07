@@ -210,3 +210,9 @@ R_A(x)=-\frac{u''(x)}{u'(x)}
 $$
 
 我们将其称作 Arrow-Pratt Absolute Risk Aversion Coefficient，越大越 risk averse。
+
+但是有时候钱越多我们就会越极端，所以我们考虑定义 Relative Risk Aversion：
+
+$$
+R_R(x)=-x\cdot\frac{u''(x)}{u'(x)}
+$$
