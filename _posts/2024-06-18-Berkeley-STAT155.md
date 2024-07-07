@@ -164,6 +164,8 @@ $$
 
 ## Decision Making Under Uncertainty
 
+### Lotteries
+
 在有 uncertainty 的情况下，用户做的决策是 lotteries，而不是确定的 goods。
 
 A lottery is a vector $$L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)$$. $$x_i$$ 是 realization，$$p_i$$ 是 probability。
@@ -187,7 +189,7 @@ $$
 
 **Von Neumann–Morgenstern utility theorem**: 上面四条同时 hold，等价于存在一个 $$u$$，并且任何可行的 $$u'$$ 都可以通过一个 affine transformation 得到：$$u' = a+bu, b>0$$。
 
-## Risk Aversion
+### Risk Aversion
 
 对于一个通过 $$u$$ 来进行选择的 agent，我们判断他是否喜欢 take risks：
 
@@ -216,3 +218,12 @@ $$
 $$
 R_R(x)=-x\cdot\frac{u''(x)}{u'(x)}
 $$
+
+### Allais Paradox
+
+考虑四个 lotteries：
+
+- Lottery A: $$\left(\$10^6, 11\%; \$0, 89\%\right)$$
+- Lottery B: $$\left(\$5\times 10^6, 10\%; \$0, 90\%\right)$$
+- Lottery C: $$\left(\$10^6, 100\%\right)$$
+- Lottery D: $$\left(\$5\times 10^6, 10\%; \$10^6, 89\%, \$0, 1\%\right)$$
