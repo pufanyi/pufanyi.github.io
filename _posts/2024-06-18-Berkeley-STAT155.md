@@ -9,6 +9,7 @@ tags:
 # pseudocode: true
 giscus_comments: true
 related_posts: false
+pretty_table: true
 toc:
   sidebar: left
 ---
