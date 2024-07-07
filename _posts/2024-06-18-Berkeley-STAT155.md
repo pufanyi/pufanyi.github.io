@@ -175,7 +175,7 @@ A lottery is a vector $$L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)$$. $$x_i$$ �
 这时候问题就简化为我们有 $$n$$ 个 realizations $$X = \{x_1, x_2, \cdots, x_n\}$$，将这 $$n$$ 个 realizations 做线性组合，我们将这个 simplex 定义为 $$\mathbb{L}(X)$$，也就是：
 
 $$
-\mathbb{L}(X) = \left\{L = (x_1, p_1; x_2, p_2; \cdots; x_n, p_n)\mid p_i\ge 0, \sum_{i=1}^n p_i = 1\right\}
+\mathbb{L}(X) = \left\{(x_1, p_1; x_2, p_2; \cdots; x_n, p_n): p_i\ge 0, \sum_{i=1}^n p_i = 1\right\}
 $$
 
 我们同样可以在 $$\mathbb{L}(X)$$ 上定义 $$\succeq$$，而 $$\succeq$$ 需要满足如下公理：
