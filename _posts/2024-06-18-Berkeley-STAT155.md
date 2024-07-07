@@ -202,3 +202,11 @@ $$
 $$
 u(\mathbb{E}[L]-\mathrm{CE}) = \mathbb{E}[u(L)]
 $$
+
+我们考虑把一个 agent 的对 risk 的态度量化地表示，我们考虑 $$-u''(x)$$ 的正负是个很好的指标。但如果 $$v=a+bu$$，那么 $$-v''(x)\neq -u''(x)$$，所以我们考虑：
+
+$$
+R_A(x)=-\frac{u''(x)}{u'(x)}
+$$
+
+我们将其称作 Arrow-Pratt Absolute Risk Aversion Coefficient，越大越 risk averse。
