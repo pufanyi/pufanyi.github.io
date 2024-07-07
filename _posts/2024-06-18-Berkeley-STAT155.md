@@ -330,3 +330,19 @@ $$
 | Rock     | $$0$$  | $$-1$$ | $$1$$    |
 | Paper    | $$1$$  | $$0$$  | $$-1$$   |
 | Scissors | $$-1$$ | $$1$$  | $$0$$    |
+
+这样子也就是 $$P_1$$ 要最大化 $$P_2$$ 要最小化。
+
+### Maxmin and Minmax Strategies
+
+Maxmin: $$P_1$$ 先来，然后他考虑 $$P_2$$ 的最优策略，也就是：
+
+$$
+\underline{v} = \max_{s_1\in\mathcal{S}_1}\min_{s_2\in\mathcal{S}_2}u_1(s_1, s_2)
+$$
+
+Minmax: $$P_2$$ 先来，然后他考虑 $$P_1$$ 的最优策略，也就是：
+
+$$
+\overline{v} = \min_{s_2\in\mathcal{S}_2}\max_{s_1\in\mathcal{S}_1}u_1(s_1, s_2)
+$$
