@@ -19,11 +19,11 @@ toc:
 
 **Consumption Space**: $$X\subseteq\mathbb{R}_+^n$$
 
-**Preference Relation**: $$x\succeq y$$, $$x$$ is as lease as good as $$y$$
+**Preference Relation**: $$x\succsim y$$, $$x$$ is as lease as good as $$y$$
 
-**Indifference**: $$x\sim y \Longleftrightarrow x\succeq y \land y\succeq x$$
+**Indifference**: $$x\sim y \Longleftrightarrow x\succsim y \land y\succsim x$$
 
-**Strict Preference**: $$x\succ y \Longleftrightarrow x\succeq y \land y\nsucceq x$$
+**Strict Preference**: $$x\succ y \Longleftrightarrow x\succsim y \land y\nsim x$$
 
 ### 常见的 Assumptions
 
@@ -83,7 +83,7 @@ $$
 **Locally Satisfied Preference**:
 
 $$
-\forall x\in X, \forall \epsilon>0, \exists y, \lVert x-y\rVert<\epsilon\land y\succeq x
+\forall x\in X, \forall \epsilon>0, \exists y, \lVert x-y\rVert<\epsilon\land y\succsim x
 $$
 
 旁边总有比他好的。
@@ -107,13 +107,13 @@ $$
 **Convex Preference**:
 
 $$
-x\succeq z, y\succeq z\Longrightarrow\forall\alpha\in[0, 1], \alpha x+(1-\alpha)y\succeq z
+x\succsim z, y\succsim z\Longrightarrow\forall\alpha\in[0, 1], \alpha x+(1-\alpha)y\succsim z
 $$
 
 **Strictly Convex Preference**:
 
 $$
-x\succeq z, y\succeq z, y\neq x\Longrightarrow \forall\alpha\in(0, 1), \alpha x+(1-\alpha)y\succ z
+x\succsim z, y\succsim z, y\neq x\Longrightarrow \forall\alpha\in(0, 1), \alpha x+(1-\alpha)y\succ z
 $$
 
 我们称 $$f$$ 是 quasi-concave 的当且仅当
@@ -125,7 +125,7 @@ $$
 **Continuous Preference**:
 
 $$
-\forall n\in\mathbb{N}, x_n\succeq y_n, x_n\to x, y_n\to y\Longrightarrow x\succeq y
+\forall n\in\mathbb{N}, x_n\succsim y_n, x_n\to x, y_n\to y\Longrightarrow x\succsim y
 $$
 
 ## Utility Functions
@@ -133,17 +133,17 @@ $$
 我们定义一个 $$u: X\to \mathbb{R}$$ 使得
 
 $$
-u(x)\ge u(y)\Longleftrightarrow x\succeq y
+u(x)\ge u(y)\Longleftrightarrow x\succsim y
 $$
 
-我们说是 $$u$$ represents $$\succeq$$。
+我们说是 $$u$$ represents $$\succsim$$。
 
-这个 $$u$$ 就是 $$\succeq$$ 的 utility functions。
+这个 $$u$$ 就是 $$\succsim$$ 的 utility functions。
 
-一个定理是 $$\succeq$$ 是 rational and continuous 的当且仅当存在一个连续的 $$u$$。
+一个定理是 $$\succsim$$ 是 rational and continuous 的当且仅当存在一个连续的 $$u$$。
 
-- $$\succeq$$ is monotone $$\Longleftrightarrow$$ $$u$$ is monotone
-- $$\succeq$$ is convex $$\Longleftrightarrow$$ $$u$$ is quasi-concave
+- $$\succsim$$ is monotone $$\Longleftrightarrow$$ $$u$$ is monotone
+- $$\succsim$$ is convex $$\Longleftrightarrow$$ $$u$$ is quasi-concave
 
 当然很显然地：
 
@@ -180,12 +180,12 @@ $$
 \mathbb{L}(X) = \left\{(x_1, p_1; x_2, p_2; \cdots; x_n, p_n): p_i\ge 0, \sum_{i=1}^n p_i = 1\right\}
 $$
 
-我们同样可以在 $$\mathbb{L}(X)$$ 上定义 $$\succeq$$，而 $$\succeq$$ 需要满足如下公理：
+我们同样可以在 $$\mathbb{L}(X)$$ 上定义 $$\succsim$$，而 $$\succsim$$ 需要满足如下公理：
 
-- Completeness: $$\forall L_1, L_2\in\mathbb{L}(X), L_1\succeq L_2\lor L_2\succeq L_1$$
-- Transitivity: $$L_1\succeq L_2, L_2\succeq L_3\Longrightarrow L_1\succeq L_3$$
-- Continuity: $$L_1\succeq L_2\succeq L_3\Longrightarrow \exists\alpha\in[0, 1], L_2\sim \alpha L_1+(1-\alpha)L_3$$
-- Independence: $$L_1\succeq L_2\Longrightarrow \forall \alpha\in[0, 1], \alpha L_1+(1-\alpha)L_3\succeq \alpha L_2+(1-\alpha)L_3$$
+- Completeness: $$\forall L_1, L_2\in\mathbb{L}(X), L_1\succsim L_2\lor L_2\succsim L_1$$
+- Transitivity: $$L_1\succsim L_2, L_2\succsim L_3\Longrightarrow L_1\succsim L_3$$
+- Continuity: $$L_1\succsim L_2\succsim L_3\Longrightarrow \exists\alpha\in[0, 1], L_2\sim \alpha L_1+(1-\alpha)L_3$$
+- Independence: $$L_1\succsim L_2\Longrightarrow \forall \alpha\in[0, 1], \alpha L_1+(1-\alpha)L_3\succsim \alpha L_2+(1-\alpha)L_3$$
 
 **Von Neumann–Morgenstern utility theorem**: 上面四条同时 hold，等价于存在一个 $$u$$，并且任何可行的 $$u'$$ 都可以通过一个 affine transformation 得到：$$u' = a+bu, b>0$$。
 
@@ -265,6 +265,15 @@ $$
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/allais_paradox_pi.png" class="img-fluid rounded z-depth-1" %}
 
-### Ellsberg Paradox
+### Ambiguity Aversion
 
 另一个叫 Ellsberg Paradox 的悖论，我们考虑现在有两个盒子，每个盒子有 100 个红球或黑球。第一个盒子有 50 红 50 黑，第二个盒子啥也不知道。
+
+有四个选项：
+
+- A: 从第一个盒子里随机抽一个球，如果是红球，拿 100 块钱，否则拿 0 块钱
+- B: 从第一个盒子里随机抽一个球，如果是黑球，拿 100 块钱，否则拿 0 块钱
+- C: 从第二个盒子里随机抽一个球，如果是红球，拿 100 块钱，否则拿 0 块钱
+- D: 从第二个盒子里随机抽一个球，如果是黑球，拿 100 块钱，否则拿 0 块钱
+
+很显然 $$A\sim B, C\sim D$$。尽管 A 和 B 加起来和 C 和 D 加起来是一样的，但大部分人会认为 $$A\succ C, B\succ D$$。
