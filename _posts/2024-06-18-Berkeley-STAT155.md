@@ -346,3 +346,9 @@ Minmax: $$P_2$$ 先来，然后他考虑 $$P_1$$ 的最优策略，也就是：
 $$
 \overline{v} = \min_{s_2\in\mathcal{S}_2}\max_{s_1\in\mathcal{S}_1}u_1(s_1, s_2)
 $$
+
+很显然后手肯定是占优的，所以
+
+$$
+\underline{v}\le \overline{v}
+$$
