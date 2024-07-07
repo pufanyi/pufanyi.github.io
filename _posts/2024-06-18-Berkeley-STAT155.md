@@ -289,7 +289,7 @@ $$
 有 $$N$$ 个 agents，每个 agent 有一个 action set
 
 $$
-S_i = \{s_{1}^i, s_{2}^i, \cdots, s_{N_i}^i\}
+\mathcal{S}_i = \{s_{1}^i, s_{2}^i, \cdots, s_{N_i}^i\}
 $$
 
 当然后面好像也有很多是写成 $$\mathcal{A}_i$$ 的，反正看得懂就行。
@@ -297,10 +297,10 @@ $$
 The set of possible strategy profiles is
 
 $$
-S = S_1\times S_2\times\cdots\times S_N
+\mathcal{S} = \mathcal{S}_1\times \mathcal{S}_2\times\cdots\times \mathcal{S}_N
 $$
 
-对于一个游戏，第 $$i$$ 个人选了决策 $$s_i$$，我们有 $$s=(s_1, s_2, \cdots, s_N)$$。
+对于一个游戏，第 $$i$$ 个人选了决策 $$s_i$$，我们有 $$s=(s_1, s_2, \cdots, s_N)\in\mathcal{S}$$。
 
 这样子我们可以定义第 $$i$$ 个人的 utility function 为 $$u_i(s)$$，我们也叫做 payoff function。
 
@@ -314,4 +314,18 @@ $$
 
 ## Zero-Sum Games
 
-最先讨论的是零和博弈。
+最先讨论的是零和博弈。也就是
+
+$$
+\forall s\in \mathcal{S}, \sum_{i=1}^N u_i(s) = 0
+$$
+
+你要获利的唯一方法是让别人变差。
+
+对于双人的，我们可以在表中只写第一个人的 payoff：
+
+|          | Rock        | Paper       | Scissors    |
+| -------- | ----------- | ----------- | ----------- |
+| Rock     | $$0$$      | $$-1$$     | $$1$$      |
+| Paper    | $$1$$      | $$0$$      | $$-1$$     |
+| Scissors | $$-1$$     | $$1$$      | $$0$$      |
