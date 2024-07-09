@@ -352,3 +352,5 @@ $$
 $$
 \underline{v}\le \overline{v}
 $$
+
+如果 $$\underline{v} = \overline{v}$$，我们定义 $$v=\underline{v}=\overline{v}$$ 为 the value of the game。
