@@ -393,3 +393,9 @@ $$
 \min\max(U)&=\min_{\boldsymbol{q}\in\Delta[m]}\max_{x\in[n]}\sum_{j\in\mathcal{m}}q_j\cdot U_{x, j}
 \end{aligned}
 $$
+
+Von Neumann's Minimax Theorem: 对于零和博弈
+
+$$
+\max\min(U) = \min\max(U)
+$$
