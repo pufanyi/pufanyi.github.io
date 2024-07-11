@@ -345,9 +345,9 @@ $$
 
 对于每个人策略一定在一个 simplex 上，我们定义其为 $$\Delta(\mathcal{I})$$ 和 $$\Delta(\mathcal{J})$$。
 
-### Maxmin and Minmax Strategies
+### Security Level
 
-Maxmin: $$P_1$$ 先来，然后他考虑 $$P_2$$ 的最优策略。
+$$\underline{v}$$: $$P_1$$ 先来，然后他考虑 $$P_2$$ 的最优策略。
 
 对于 pure strategies：
 
@@ -361,7 +361,7 @@ $$
 \underline{v} = \max_{\boldsymbol{p}\in\Delta(\mathcal{I})}\min_{\boldsymbol{q}\in\Delta(\mathcal{J})}p^{\top}Mq
 $$
 
-Minmax: $$P_2$$ 先来，然后他考虑 $$P_1$$ 的最优策略。
+$$\overline{v}$$: $$P_2$$ 先来，然后他考虑 $$P_1$$ 的最优策略。
 
 对于 pure strategies：
 
@@ -382,3 +382,14 @@ $$
 $$
 
 如果 $$\underline{v} = \overline{v}$$，我们定义 $$v=\underline{v}=\overline{v}$$ 为 the value of the game。
+
+### Maxmin and Minmax Strategies
+
+对于 maxmin 和 minmax，我们考虑的是假设我们告诉对手我们的策略（包含概率），对手选择最优 pure strategy。对于一个 $$n\times m$$ 的矩阵 $$U$$：
+
+$$
+\begin{aligned}
+\max\min(U)&=\max_{\boldsymbol{p}\in\Delta[n]}\min_{y\in[m]}\sum_{i\in\mathcal{n}}p_i\cdot U_{i, y}\\
+\min\max(U)&=\min_{\boldsymbol{q}\in\Delta[m]}\max_{x\in[n]}\sum_{j\in\mathcal{m}}q_j\cdot U_{x, j}
+\end{aligned}
+$$
