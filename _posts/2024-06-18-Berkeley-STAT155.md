@@ -313,27 +313,9 @@ $$
 | **Paper**    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
 | **Scissors** | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
 
-## Zero-Sum Games
+## Strategies
 
-最先讨论的是零和博弈。也就是
-
-$$
-\forall s\in \mathcal{S}, \sum_{i=1}^N u_i(s) = 0
-$$
-
-你要获利的唯一方法是让别人变差。
-
-对于双人的，我们可以在表中只写第一个人的 payoff：
-
-|              | Rock   | Paper  | Scissors |
-| ------------ | ------ | ------ | -------- |
-| **Rock**     | $$0$$  | $$-1$$ | $$1$$    |
-| **Paper**    | $$1$$  | $$0$$  | $$-1$$   |
-| **Scissors** | $$-1$$ | $$1$$  | $$0$$    |
-
-这样子也就是 $$P_1$$ 要最大化 $$P_2$$ 要最小化。
-
-### Maxmin and Minmax Strategies
+### Maxmin and Minmax Strategies for Pure Strategies
 
 Maxmin: $$P_1$$ 先来，然后他考虑 $$P_2$$ 的最优策略，也就是：
 
@@ -354,3 +336,23 @@ $$
 $$
 
 如果 $$\underline{v} = \overline{v}$$，我们定义 $$v=\underline{v}=\overline{v}$$ 为 the value of the game。
+
+## Zero-Sum Games
+
+最先讨论的是零和博弈。也就是
+
+$$
+\forall s\in \mathcal{S}, \sum_{i=1}^N u_i(s) = 0
+$$
+
+你要获利的唯一方法是让别人变差。
+
+对于双人的，我们可以在表中只写第一个人的 payoff：
+
+|              | Rock   | Paper  | Scissors |
+| ------------ | ------ | ------ | -------- |
+| **Rock**     | $$0$$  | $$-1$$ | $$1$$    |
+| **Paper**    | $$1$$  | $$0$$  | $$-1$$   |
+| **Scissors** | $$-1$$ | $$1$$  | $$0$$    |
+
+这样子也就是 $$P_1$$ 要最大化 $$P_2$$ 要最小化。
