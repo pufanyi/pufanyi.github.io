@@ -333,6 +333,14 @@ $$
 
 这样子也就是 $$P_1$$ 要最大化 $$P_2$$ 要最小化。
 
+如果一个游戏不是零和的，我们可以加一个人，让
+
+$$
+u_{N+1}(a_1, a_2, \cdots, a_N) = -\sum_{i=1}^N u_i(a_1, a_2, \cdots, a_N)
+$$
+
+这样子就变成了零和博弈。
+
 ### Pure Strategies and Mixed Strategies
 
 Pure strategy 指的是一个人只能选一个 action，而 mixed strategy 指的是一个人可以通过概率分布选多个 actions。
