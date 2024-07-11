@@ -315,7 +315,17 @@ $$
 
 ## Strategies
 
-### Maxmin and Minmax Strategies for Pure Strategies
+### Pure Strategies and Mixed Strategies
+
+Pure strategy 指的是一个人只能选一个 action，而 mixed strategy 指的是一个人可以通过概率分布选多个 actions。
+
+假设 $$P_1$$ 选的概率为 $$\boldsymbol{p}$$，$$P_2$$ 选的为 $$\boldsymbol{q}$$。$$P_1$$ 的 payoff 为 $$M$$，那么我们有 $$P_1$$ 的 expected payoff：
+
+$$
+U(\boldsymbol{p}, \boldsymbol{q}) = \sum_{i\in\mathcal{I}}\sum_{j\in\mathcal{J}}M_{ij}p_iq_j=p^{\top}Mq
+$$
+
+### Maxmin and Minmax Strategies
 
 Maxmin: $$P_1$$ 先来，然后他考虑 $$P_2$$ 的最优策略，也就是：
 
@@ -326,7 +336,7 @@ $$
 Minmax: $$P_2$$ 先来，然后他考虑 $$P_1$$ 的最优策略，也就是：
 
 $$
-\overline{v} = \min_{s_2\in\mathcal{S}_2}\max_{s_1\in\mathcal{S}_1}u_1(s_1, s_2)
+\overline{v} = \min_{s_2\in\mathcal{S}_2}\max_{s_1\in\mathcal{S}_1}u_2(s_1, s_2)
 $$
 
 很显然后手肯定是占优的，所以
