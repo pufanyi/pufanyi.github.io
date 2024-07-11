@@ -325,7 +325,9 @@ $$
 U(\boldsymbol{p}, \boldsymbol{q}) = \sum_{i\in\mathcal{I}}\sum_{j\in\mathcal{J}}M_{ij}p_iq_j=p^{\top}Mq
 $$
 
-### Maxmin and Minmax Strategies
+对于每个人策略一定在一个 simplex 上，我们定义其为 $$\Delta(\mathcal{I})$$ 和 $$\Delta(\mathcal{J})$$。
+
+### Maxmin and Minmax Strategies for Pure Strategies
 
 Maxmin: $$P_1$$ 先来，然后他考虑 $$P_2$$ 的最优策略，也就是：
 
