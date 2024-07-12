@@ -321,6 +321,8 @@ A strategic game consists of
 - Actions: $$\mathcal{A}=\mathcal{A_1}\times\cdots\times\mathcal{A}_N$$;
 - Preferences: $$\succsim_i$$ for each player $$i$$.
 
+当然很多情况下我们可以用 payoff function 来表示 preference。
+
 ## Zero-Sum Games
 
 最先讨论的是零和博弈。也就是
