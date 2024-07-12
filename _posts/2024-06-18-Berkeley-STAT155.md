@@ -316,6 +316,14 @@ $$
 
 对于第 $$i$$ 个玩家，假设现在有 information $$H\in\mathscr{H}_i$$，那么定义他可行的方案 $$\mathcal{C}_i(H)\subseteq\mathcal{A}_i$$（对于每个 $$H$$ 可行方案肯定是一样的，否则他就有更多 information 了），然后我们定义他的 strategy 为 $$s_i: \mathscr{H}_i\to\mathcal{A}_i$$ 并且 $$s_i(H)\in\mathcal{C}_i(H)$$。
 
+最终综合每个人的选择，我们有一个 strategy profile:
+
+$$
+s = (s_1, s_2, \cdots, s_N)\in \mathcal{S}
+$$
+
+而很多时候我们会关注某个 player $$i$$ 的 strategy，我们一般会将 strategy profile 写作 $$(s_i, s_{-i})$$，其中 $$s_{-i}$$ 是除了 $$i$$ 以外的其他人的 strategy。
+
 ### Payoff Functions
 
 对于一个游戏，第 $$i$$ 个人选了决策 $$s_i$$，我们有 $$s=(s_1, s_2, \cdots, s_N)\in\mathcal{S}$$。
