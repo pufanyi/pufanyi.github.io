@@ -324,7 +324,7 @@ A strategic game consists of
 
 当然很多情况下我们可以用 payoff function 来表示 preference。
 
-对于一个游戏，每个人都会有一个 infomation
+对于一个游戏，在玩的过程中，每个人都会有一个 information $$H$$，对于第 $$i$$ 个人所有可能的 information 集合我们记作 information sets $$\mathscr{H}_i$$。玩家只能看到 $$H$$ 以内的东西，其他的（比如 $$H$$ 以外别人的决策）他是看不见的。
 
 ## Zero-Sum Games
 
