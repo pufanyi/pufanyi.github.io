@@ -326,6 +326,8 @@ A strategic game consists of
 
 对于一个游戏，在玩的过程中，每个人都会有一个 information $$H$$，对于第 $$i$$ 个人所有可能的 information 集合我们记作 information sets $$\mathscr{H}_i$$。玩家只能看到 $$H$$ 以内的东西，其他的（比如 $$H$$ 以外别人的决策）他是看不见的。
 
+对于第 $$i$$ 个玩家，假设现在有 information $$H\in\mathscr{H}_i$$，那么定义他可行的方案 $$\mathcal{C}_i(H)\subseteq\mathcal{A}_i$$（对于每个 $$H$$ 可行方案肯定是一样的，否则他就有更多 information 了），然后我们定义他的 strategy 为 $$s_i: \mathscr{H}_i\to\mathcal{A}_i$$ 并且 $$s_i(H)\in\mathcal{C}_i(H)$$。
+
 ## Zero-Sum Games
 
 最先讨论的是零和博弈。也就是
