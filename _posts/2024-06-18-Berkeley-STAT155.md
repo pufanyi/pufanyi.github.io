@@ -338,6 +338,14 @@ $$
 | **Paper**    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
 | **Scissors** | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
 
+### Strategy Form
+
+我们定义一个 simple game 的 strategy / normal form 为：
+
+$$
+\Gamma = \left<N, \left\{S_i\right\}, \left\{u_i(\cdot)\right\}\right>
+$$
+
 ## Zero-Sum Games
 
 最先讨论的是零和博弈。也就是
