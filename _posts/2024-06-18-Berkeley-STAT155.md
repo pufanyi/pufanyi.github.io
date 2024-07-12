@@ -317,12 +317,14 @@ $$
 
 A strategic game consists of
 
-- The players $$\mathcal{N} = \{1, 2, \cdots, N\}$$;
-- Actions: $$\mathcal{A}=\mathcal{A_1}\times\cdots\times\mathcal{A}_N$$;
-- Outcomes;
-- Preferences: $$\succsim_i$$ for each player $$i$$.
+- The players $$\mathcal{N} = \{1, 2, \cdots, N\}$$
+- Actions: $$\mathcal{A}=\mathcal{A_1}\times\cdots\times\mathcal{A}_N$$
+- Preferences: $$\succsim_i$$ for each player $$i$$
+- Outcomes
 
 当然很多情况下我们可以用 payoff function 来表示 preference。
+
+对于一个游戏，每个人都会有一个 infomation
 
 ## Zero-Sum Games
 
