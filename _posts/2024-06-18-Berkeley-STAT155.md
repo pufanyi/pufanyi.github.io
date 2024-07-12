@@ -304,15 +304,19 @@ A strategic game consists of
 - Preferences: $$\succsim_i$$ for each player $$i$$
 - Outcomes
 
-当然很多情况下我们可以用 payoff function 来表示 preference。
-
-### Payoff Functions
+### Information Sets and Strategies
 
 The set of possible strategy profiles is
 
 $$
 \mathcal{S} = \mathcal{S}_1\times \mathcal{S}_2\times\cdots\times \mathcal{S}_N
 $$
+
+对于一个游戏，在玩的过程中，每个人都会有一个 information $$H$$，对于第 $$i$$ 个人所有可能的 information 集合我们记作 information sets $$\mathscr{H}_i$$。玩家只能看到 $$H$$ 以内的东西，其他的（比如 $$H$$ 以外别人的决策）他是看不见的。
+
+对于第 $$i$$ 个玩家，假设现在有 information $$H\in\mathscr{H}_i$$，那么定义他可行的方案 $$\mathcal{C}_i(H)\subseteq\mathcal{A}_i$$（对于每个 $$H$$ 可行方案肯定是一样的，否则他就有更多 information 了），然后我们定义他的 strategy 为 $$s_i: \mathscr{H}_i\to\mathcal{A}_i$$ 并且 $$s_i(H)\in\mathcal{C}_i(H)$$。
+
+### Payoff Functions
 
 对于一个游戏，第 $$i$$ 个人选了决策 $$s_i$$，我们有 $$s=(s_1, s_2, \cdots, s_N)\in\mathcal{S}$$。
 
@@ -325,12 +329,6 @@ $$
 | **Rock**     | $$(0, 0)$$  | $$(-1, 1)$$ | $$(1, -1)$$ |
 | **Paper**    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
 | **Scissors** | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
-
-### Information Sets and Strategies
-
-对于一个游戏，在玩的过程中，每个人都会有一个 information $$H$$，对于第 $$i$$ 个人所有可能的 information 集合我们记作 information sets $$\mathscr{H}_i$$。玩家只能看到 $$H$$ 以内的东西，其他的（比如 $$H$$ 以外别人的决策）他是看不见的。
-
-对于第 $$i$$ 个玩家，假设现在有 information $$H\in\mathscr{H}_i$$，那么定义他可行的方案 $$\mathcal{C}_i(H)\subseteq\mathcal{A}_i$$（对于每个 $$H$$ 可行方案肯定是一样的，否则他就有更多 information 了），然后我们定义他的 strategy 为 $$s_i: \mathscr{H}_i\to\mathcal{A}_i$$ 并且 $$s_i(H)\in\mathcal{C}_i(H)$$。
 
 ## Zero-Sum Games
 
