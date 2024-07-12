@@ -313,6 +313,14 @@ $$
 | **Paper**    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
 | **Scissors** | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
 
+## Definition of a Game
+
+A strategic game consists of
+
+- The players $$\mathcal{N} = \{1, 2, \cdots, N\}$$;
+- Actions: $$\mathcal{A}=\mathcal{A_1}\times\cdots\times\mathcal{A}_N$$;
+- Preferences: $$\succsim_i$$ for each player $$i$$.
+
 ## Zero-Sum Games
 
 最先讨论的是零和博弈。也就是
