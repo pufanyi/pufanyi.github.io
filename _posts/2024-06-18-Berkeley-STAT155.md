@@ -281,7 +281,9 @@ $$
 
 这是因为人们不喜欢不确定性，也就是 ambiguity aversion。
 
-## Payoff Functions
+## Definition of a Game
+
+### Actions and Preferences
 
 接下来正是讨论 Game Theory 了。
 
@@ -294,6 +296,17 @@ $$
 $$
 
 当然后面好像也有很多是写成 $$\mathcal{A}_i$$ 的，反正看得懂就行。
+
+A strategic game consists of
+
+- The players $$\mathcal{N} = \{1, 2, \cdots, N\}$$
+- Actions: $$\mathcal{A}=\mathcal{A_1}\times\cdots\times\mathcal{A}_N$$
+- Preferences: $$\succsim_i$$ for each player $$i$$
+- Outcomes
+
+当然很多情况下我们可以用 payoff function 来表示 preference。
+
+### Payoff Functions
 
 The set of possible strategy profiles is
 
@@ -313,16 +326,7 @@ $$
 | **Paper**    | $$(1, -1)$$ | $$(0, 0)$$  | $$(-1, 1)$$ |
 | **Scissors** | $$(-1, 1)$$ | $$(1, -1)$$ | $$(0, 0)$$  |
 
-## Definition of a Game
-
-A strategic game consists of
-
-- The players $$\mathcal{N} = \{1, 2, \cdots, N\}$$
-- Actions: $$\mathcal{A}=\mathcal{A_1}\times\cdots\times\mathcal{A}_N$$
-- Preferences: $$\succsim_i$$ for each player $$i$$
-- Outcomes
-
-当然很多情况下我们可以用 payoff function 来表示 preference。
+### Information Sets and Strategies
 
 对于一个游戏，在玩的过程中，每个人都会有一个 information $$H$$，对于第 $$i$$ 个人所有可能的 information 集合我们记作 information sets $$\mathscr{H}_i$$。玩家只能看到 $$H$$ 以内的东西，其他的（比如 $$H$$ 以外别人的决策）他是看不见的。
 
