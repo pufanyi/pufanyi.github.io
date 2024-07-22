@@ -471,8 +471,20 @@ $$
 \exists s_i'\in\mathcal{S}_i, \forall s_{-i}\in\mathcal{S}_{-i}, u_i(s_i', s_{-i})\ge u_i(s_i, s_{-i})
 $$
 
-### Iterated Elimination of Dominated Strategies
+### Iterated Elimination of Strictly Dominated Strategies
 
 Strictly dominated strategies 一定不会被选，所以我们可以直接把这个策略去掉。然后我们就可以不断找每个人的 strictly dominated strategies，然后去掉来简化游戏。
 
 不能用 weekly dominated strategies，因为这些策略还是有可能会被选的。
+
+### Strictly Dominated Strategies in Mixed Strategies
+
+有时候尽管 pure strategy 不存在 strictly dominated strategies，考虑 mixed strategies 时可能会存在。
+
+比如说
+
+|       |     D     |     E     |
+| ----- | :-------: | :-------: |
+| **A** | $$10, 1$$ | $$0, 0$$  |
+| **B** | $$4, 2$$  | $$4, 1$$  |
+| **C** | $$0, 5$$  | $$10, 2$$ |
