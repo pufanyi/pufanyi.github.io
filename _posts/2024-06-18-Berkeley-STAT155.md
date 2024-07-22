@@ -440,3 +440,15 @@ Von Neumann's Minimax Theorem: 对于零和博弈
 $$
 \max\min(U) = \min\max(U)
 $$
+
+## Dominant Strategies
+
+### Strictly Dominant Strategies
+
+对于一个 player，如果不管对方怎么做决策，他做某个决策一定是最优的，那这个决策就是 strictly dominant 的。
+
+A strategy $$s_i\in \mathcal{S}_i$$ is strictly dominant for player $$i$$ if
+
+$$
+\forall s_{-i}\in\mathcal{S}_{-i}, \forall s_i'\in\mathcal{S}_i, u_i(s_i, s_{-i})>u_i(s_i', s_{-i})
+$$
