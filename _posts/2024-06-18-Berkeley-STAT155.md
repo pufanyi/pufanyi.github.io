@@ -340,7 +340,7 @@ $$
 
 ### Strategy Form
 
-我们定义一个 $\mathcal{I}$ 个人的 simple game 的 strategy / normal form 为：
+我们定义一个 $$\mathcal{I}$$ 个人的 simple game 的 strategy / normal form 为：
 
 $$
 \Gamma = \left<\mathcal{I}, \left\{S_i\right\}, \left\{u_i(\cdot)\right\}\right>
