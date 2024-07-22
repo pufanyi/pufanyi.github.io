@@ -452,3 +452,13 @@ A strategy $$s_i\in \mathcal{S}_i$$ is strictly dominant for player $$i$$ if
 $$
 \forall s_{-i}\in\mathcal{S}_{-i}, \forall s_i'\in\mathcal{S}_i, u_i(s_i, s_{-i})>u_i(s_i', s_{-i})
 $$
+
+### Strictly Dominated Strategies
+
+我们说一个 strategy 是 strictly dominated 的，如果存在另一个 strategy 使得不管对方怎么做，这个 strategy 都比他好。换句话说，就是这个 strategy 一定不会被选。
+
+A strategy $$s_i\in \mathcal{S}_i$$ is strictly dominated for player $$i$$ if
+
+$$
+\exists s_i'\in\mathcal{S}_i, \forall s_{-i}\in\mathcal{S}_{-i}, u_i(s_i', s_{-i})>u_i(s_i, s_{-i})
+$$
