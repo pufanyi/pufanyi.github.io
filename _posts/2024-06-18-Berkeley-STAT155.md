@@ -340,11 +340,23 @@ $$
 
 ### Strategy Form
 
-我们定义一个 simple game 的 strategy / normal form 为：
+我们定义一个 $\mathcal{I}$ 个人的 simple game 的 strategy / normal form 为：
 
 $$
-\Gamma = \left<N, \left\{S_i\right\}, \left\{u_i(\cdot)\right\}\right>
+\Gamma = \left<\mathcal{I}, \left\{S_i\right\}, \left\{u_i(\cdot)\right\}\right>
 $$
+
+### Pure Strategies and Mixed Strategies
+
+Pure strategy 指的是一个人只能选一个 action，而 mixed strategy 指的是一个人可以通过概率分布选多个 actions。
+
+假设 $$P_1$$ 选的概率为 $$\boldsymbol{p}$$，$$P_2$$ 选的为 $$\boldsymbol{q}$$。$$P_1$$ 的 payoff 为 $$M$$，那么我们有 $$P_1$$ 的 expected payoff：
+
+$$
+U_1(\boldsymbol{p}, \boldsymbol{q}) = \sum_{i\in\mathcal{I}}\sum_{j\in\mathcal{J}}M^{(1)}_{ij}p_iq_j=p^{\top}M_1q
+$$
+
+对于每个人策略一定在一个 simplex 上，我们定义其为 $$\Delta(\mathcal{I})$$ 和 $$\Delta(\mathcal{J})$$。
 
 ## Zero-Sum Games
 
@@ -373,18 +385,6 @@ u_{N+1}(a_1, a_2, \cdots, a_N) = -\sum_{i=1}^N u_i(a_1, a_2, \cdots, a_N)
 $$
 
 这样子就变成了零和博弈。
-
-### Pure Strategies and Mixed Strategies
-
-Pure strategy 指的是一个人只能选一个 action，而 mixed strategy 指的是一个人可以通过概率分布选多个 actions。
-
-假设 $$P_1$$ 选的概率为 $$\boldsymbol{p}$$，$$P_2$$ 选的为 $$\boldsymbol{q}$$。$$P_1$$ 的 payoff 为 $$M$$，那么我们有 $$P_1$$ 的 expected payoff：
-
-$$
-U(\boldsymbol{p}, \boldsymbol{q}) = \sum_{i\in\mathcal{I}}\sum_{j\in\mathcal{J}}M_{ij}p_iq_j=p^{\top}Mq
-$$
-
-对于每个人策略一定在一个 simplex 上，我们定义其为 $$\Delta(\mathcal{I})$$ 和 $$\Delta(\mathcal{J})$$。
 
 ### Security Level
 
