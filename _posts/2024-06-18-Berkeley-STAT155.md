@@ -502,3 +502,7 @@ $$
 $$
 u_i(\sigma_i', \sigma_{-i})-u_i(\sigma_i, \sigma_{-i})=\sum_{-i\in s_{-i}}\left[\prod_{k\neq i}\sigma_{k}(s_k)\right]\left[u_i(\sigma'_i, s_{-i})-u_i(\sigma_i, s_{-i})\right]>0
 $$
+
+我们考虑这个式子，如果所有的 $$u_i(\sigma'_i, s_{-i})-u_i(\sigma_i, s_{-i})>0$$ 的话，很显然整个式子是正的，如果其中有一个小于 $$0$$，我们就让这一项前面的 $$\sigma_k(s_k)=1$$，其他都变成 $$0$$，这样整个式子就小于 $$0$$ 了。
+
+于是乎对于一个 $$\sigma_i$$，我们只要 check 所有的 pure strategies 就可以。
