@@ -462,3 +462,17 @@ A strategy $$s_i\in \mathcal{S}_i$$ is strictly dominated for player $$i$$ if
 $$
 \exists s_i'\in\mathcal{S}_i, \forall s_{-i}\in\mathcal{S}_{-i}, u_i(s_i', s_{-i})>u_i(s_i, s_{-i})
 $$
+
+### Weakly Dominated Strategies
+
+A strategy $$s_i\in \mathcal{S}_i$$ is weakly dominated for player $$i$$ if
+
+$$
+\exists s_i'\in\mathcal{S}_i, \forall s_{-i}\in\mathcal{S}_{-i}, u_i(s_i', s_{-i})\ge u_i(s_i, s_{-i})
+$$
+
+### Iterated Elimination of Dominated Strategies
+
+Strictly dominated strategies 一定不会被选，所以我们可以直接把这个策略去掉。然后我们就可以不断找每个人的 strictly dominated strategies，然后去掉来简化游戏。
+
+不能用 weekly dominated strategies，因为这些策略还是有可能会被选的。
