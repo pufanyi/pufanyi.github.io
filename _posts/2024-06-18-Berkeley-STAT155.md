@@ -506,3 +506,11 @@ $$
 我们考虑这个式子，如果所有的 $$u_i(\sigma'_i, s_{-i})-u_i(\sigma_i, s_{-i})>0$$ 的话，很显然整个式子是正的，如果其中有一个小于 $$0$$，我们就让这一项前面的 $$\sigma_k(s_k)=1$$，其他都变成 $$0$$，这样整个式子就小于 $$0$$ 了。
 
 于是乎对于一个 $$\sigma_i$$，我们只要 check 所有的 pure strategies 就可以。
+
+### Best Response
+
+We say that a strategy $$\sigma_i$$ is a best response to $$\sigma_{-i}$$ if
+
+$$
+\forall\sigma'_i\in\Delta(\mathcal{S}_i), u_i(\sigma_i, \sigma_{-i})\ge u_i(\sigma'_i, \sigma_{-i})
+$$
