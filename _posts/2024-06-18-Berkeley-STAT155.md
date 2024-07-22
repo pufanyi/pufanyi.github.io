@@ -497,8 +497,8 @@ $$
 \forall\sigma_{-i}, u_i(\sigma_i', \sigma_{-i})>u_i(\sigma_i, \sigma_{-i})
 $$
 
-那其实是
+移项然后展开：
 
 $$
-u_i(\sigma_i', \sigma_{-i})-u_i(\sigma_i, \sigma_{-i})
+u_i(\sigma_i', \sigma_{-i})-u_i(\sigma_i, \sigma_{-i})=\sum_{-i\in s_{-i}}\left[\prod_{k\neq i}\sigma_{k}(s_k)\right]\left[u_i(\sigma'_i, s_{-i})-u_i(\sigma_i, s_{-i})\right]>0
 $$
