@@ -490,3 +490,15 @@ Strictly dominated strategies 一定不会被选，所以我们可以直接把�
 | **D** | $$(0, 5)$$  | $$(10, 2)$$ |
 
 这玩意儿 $$M$$ 是被 strictly dominated by $$\frac{1}{2}U+\frac{1}{2}D$$ 的。
+
+我们说一个 mixed strategy $$\sigma_i$$ 是 strictly dominated 的，当且仅当存在 $$\sigma_i'$$ 使得
+
+$$
+\forall\sigma_{-i}, u_i(\sigma_i', \sigma_{-i})>u_i(\sigma_i, \sigma_{-i})
+$$
+
+那其实是
+
+$$
+u_i(\sigma_i', \sigma_{-i})-u_i(\sigma_i, \sigma_{-i})
+$$
