@@ -544,3 +544,9 @@ u_i(\sigma_i, \sigma_{-i})\ge u_i(\sigma_i', \sigma_{-i})
 $$
 
 for all $$\sigma_i'\in\Delta(\mathcal{S}_i)$$.
+
+其实也就是
+
+$$
+\forall i, \sigma_i\in b_i(\sigma_{-i})
+$$
