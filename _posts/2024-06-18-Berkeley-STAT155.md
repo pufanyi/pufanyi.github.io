@@ -603,3 +603,15 @@ A Nash equilibrium exists in game $$\Gamma=\left[\mathcal{I}, \left\{\mathcal{S}
 2. $$u_i(s_1, \cdots, s_\mathcal{I})$$ is continuous in $$(s_1, \cdots, s_\mathcal{I})$$ and quasi-concave in $$s_i$$.
 
 考虑到当 $$\mathcal{S}$$ 有限的时候，$$\Delta(\mathcal{S})$$ 满足了 nonempty, convex, compact 三个条件，而且 $$u_i$$ 也是 continuous 和 quasi-concave 的。所以我们说对于 mixed strategies game $$\Gamma=\left[\mathcal{I}, \left\{\Delta(\mathcal{S}_i)\right\}, \left\{u_i(\cdot)\right\}\right]$$，如果 $$\mathcal{S}_i$$ 是有限的，那么 Nash equilibrium 一定存在。
+
+### Correlated Equilibria
+
+前面我们考虑 $$\sigma_i$$ 都是独立的。但在现实生活中，一些信息是共享的，导致我们的策略是相关的。
+
+比如说红绿灯，大家会看到信号灯的信息来做出决策。
+
+这时候我们就要定义：
+
+$$
+U_i(\sigma_1, \cdots, \sigma_\mathcal{I})=\sum_{s}\mathbb{P}[s_1, \cdots, s_\mathcal{I}]u_i(s_1, \cdots, s_\mathcal{I})
+$$
