@@ -594,3 +594,10 @@ $$
 2. $$u_i(s_i, \sigma_{-i})\ge u_i(s_i', \sigma_{-i})$$ for all $$s_i\in\mathcal{S}_i^+$$ and $$s_i'\in\mathcal{S}_i\setminus\mathcal{S}_i^+$$
 
 大概就是，对于我来说，我知道别人有一个 mixed strategy，而我出的这个 mixed strategy 中的任何一种可能性都是一样优的（否则我就不要他了），而我不选的那几个操作一定不会更优（否则我肯定会增加它的概率）。如果对于每个人来说都是这样，那么就达到了一种均衡。
+
+### Existence of Nash Equilibrium
+
+A Nash equilibrium exists in game $$\Gamma=\left[\mathcal{I}, \left\{\mathcal{S}_i\right\}, \left\{u_i(\cdot)\right\}\right]$$ if for all $$i=1, \cdots, \mathcal{I}$$:
+
+1. $$\mathcal{S}_i$$ is a nonempty, convex, and compact subset of some Euclidean space $$\mathbb{R}^M$$;
+2. $$u_i(s_1, \cdots, s_\mathcal{I})$$ is continuous in $$(s_1, \cdots, s_\mathcal{I})$$ and quasi-concave in $$s_i$$.
