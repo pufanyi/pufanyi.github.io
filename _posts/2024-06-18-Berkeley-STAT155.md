@@ -517,8 +517,14 @@ $$
 \forall\sigma'_i\in\Delta(\mathcal{S}_i), u_i(\sigma_i, \sigma_{-i})\ge u_i(\sigma'_i, \sigma_{-i})
 $$
 
-### Nash Equilibrium Definition
+### Nash Equilibrium in Pure Strategies
 
 每个人都是 best response 的策略。
 
-A strategy profile $$s=(s_1, \cdots, s_\mathcal{I})$$ constitutes a Nash equilibrium of a game $$\Gamma$$
+A strategy profile $$s=(s_1, \cdots, s_\mathcal{I})$$ constitutes a Nash equilibrium of a game $$\Gamma=\left[\mathcal{I}, \left\{S_i\right\}, \left{u_i(\cdot)\right}\right]$$ if for every $$i=1, \cdots, \mathcal{I}$$,
+
+$$
+u_i(s_i, s_{-i})\ge u_i(s_i', s_{-i})
+$$
+
+for all $$s_i'\in S_i$$.
