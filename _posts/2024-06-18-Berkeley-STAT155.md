@@ -520,7 +520,7 @@ $$
 **_Best response correspondence_**:
 
 $$
-b_i(s_{-i})=\left\{s_i\in\mathcal{S}_i: \forall s_i'\in\mathcal{S}_i, u_i(s_i, s_{-i})\ge u_i(s'_i, s_{-i})\right\}
+b_i(\sigma_{-i})=\left\{\sigma_i\in\Delta(\mathcal{S}_i): \forall \sigma_i'\in\Delta(\mathcal{S}_i), u_i(\sigma_i, \sigma_{-i})\ge u_i(\sigma_i', \sigma_{-i})\right\}
 $$
 
 ### Nash Equilibrium in Pure Strategies
