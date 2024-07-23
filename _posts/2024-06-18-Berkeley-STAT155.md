@@ -601,3 +601,5 @@ A Nash equilibrium exists in game $$\Gamma=\left[\mathcal{I}, \left\{\mathcal{S}
 
 1. $$\mathcal{S}_i$$ is a nonempty, convex, and compact subset of some Euclidean space $$\mathbb{R}^M$$;
 2. $$u_i(s_1, \cdots, s_\mathcal{I})$$ is continuous in $$(s_1, \cdots, s_\mathcal{I})$$ and quasi-concave in $$s_i$$.
+
+考虑到当 $$\mathcal{S}$$ 有限的时候，$$\Delta(\mathcal{S})$$ 满足了 nonempty, convex, compact 三个条件，而且 $$u_i$$ 也是 continuous 和 quasi-concave 的。所以我们说对于 mixed strategies game $$\Gamma=\left[\mathcal{I}, \left\{\Delta(\mathcal{S}_i)\right\}, \left\{u_i(\cdot)\right\}\right]$$，如果 $$\mathcal{S}_i$$ 是有限的，那么 Nash equilibrium 一定存在。
