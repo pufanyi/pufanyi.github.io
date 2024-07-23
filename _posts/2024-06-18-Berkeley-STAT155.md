@@ -507,6 +507,8 @@ $$
 
 于是乎对于一个 $$\sigma_i$$，我们只要 check 所有的 pure strategies 就可以。
 
+## Nash Equilibrium
+
 ### Best Response
 
 We say that a strategy $$\sigma_i$$ is a best response to $$\sigma_{-i}$$ if
@@ -514,3 +516,9 @@ We say that a strategy $$\sigma_i$$ is a best response to $$\sigma_{-i}$$ if
 $$
 \forall\sigma'_i\in\Delta(\mathcal{S}_i), u_i(\sigma_i, \sigma_{-i})\ge u_i(\sigma'_i, \sigma_{-i})
 $$
+
+### Nash Equilibrium Definition
+
+每个人都是 best response 的策略。
+
+A strategy profile $$s=(s_1, \cdots, s_\mathcal{I})$$ constitutes a Nash equilibrium of a game $$\Gamma$$
