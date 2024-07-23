@@ -528,3 +528,7 @@ u_i(s_i, s_{-i})\ge u_i(s_i', s_{-i})
 $$
 
 for all $$s_i'\in S_i$$.
+
+### Nash Equilibrium in Mixed Strategies
+
+
