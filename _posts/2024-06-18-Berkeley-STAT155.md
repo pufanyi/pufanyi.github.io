@@ -615,3 +615,5 @@ A Nash equilibrium exists in game $$\Gamma=\left[\mathcal{I}, \left\{\mathcal{S}
 $$
 U_i(\sigma_1, \cdots, \sigma_\mathcal{I})=\sum_{s}\mathbb{P}[s_1, \cdots, s_\mathcal{I}]u_i(s_1, \cdots, s_\mathcal{I})
 $$
+
+而这时候我们的 strategy 概率就应该是定义在 $$\mathcal{S}=S_1\times\cdots\times S_\mathcal{I}$$ 上了，也就是描述 NE 需要考虑 joint distribution。
