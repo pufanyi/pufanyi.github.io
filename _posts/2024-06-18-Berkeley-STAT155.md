@@ -531,4 +531,10 @@ for all $$s_i'\in S_i$$.
 
 ### Nash Equilibrium in Mixed Strategies
 
+和 pure strategies 的定义是一样的，对于游戏 $$\Gamma=\left[\mathcal{I}, \left\{\Delta(\mathcal{S}_i)\right\}, \left\{u_i(\cdot)\right\}\right]$$, 我们有 $$\sigma = (\sigma_1, \cdots, \sigma_\mathcal{I})$$ 是 Nash equilibrium if for every $$i=1, \cdots, \mathcal{I}$$,
 
+$$
+u_i(\sigma_i, \sigma_{-i})\ge u_i(\sigma_i', \sigma_{-i})
+$$
+
+for all $$\sigma_i'\in\Delta(\mathcal{S}_i)$$.
