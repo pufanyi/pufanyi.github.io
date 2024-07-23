@@ -587,3 +587,8 @@ $$
 $$
 
 也就是这个人有可能执行这个操作。
+
+于是乎一个 $$\sigma$$ 要满足他是 Nash equilibrium 当且仅当对于 $$i=1, \cdots, \mathcal{I}$$：
+
+1. $$u_i(s_i, \sigma_{-i})=u_i(s_i', \sigma_{-i})$$ for all $$s_i, s_i'\in\mathcal{S}_i^+$$
+2. $$u_i(s_i, \sigma_{-i})\ge u_i(s_i', \sigma_{-i})$$ for all $$s_i\in\mathcal{S}_i^+$$ and $$s_i'\in\mathcal{S}_i\setminus\mathcal{S}_i^+$$
