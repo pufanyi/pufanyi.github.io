@@ -555,10 +555,10 @@ $$
 
 比如说这个游戏：
 
-|                | Bach ($$\mathscr{B}_2$$)       | Stravinsky ($$\mathscr{S}_2$$) |
-| -------------- | ----------- | ----------- |
-| **Bach** ($$\mathscr{B}_1$$)       | $$(10, 5)$$ | $$(0, 0)$$  |
-| **Stravinsky** ($$\mathcal{S}_1$$) | $$(0, 0)$$  | $$(5, 10)$$ |
+|                                    | Bach ($$\mathscr{B}_2$$) | Stravinsky ($$\mathscr{S}_2$$) |
+| ---------------------------------- | ------------------------ | ------------------------------ |
+| **Bach** ($$\mathscr{B}_1$$)       | $$(10, 5)$$              | $$(0, 0)$$                     |
+| **Stravinsky** ($$\mathcal{S}_1$$) | $$(0, 0)$$               | $$(5, 10)$$                    |
 
 我们有对于 $$P_1$$：
 
@@ -577,3 +577,13 @@ $$
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/nash_equilibrium_bach.png" class="img-fluid rounded z-depth-1" %}
 
 交点为 $$(0, 0), \left(\frac{1}{3}, \frac{2}{3}\right), (1, 1)$$，所以这三个点是 Nash equilibrium。
+
+### Checking for Nash Equilibrium
+
+我们考虑游戏 $$\Gamma=\left[\mathcal{I}, \left\{\Delta(\mathcal{S}_i)\right\}, \left\{u_i(\cdot)\right\}\right]$$。对于一个 $$\sigma=(\sigma_1, \cdots, \sigma_\mathcal{I})$$，我们定义 $$\mathcal{S}_i^+\subseteq\mathcal{S}_i$$：
+
+$$
+\mathcal{S}_i^+=\left\{s_j\in\mathcal{S}_i: \sigma_{i,j}>0\right\}
+$$
+
+也就是这个人有可能执行这个操作。
