@@ -550,3 +550,30 @@ for all $$\sigma_i'\in\Delta(\mathcal{S}_i)$$.
 $$
 \forall i, \sigma_i\in b_i(\sigma_{-i})
 $$
+
+所以直觉上来讲其实就是这些 correspondence 的交集。
+
+比如说这个游戏：
+
+|                | Bach ($$\mathscr{B}_2$$)       | Stravinsky ($$\mathscr{S}_2$$) |
+| -------------- | ----------- | ----------- |
+| **Bach** ($$\mathscr{B}_1$$)       | $$(10, 5)$$ | $$(0, 0)$$  |
+| **Stravinsky** ($$\mathcal{S}_1$$) | $$(0, 0)$$  | $$(5, 10)$$ |
+
+我们有对于 $$P_1$$：
+
+$$
+\mathscr{B}_1\succsim\mathcal{S}_1\Longleftrightarrow p(\mathscr{B}_2)\ge\frac{1}{3}
+$$
+
+同理，对称地对于 $$P_2$$：
+
+$$
+\mathscr{B}_2\succsim\mathcal{S}_2\Longleftrightarrow p(\mathscr{B}_1)\ge\frac{2}{3}
+$$
+
+画出图：
+
+{% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/nash_equilibrium_bach.png" class="img-fluid rounded z-depth-1" %}
+
+交点为 $$(0, 0), \left(\frac{1}{3}, \frac{2}{3}\right), (1, 1)$$，所以这三个点是 Nash equilibrium。
