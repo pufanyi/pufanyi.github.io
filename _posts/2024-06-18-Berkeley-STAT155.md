@@ -527,7 +527,7 @@ $$
 
 每个人都是 best response 的策略。
 
-A strategy profile $$s=(s_1, \cdots, s_\mathcal{I})$$ constitutes a Nash equilibrium of a game $$\Gamma=\left[\mathcal{I}, \left\{S_i\right\}, \left{u_i(\cdot)\right}\right]$$ if for every $$i=1, \cdots, \mathcal{I}$$,
+A strategy profile $$s=(s_1, \cdots, s_\mathcal{I})$$ constitutes a Nash equilibrium of a game $$\Gamma=\left[\mathcal{I}, \left\{S_i\right\}, \left\{u_i(\cdot)\right\}\right]$$ if for every $$i=1, \cdots, \mathcal{I}$$,
 
 $$
 u_i(s_i, s_{-i})\ge u_i(s_i', s_{-i})
