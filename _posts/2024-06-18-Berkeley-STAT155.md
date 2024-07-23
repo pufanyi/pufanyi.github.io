@@ -558,18 +558,18 @@ $$
 |                                    | Bach ($$\mathscr{B}_2$$) | Stravinsky ($$\mathscr{S}_2$$) |
 | ---------------------------------- | ------------------------ | ------------------------------ |
 | **Bach** ($$\mathscr{B}_1$$)       | $$(10, 5)$$              | $$(0, 0)$$                     |
-| **Stravinsky** ($$\mathcal{S}_1$$) | $$(0, 0)$$               | $$(5, 10)$$                    |
+| **Stravinsky** ($$\mathscr{S}_1$$) | $$(0, 0)$$               | $$(5, 10)$$                    |
 
 我们有对于 $$P_1$$：
 
 $$
-\mathscr{B}_1\succsim\mathcal{S}_1\Longleftrightarrow p(\mathscr{B}_2)\ge\frac{1}{3}
+\mathscr{B}_1\succsim\mathscr{S}_1\Longleftrightarrow p(\mathscr{B}_2)\ge\frac{1}{3}
 $$
 
 同理，对称地对于 $$P_2$$：
 
 $$
-\mathscr{B}_2\succsim\mathcal{S}_2\Longleftrightarrow p(\mathscr{B}_1)\ge\frac{2}{3}
+\mathscr{B}_2\succsim\mathscr{S}_2\Longleftrightarrow p(\mathscr{B}_1)\ge\frac{2}{3}
 $$
 
 画出图：
