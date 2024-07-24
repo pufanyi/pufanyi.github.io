@@ -688,3 +688,12 @@ $$
 最终剩下来的策略就是 rationalizable strategies。
 
 如果最终只剩了一个，那么我们说这个游戏是 dominance solvable 的。
+
+很显然 NE 肯定是 rationalizable 的，因为如果他不是 rationalizable，那肯定在某一次删除的时候被定义为 NBR 了，而那个 best response 肯定比这个好。
+
+但是 rationalizable 不一定是 NE 的，比如说 Matching Pennies：
+
+|              | Heads        | Tails        |
+| ------------ | ------------ | ------------ |
+| **Heads**    | $$(1, -1)$$  | $$(-1, 1)$$  |
+| **Tails**    | $$(-1, 1)$$  | $$(1, -1)$$  |
