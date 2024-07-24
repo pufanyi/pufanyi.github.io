@@ -678,3 +678,13 @@ $$
 ### Mechanism / Market Design
 
 另一种让社会达到最优状态的方法叫 mechanism design，也叫 reverse game theory。我们通过设计和修改游戏机制来打到社会的最优性。
+
+## Rationalizable Strategies
+
+我们考虑一个游戏，如果对方做出某个选择，我们会做出相应的 best response。但是有些策略不管对方选了什么，我们都不可能作为 best response 去选择，我们把这种策略叫做 NBR（never best response）。
+
+那很显然 NBR 是可以忽略的，所以我们就重复在游戏中删除 NBR，直到没有 NBR 为止。
+
+最终剩下来的策略就是 rationalizable strategies。
+
+如果最终只剩了一个，那么我们说这个游戏是 dominance solvable 的。
