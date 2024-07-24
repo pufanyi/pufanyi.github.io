@@ -617,3 +617,15 @@ U_i(\sigma_1, \cdots, \sigma_\mathcal{I})=\sum_{s}\mathbb{P}[s_1, \cdots, s_\mat
 $$
 
 而这时候我们的 strategy 概率就应该是定义在 $$\mathcal{S}=S_1\times\cdots\times S_\mathcal{I}$$ 上了，也就是描述 NE 需要考虑 joint distribution。
+
+## Welfare / Optimality
+
+很多时候我们需要知道什么是“好的”，因为有时候 Nash equilibrium 并不是最优的。
+
+### Social Welfare
+
+最直观的方法是定义一个函数来表示整个社会的 welfare。我们定义 social welfare function 为
+
+$$
+\mathcal{W}(x_1, \cdots, x_\mathcal{I})=\sum_{i=1}^\mathcal{I}\alpha_i u_i(x_i, x_{-i})
+$$
