@@ -629,3 +629,41 @@ $$
 $$
 \mathcal{W}(x_1, \cdots, x_\mathcal{I})=\sum_{i=1}^\mathcal{I}\alpha_i u_i(x_i, x_{-i})
 $$
+
+但这样做有两个很显然的问题：
+
+1. 谁来定义 $$\alpha_i$$？
+2. 是否所有人都能 accept 这个定义？
+
+所以我们下面引出 Pareto Optimality。
+
+### Pareto Optimality
+
+假设我们有两个 agents 和两种物品进行分配，第一个物品有 $$A$$ 个，第二个物品有 $$B$$ 个。那么我们可以定义 allocation 为：
+
+$$
+\left((x_1^a, x_2^a), (x_1^b, x_2^b)\right)
+$$
+
+而物品的数量有限，所以：
+
+$$
+\begin{cases}
+x_1^a+x_1^b=A\\
+x_2^a+x_2^b=B
+\end{cases}
+$$
+
+我们定义一个 Pareto Improvement $$\left((y_1^a, y_2^a), (y_1^b, y_2^b)\right)$$ 满足：
+
+$$
+\begin{bmatrix}
+u_a(y_1^a, y_2^a)\\
+u_b(y_1^b, y_2^b)
+\end{bmatrix}>
+\begin{bmatrix}
+u_a(x_1^a, x_2^a)\\
+u_b(x_1^b, x_2^b)
+\end{bmatrix}
+$$
+
