@@ -672,3 +672,9 @@ $$
 如果一个 allocation 没有 Pareto Improvement，那么我们称其为 Pareto Optimal。
 
 然而 Pareto Optimal 也不一定是 fair 的，但是他是 bare minimum，也就是说如果不是 Pareto Optimal，那么我们应该做出改进。
+
+上课提到了一个叫 laissez-fairez 的名词，其实就是自由放任。让市场自由调节来达到一个 Pareto Optimal 的状态。
+
+### Mechanism / Market Design
+
+另一种让社会达到最优状态的方法叫 mechanism design，也叫 reverse game theory。我们通过设计和修改游戏机制来打到社会的最优性。
