@@ -668,3 +668,7 @@ u_b(x_1^b, x_2^b)
 $$
 
 其中的 $$>$$ 指的是有一个大于其余大于等于。
+
+如果一个 allocation 没有 Pareto Improvement，那么我们称其为 Pareto Optimal。
+
+然而 Pareto Optimal 也不一定是 fair 的，但是他是 bare minimum，也就是说如果不是 Pareto Optimal，那么我们应该做出改进。
