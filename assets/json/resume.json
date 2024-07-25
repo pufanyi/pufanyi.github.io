@@ -9,14 +9,7 @@
       "address": "50 Nanyang Ave",
       "postalCode": "639798",
       "city": "Singapore"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    }
   },
   "work": [
     {
@@ -24,8 +17,7 @@
       "position": "URECA Student",
       "url": "https://www.mmlab-ntu.com/",
       "startDate": "2023-07",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "highlights": ["Fortunately to be supervised by Asst. Prof. Ziwei Liu.", "Taking research on the large-scale multi-modality models."]
     }
   ],
   "education": [
