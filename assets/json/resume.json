@@ -1,18 +1,15 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Pu Fanyi",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "FPU001@e.ntu.edu.sg",
+    "phone": "+65 8398 1454",
+    "url": "https://pufanyi.github.io",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "50 Nanyang Ave",
+      "postalCode": "639798",
+      "city": "Singapore",
+      "countryCode": "Singapore"
     },
     "profiles": [
       {
