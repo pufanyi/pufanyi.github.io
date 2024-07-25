@@ -147,13 +147,18 @@
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "English",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Chinese",
+      "fluency": "Native",
+      "icon": ""
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Intermediate",
       "icon": ""
     }
   ],
