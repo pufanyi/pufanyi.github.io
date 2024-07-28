@@ -20,6 +20,15 @@
       "studyType": "Bachelor of Computing in Data Science and Artificial Intelligence, with a minor in Applied Physics",
       "startDate": "2022",
       "endDate": "2026"
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, CA",
+      "url": "https://summer.berkeley.edu/",
+      "area": "Computer Science",
+      "studyType": "Summer School",
+      "startDate": "2024-06",
+      "endDate": "2024-08"
     }
   ],
   "work": [
