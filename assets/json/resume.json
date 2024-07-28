@@ -11,15 +11,6 @@
       "city": "Singapore"
     }
   },
-  "work": [
-    {
-      "name": "MMLab-NTU",
-      "position": "URECA Student",
-      "url": "https://www.mmlab-ntu.com/",
-      "startDate": "2023-07",
-      "highlights": ["Fortunately to be supervised by Asst. Prof. Ziwei Liu.", "Taking research on the large-scale multi-modality models."]
-    }
-  ],
   "education": [
     {
       "institution": "College of Computing and Data Science, Nanyang Technological University, Singapore",
@@ -28,9 +19,16 @@
       "area": "Software Development",
       "studyType": "Bachelor of Computing in Data Science and Artificial Intelligence, with a minor in Applied Physics",
       "startDate": "2022",
-      "endDate": "2026",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "endDate": "2026"
+    }
+  ],
+  "work": [
+    {
+      "name": "MMLab-NTU",
+      "position": "URECA Student",
+      "url": "https://www.mmlab-ntu.com/",
+      "startDate": "2023-07",
+      "highlights": ["Fortunately to be supervised by Asst. Prof. Ziwei Liu.", "Taking research on the large-scale multi-modality models."]
     }
   ],
   "awards": [
