@@ -707,3 +707,5 @@ $$
 | **C** | $$(1, 1)$$ | $$(1, 2)$$ |
 
 尽管我们考虑 pure strategies，$$b_1(X)=\{A\}, b_1(Y)=\{B\}$$，$$C$$ 是不会被选的。
+
+{% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/rationalizable.png" class="img-fluid rounded z-depth-1" %}
