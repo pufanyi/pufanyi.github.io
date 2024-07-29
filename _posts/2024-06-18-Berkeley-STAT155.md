@@ -709,3 +709,27 @@ $$
 尽管我们考虑 pure strategies，$$b_1(X)=\{A\}, b_1(Y)=\{B\}$$，$$C$$ 是不会被选的。
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/rationalizable.png" class="img-fluid rounded z-depth-1" %}
+
+## Nash Equilibrium with Trembling Hands
+
+### The Oddness Theorem
+
+一个神奇的结论是在大部分情况下，一个游戏一定有奇数个 NE。
+
+严谨的说，拥有偶数个 NE 的游戏所构成的集合 Lebesgue measure 为 $$0$$。
+
+比如说有一个游戏：
+
+|       | L              | R              |
+| ----- | -------------- | -------------- |
+| **U** | $$(a_1, a_2)$$ | $$(b_1, b_2)$$ |
+| **D** | $$(c_1, c_2)$$ | $$(d_1, d_2)$$ |
+
+那么我们对于任意 $$\epsilon>0$$，存在 $$0\le \epsilon_1, \cdots, \epsilon_8\le \epsilon$$ 使得游戏：
+
+|       | L                                    | R                                    |
+| ----- | ------------------------------------ | ------------------------------------ |
+| **U** | $$(a_1+\epsilon_1, a_2+\epsilon_2)$$ | $$(b_1+\epsilon_3, b_2+\epsilon_4)$$ |
+| **D** | $$(c_1+\epsilon_5, c_2+\epsilon_6)$$ | $$(d_1+\epsilon_7, d_2+\epsilon_8)$$ |
+
+拥有奇数个 NE。
