@@ -618,6 +618,31 @@ $$
 
 而这时候我们的 strategy 概率就应该是定义在 $$\mathcal{S}=S_1\times\cdots\times S_\mathcal{I}$$ 上了，也就是描述 NE 需要考虑 joint distribution。
 
+### The Oddness Theorem
+
+一个神奇的结论是在大部分情况下，一个游戏一定有奇数个 NE。
+
+严谨的说，拥有偶数个 NE 的游戏所构成的集合 Lebesgue measure 为 $$0$$。
+
+比如说有一个游戏：
+
+|       | L              | R              |
+| ----- | -------------- | -------------- |
+| **U** | $$(a_1, a_2)$$ | $$(b_1, b_2)$$ |
+| **D** | $$(c_1, c_2)$$ | $$(d_1, d_2)$$ |
+
+那么我们对于任意 $$\epsilon>0$$，存在 $$0\le \epsilon_1, \cdots, \epsilon_8\le \epsilon$$ 使得游戏：
+
+|       | L                                    | R                                    |
+| ----- | ------------------------------------ | ------------------------------------ |
+| **U** | $$(a_1+\epsilon_1, a_2+\epsilon_2)$$ | $$(b_1+\epsilon_3, b_2+\epsilon_4)$$ |
+| **D** | $$(c_1+\epsilon_5, c_2+\epsilon_6)$$ | $$(d_1+\epsilon_7, d_2+\epsilon_8)$$ |
+
+拥有奇数个 NE。
+
+证明没有详细地讲，只说了个大概的思路。主要是考虑一个 $$f: X\to X$$ 的连续函数，不动点在大部分情况下有奇数个。除非与 $$y=x$$ 相切或者端点在 $$(x, x)$$ 上，这种情况下稍稍移动一下函数就可以了。
+
+
 ## Welfare / Optimality
 
 很多时候我们需要知道什么是“好的”，因为有时候 Nash equilibrium 并不是最优的。
@@ -710,33 +735,7 @@ $$
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/rationalizable.png" class="img-fluid rounded z-depth-1" %}
 
-## Nash Equilibrium with Trembling Hand
-
-### The Oddness Theorem
-
-一个神奇的结论是在大部分情况下，一个游戏一定有奇数个 NE。
-
-严谨的说，拥有偶数个 NE 的游戏所构成的集合 Lebesgue measure 为 $$0$$。
-
-比如说有一个游戏：
-
-|       | L              | R              |
-| ----- | -------------- | -------------- |
-| **U** | $$(a_1, a_2)$$ | $$(b_1, b_2)$$ |
-| **D** | $$(c_1, c_2)$$ | $$(d_1, d_2)$$ |
-
-那么我们对于任意 $$\epsilon>0$$，存在 $$0\le \epsilon_1, \cdots, \epsilon_8\le \epsilon$$ 使得游戏：
-
-|       | L                                    | R                                    |
-| ----- | ------------------------------------ | ------------------------------------ |
-| **U** | $$(a_1+\epsilon_1, a_2+\epsilon_2)$$ | $$(b_1+\epsilon_3, b_2+\epsilon_4)$$ |
-| **D** | $$(c_1+\epsilon_5, c_2+\epsilon_6)$$ | $$(d_1+\epsilon_7, d_2+\epsilon_8)$$ |
-
-拥有奇数个 NE。
-
-证明没有详细地讲，只说了个大概的思路。主要是考虑一个 $$f: X\to X$$ 的连续函数，不动点在大部分情况下有奇数个。除非与 $$y=x$$ 相切或者端点在 $$(x, x)$$ 上，这种情况下稍稍移动一下函数就可以了。
-
-### Trembling Hand Perfect Equilibrium
+## Trembling Hand Perfect Equilibrium
 
 有时候我们做选择会手抖出错。也就其实是我们在选操作 $$i$$ 的时候，我们其实选的是一个概率分布 $$\sigma_i$$。
 
