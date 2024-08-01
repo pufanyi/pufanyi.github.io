@@ -734,7 +734,9 @@ $$
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/rationalizable.png" class="img-fluid rounded z-depth-1" %}
 
-## Trembling Hand Perfect Equilibrium
+## Games with Trembling Hands
+
+### Trembling Hand Perfect Equilibrium
 
 有时候我们做选择会手抖出错。也就其实是我们在选操作 $$i$$ 的时候，我们其实选的是一个概率分布 $$\sigma_i$$。
 
@@ -750,5 +752,7 @@ totally mixed strategy profiles for each player. 其中的 totally mixed 指的�
 | **D** | $$(-3, 0)$$ | $$(0, 0)$$  |
 
 $$(D, D)$$ 是 NE 但不是 THNE，因为如果稍微扰动一下，变成 $$((\epsilon_1, 1-\epsilon_1), (\epsilon_2, 1-\epsilon_2))$$，这时候是不如 $$((1-\epsilon_1, \epsilon_1), (\epsilon_2, 1-\epsilon_2))$$ 的。也就是说，在有 trembling hand 的情况下，$$P_1$$ 和 $$P_2$$ 其实会考虑换到 $$U$$。
+
+### Evolutionary Stable
 
 当然根据这个定义，所有 totally mixed strategies 都是 THNE 的。但是我们可以沿用这个 idea 来定义和 “stability”。我们把一个 NE 扰动一下，如果还是 NE，那么我们就说这个 NE 是 stable 的。
