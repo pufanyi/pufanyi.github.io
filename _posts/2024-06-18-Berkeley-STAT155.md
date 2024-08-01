@@ -736,8 +736,8 @@ $$
 
 证明没有详细地讲，只说了个大概的思路。主要是考虑一个 $$f: X\to X$$ 的连续函数，不动点在大部分情况下有奇数个。除非与 $$y=x$$ 相切或者端点在 $$(x, x)$$ 上，这种情况下稍稍移动一下函数就可以了。
 
-### Trembling Hand
+### Trembling Hand Perfect Equilibrium
 
 有时候我们做选择会手抖出错。也就其实是我们在选操作 $$i$$ 的时候，我们其实选的是一个概率分布 $$\sigma_i$$。
 
-而考虑到这个概率问题，如果我们选的是 mixed strategies，其实他最后只是套了个函数，到最后还是一个 mixed strategy。因此在这里我们主要讨论的是 pure strategies with trembling hand。
+我们定义 Trembling Hand Perfect Equilibrium 为所有人都用了 totally mixed strategy 的 NE，也就是所有的 $$\sigma$$ 都大于 $$0$$。
