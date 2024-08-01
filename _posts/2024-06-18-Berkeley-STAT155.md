@@ -741,3 +741,14 @@ $$
 We say that a strategy profile $$\sigma$$ is a trembling-hand perfect
 Nash Equilibrium if it can be approximated by a sequence of
 totally mixed strategy profiles for each player. 其中的 totally mixed 指的是所有概率都大于 $$0$$。也就是说，对于一个 pure strategy，稍稍扰动一下也是没有问题的。
+
+就比如下面这个例子：
+
+|       | U           | D           |
+| ----- | ----------- | ----------- |
+| **U** | $$(1, 1)$$  | $$(0, -3)$$ |
+| **D** | $$(-3, 0)$$ | $$(0, 0)$$  |
+
+$$(D, D)$$ 是 NE 但不是 THNE，因为如果稍微扰动一下，变成 $$((\epsilon_1, 1-\epsilon_1), (\epsilon_2, 1-\epsilon_2))$$，这时候是不如 $$((1-\epsilon_1, \epsilon_1), (\epsilon_2, 1-\epsilon_2))$$ 的。也就是说，在有 trembling hand 的情况下，$$P_1$$ 和 $$P_2$$ 其实会考虑换到 $$U$$。
+
+当然根据这个定义，所有 totally mixed strategies 都是 THNE 的。但是我们可以沿用这个 idea 来定义和 “stability”。我们把一个 NE 扰动一下，如果还是 NE，那么我们就说这个 NE 是 stable 的。
