@@ -739,4 +739,6 @@ $$
 
 有时候我们做选择会手抖出错。也就其实是我们在选操作 $$i$$ 的时候，我们其实选的是一个概率分布 $$\sigma_i$$。
 
-我们定义 Trembling Hand Perfect Equilibrium 为所有人都用了 totally mixed strategy 的 NE，也就是所有的 $$\sigma$$ 都大于 $$0$$。
+We say that a strategy profile $$\sigma$$ is a trembling-hand perfect
+Nash Equilibrium if it can be approximated by a sequence of
+totally mixed strategy profiles for each player. 其中的 totally mixed 指的是所有概率都大于 $$0$$。也就是说，对于一个 pure strategy，稍稍扰动一下也是没有问题的。
