@@ -710,7 +710,7 @@ $$
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/rationalizable.png" class="img-fluid rounded z-depth-1" %}
 
-## Nash Equilibrium with Trembling Hands
+## Nash Equilibrium with Trembling Hand
 
 ### The Oddness Theorem
 
@@ -733,3 +733,11 @@ $$
 | **D** | $$(c_1+\epsilon_5, c_2+\epsilon_6)$$ | $$(d_1+\epsilon_7, d_2+\epsilon_8)$$ |
 
 拥有奇数个 NE。
+
+证明没有详细地讲，只说了个大概的思路。主要是考虑一个 $$f: X\to X$$ 的连续函数，不动点在大部分情况下有奇数个。除非与 $$y=x$$ 相切或者断点在 $$(x, x)$$ 上，这种情况下稍稍移动一下函数就可以了。
+
+### Trembling Hand
+
+有时候我们做选择会手抖出错。也就其实是我们在选操作 $$i$$ 的时候，我们其实选的是一个概率分布 $$\sigma_i$$。
+
+而考虑到这个概率问题，如果我们选的是 mixed strategies，其实他最后只是套了个函数，到最后还是一个 mixed strategy。因此在这里我们主要讨论的是 pure strategies with trembling hand。
