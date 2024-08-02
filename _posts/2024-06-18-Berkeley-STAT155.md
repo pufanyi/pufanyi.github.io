@@ -755,4 +755,9 @@ $$(D, D)$$ 是 NE 但不是 THNE，因为如果稍微扰动一下，变成 $$((\
 
 ### Evolutionary Stable
 
-当然根据这个定义，所有 totally mixed strategies 都是 THNE 的。但是我们可以沿用这个 idea 来定义和 “stability”。我们把一个 NE 扰动一下，如果还是 NE，那么我们就说这个 NE 是 stable 的。
+当然根据这个定义，所有 totally mixed strategies 都是 THNE 的。但是我们可以沿用这个 idea 来定义和 “stability”。我们把一个 NE 扰动一下，如果还是 NE，那么我们就说这个 NE 是 stable 的。我们定义这个东西叫做 evolutionary stable。
+
+A mixed strategy profile $$\sigma^*$$ is Evolutionary Stable if:
+
+1. $$u_i(\sigma_i^*, \sigma_{-i}^*)\ge u_i(\sigma_i, \sigma_{-i}^*)$$ for all $$i$$ and $$\sigma_i\in\Delta(\mathcal{S}_i)$$
+2. if $$u_i(\sigma_i^*, \sigma_{-i}^*)=u_i(\sigma_i, \sigma_{-i}^*)$$, then $$u_i(\sigma_i^*, \sigma_{-i})>u_i(\sigma_i, \sigma_{-i})$$
