@@ -14,8 +14,8 @@ toc:
   sidebar: left
 ---
 
-- [STAT 155 Game Theory](https://classes.berkeley.edu/content/2024-summer-stat-155-001-lec-001) | [Textbook](https://mitpress.mit.edu/9780262650403/a-course-in-game-theory/)
-- [MH4320 Computational Economics](<https://www.ntu.edu.sg/docs/librariesprovider123/obtl/mas/updated-obtl/mh4320-spms-mas-outcomes-based-teaching-and-learning-document-(obtl)-5-jun-2023.pdf>) | [Textbook](https://www.cambridge.org/core/books/game-theory/B0C072F66E027614E46A5CAB26394C7D)
+- [STAT 155 Game Theory](https://classes.berkeley.edu/content/2024-summer-stat-155-001-lec-001) \| [Textbook](https://mitpress.mit.edu/9780262650403/a-course-in-game-theory/)
+- [MH4320 Computational Economics](<https://www.ntu.edu.sg/docs/librariesprovider123/obtl/mas/updated-obtl/mh4320-spms-mas-outcomes-based-teaching-and-learning-document-(obtl)-5-jun-2023.pdf>) \| [Textbook](https://www.cambridge.org/core/books/game-theory/B0C072F66E027614E46A5CAB26394C7D)
 
 ## Preferences
 
@@ -519,6 +519,8 @@ $$
 很显然 common knowledge 是 mutual knowledge。
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/common_knowledge.png" class="img-fluid rounded z-depth-1" %}
+
+假设人从左到右是 $$A, B, C$$，$$A$$ 不知道 $$A$$ 的帽子颜色，假设 $$A$$ 的帽子颜色不是红的，
 
 ## Nash Equilibrium
 
