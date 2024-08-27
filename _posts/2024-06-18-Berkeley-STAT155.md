@@ -14,6 +14,9 @@ toc:
   sidebar: left
 ---
 
+- [STAT 155 Game Theory](https://classes.berkeley.edu/content/2024-summer-stat-155-001-lec-001) | [Textbook](https://mitpress.mit.edu/9780262650403/a-course-in-game-theory/)
+- [MH4320 Computational Economics](<https://www.ntu.edu.sg/docs/librariesprovider123/obtl/mas/updated-obtl/mh4320-spms-mas-outcomes-based-teaching-and-learning-document-(obtl)-5-jun-2023.pdf>) | [Textbook](https://www.cambridge.org/core/books/game-theory/B0C072F66E027614E46A5CAB26394C7D)
+
 ## Preferences
 
 ### 一些基础定义和概念
@@ -509,9 +512,11 @@ $$
 
 ## Knowledge
 
-### Common Knowledge
+**Mutual Knowledge**: 如果大家都知道某个 knowledge，那么这个 knowledge 是 mutual knowledge。
 
-如果任意一个 player 序列 $$i_1, i_2, \cdots, i_k$$，我们有 $$i_1$$ 知道 $$i_2$$ 知道 $$\cdots$$ 知道 $$i_k$$ 知道某个 knowledge，那么我们说这个 knowledge 是 common knowledge。
+**Common Knowledge**: 如果任意一个 player 序列 $$i_1, i_2, \cdots, i_k$$，我们有 $$i_1$$ 知道 $$i_2$$ 知道 $$\cdots$$ 知道 $$i_k$$ 知道某个 knowledge，那么我们说这个 knowledge 是 common knowledge。
+
+很显然 common knowledge 是 mutual knowledge。
 
 ## Nash Equilibrium
 
