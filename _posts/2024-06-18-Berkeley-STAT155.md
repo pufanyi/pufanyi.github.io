@@ -520,7 +520,7 @@ $$
 
 {% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/common_knowledge.png" class="img-fluid rounded z-depth-1" %}
 
-假设人从左到右是 $$A, B, C$$，$$A$$ 不知道 $$A$$ 的帽子颜色，假设 $$A$$ 的帽子颜色不是红的，
+假设人从左到右是 $$A, B, C$$，$$A$$ 不知道 $$A$$ 的帽子颜色。我们现在假定 player 序列是 $$A, B, C$$。对于 $$A$$ 来说，假设 $$A$$ 的帽子颜色是红的，那么 $$B$$ 就能看到俩红，那他就能知道 $$C$$ 肯定能看到至少一红。但是如果 $$A$$ 的帽子不是红色的，那么 $$B$$ 只能看到一红，他就不能确定 $$C$$ 是否能看到红色了。这导致了这道题不是 common knowledge。
 
 ## Nash Equilibrium
 
