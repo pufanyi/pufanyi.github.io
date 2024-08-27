@@ -14,8 +14,12 @@ toc:
   sidebar: left
 ---
 
-- [STAT 155 Game Theory](https://classes.berkeley.edu/content/2024-summer-stat-155-001-lec-001) \| [Textbook](https://mitpress.mit.edu/9780262650403/a-course-in-game-theory/)
-- [MH4320 Computational Economics](<https://www.ntu.edu.sg/docs/librariesprovider123/obtl/mas/updated-obtl/mh4320-spms-mas-outcomes-based-teaching-and-learning-document-(obtl)-5-jun-2023.pdf>) \| [Textbook](https://www.cambridge.org/core/books/game-theory/B0C072F66E027614E46A5CAB26394C7D)
+- [STAT 155 Game Theory](https://classes.berkeley.edu/content/2024-summer-stat-155-001-lec-001)
+  - [Textbook 1](https://mitpress.mit.edu/9780262650403/a-course-in-game-theory/)
+  - [Textbook 2](https://mitpress.mit.edu/9780262061414/game-theory/)
+  - [Textbook 3](https://doi.org/10.2307/j.ctvjsf522)
+- [MH4320 Computational Economics](<https://www.ntu.edu.sg/docs/librariesprovider123/obtl/mas/updated-obtl/mh4320-spms-mas-outcomes-based-teaching-and-learning-document-(obtl)-5-jun-2023.pdf>)
+  - [Textbook](https://www.cambridge.org/core/books/game-theory/B0C072F66E027614E46A5CAB26394C7D)
 
 ## Preferences
 
