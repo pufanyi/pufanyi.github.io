@@ -518,6 +518,8 @@ $$
 
 很显然 common knowledge 是 mutual knowledge。
 
+{% include figure.liquid loading="eager" path="assets/img/2024-06-18-Berkeley-STAT155/common_knowledge.png" class="img-fluid rounded z-depth-1" %}
+
 ## Nash Equilibrium
 
 ### Best Response
