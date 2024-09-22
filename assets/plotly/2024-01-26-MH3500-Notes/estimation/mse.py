@@ -22,7 +22,7 @@ if __name__ == "__main__":
             y=y,
         )
     )
-    
+
     y = [MSE(N / (N + 0.5), i) for i in x]
     fig.add_trace(
         go.Scatter(
