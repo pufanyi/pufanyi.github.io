@@ -21,7 +21,7 @@ on:
 jobs:
   build:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'pufanyi' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'alshedivat' }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -50,8 +50,8 @@ jobs:
           DSLIM_TARGET_COMPOSE_SVC: jekyll
           DSLIM_CONTINUE_AFTER: signal
         with:
-          target: pufanyi/blog
+          target: amirpourmand/al-folio
           tag: "slim"
 
       # Push to the registry
-      - run: docker image push pufanyi/blog:slim
+      - run: docker image push amirpourmand/al-folio:slim
