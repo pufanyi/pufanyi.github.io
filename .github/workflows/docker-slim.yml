@@ -21,7 +21,7 @@ on:
 jobs:
   build:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'pufanyi' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository_owner == 'alshedivat' }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -43,26 +43,15 @@ jobs:
           sed -i "s|\.:|${{ github.workspace }}:|g" ${{ github.workspace }}/docker-compose.yml
           cat ${{ github.workspace }}/docker-compose.yml
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Cache Docker layers
-        uses: actions/cache@v4
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-buildx-
-
-      - uses: kitabisa/docker-slim-action@v1.2.1
+      - uses: kitabisa/docker-slim-action@v1.1.1
         env:
           DSLIM_PULL: true
           DSLIM_COMPOSE_FILE: ${{ github.workspace }}/docker-compose.yml
           DSLIM_TARGET_COMPOSE_SVC: jekyll
           DSLIM_CONTINUE_AFTER: signal
         with:
-          target: pufanyi/blog
+          target: amirpourmand/al-folio
           tag: "slim"
 
       # Push to the registry
-      - run: docker image push pufanyi/blog:slim
+      - run: docker image push amirpourmand/al-folio:slim

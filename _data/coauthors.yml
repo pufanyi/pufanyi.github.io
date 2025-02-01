@@ -1,35 +1,34 @@
-hu:
-  - firstname: [Kairui]
-    url: https://scholar.google.com.sg/citations?user=_oHHACwAAAAJ
+"adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-li:
-  - firstname: [Bo]
-    url: https://brianboli.com/
-  - firstname: [Chunyuan]
-    url: https://chunyuan.li/
+"podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-zhang:
-  - firstname: [Yuanhan]
-    url: https://zhangyuanhan-ai.github.io/
-  - firstname: [Peiyuan]
-    url: https://veiled-texture-20c.notion.site/Peiyuan-Zhang-ab24b48621c9491db767a76df860873a
-  - firstname: [Kaichen]
-    url: https://kcz358.github.io/
+"rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-chen:
-  - firstname: [Liangyu]
-    url: https://cliangyu.com/
+"bach":
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-wang:
-  - firstname: [Jinghao]
-    url: https://king159.github.io/
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-yang:
-  - firstname: [Jingkang]
-    url: https://jingkang50.github.io/
+"przibram":
+  - firstname: ["Karl"]
+    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-liu:
-  - firstname: [Ziwei]
-    url: https://liuziwei7.github.io/
-  - firstname: [Shuai]
-    url: https://github.com/choiszt
+"schrodinger":
+  - firstname: ["Erwin"]
+    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+
+"lorentz":
+  - firstname: ["Hendrik Antoon"]
+    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+
+"planck":
+  - firstname: ["Max"]
+    url: https://en.wikipedia.org/wiki/Max_Planck
