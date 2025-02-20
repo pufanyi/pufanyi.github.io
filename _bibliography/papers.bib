@@ -1,115 +1,92 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{zhang2024lmms,
+    title={LMMs-Eval: Reality Check on the Evaluation of Large Multimodal Models},
+    author={Kaichen Zhang* and Bo Li* and Peiyuan Zhang* and Fanyi Pu* and Joshua Adrian Cahyono and Kairui Hu and Shuai Liu and Yuanhan Zhang and Jingkang Yang and Chunyuan Li and Ziwei Liu},
+    year={2024},
+    eprint={2407.12772},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    arXiv={2407.12772},
+    preview={lmms-eval.png},
+    pdf={https://arxiv.org/pdf/2407.12772.pdf},
+    code={https://github.com/EvolvingLMMs-Lab/lmms-eval/},
+    google_scholar_id={qjMakFHDy7sC},
+    bibtex_show={true},
+    selected={true},
+    abstract={The advances of large foundation models necessitate wide-coverage, low-cost, and zero-contamination benchmarks. Despite continuous exploration of language model evaluations, comprehensive studies on the evaluation of Large Multi-modal Models (LMMs) remain limited. In this work, we introduce LMMS-EVAL, a unified and standardized multimodal benchmark framework with over 50 tasks and more than 10 models to promote transparent and reproducible evaluations. Although LMMS-EVAL offers comprehensive coverage, we find it still falls short in achieving low cost and zero contamination. To approach this evaluation trilemma, we further introduce LMMS-EVAL LITE, a pruned evaluation toolkit that emphasizes both coverage and efficiency. Additionally, we present Multimodal LIVEBENCH that utilizes continuously updating news and online forums to assess models' generalization abilities in the wild, featuring a low-cost and zero-contamination evaluation approach. In summary, our work highlights the importance of considering the evaluation trilemma and provides practical solutions to navigate the trade-offs in evaluating large multi-modal models, paving the way for more effective and reliable benchmarking of LMMs. We opensource our codebase and maintain leaderboard of LIVEBENCH at https://github.com/EvolvingLMMs-Lab/lmms-eval and https://huggingface.co/spaces/lmms-lab/LiveBench.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@article{zhang2024worldqa,
+  title={WorldQA: Multimodal World Knowledge in Videos through Long-Chain Reasoning},
+  author={Zhang, Yuanhan and Zhang, Kaichen and Li, Bo and Pu, Fanyi and Setiadharma, Christopher Arif and Yang, Jingkang and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2405.03272},
+  arxiv={2405.03272},
+  year={2024},
+  preview={worldqa.png},
+  google_scholar_id={9yKSN-GCB0IC},
+  abstract={Multimodal information, together with our knowledge, help us to understand the complex and dynamic world. Large language models (LLM) and large multimodal models (LMM), however, still struggle to emulate this capability. In this paper, we present WorldQA, a video understanding dataset designed to push the boundaries of multimodal world models with three appealing properties: (1) Multimodal Inputs: The dataset comprises 1007 question-answer pairs and 303 videos, necessitating the analysis of both auditory and visual data for successful interpretation. (2) World Knowledge: We identify five essential types of world knowledge for question formulation. This approach challenges models to extend their capabilities beyond mere perception. (3) Long-Chain Reasoning: Our dataset introduces an average reasoning step of 4.45, notably surpassing other videoQA datasets. Furthermore, we introduce WorldRetriever, an agent designed to synthesize expert knowledge into a coherent reasoning chain, thereby facilitating accurate responses to WorldQA queries. Extensive evaluations of 13 prominent LLMs and LMMs reveal that WorldRetriever, although being the most effective model, achieved only 70% of humanlevel performance in multiple-choice questions. This finding highlights the necessity for further advancement in the reasoning and comprehension abilities of models. Our experiments also yield several key insights. For instance, while humans tend to perform better with increased frames, current LMMs, including WorldRetriever, show diminished performance under similar conditions. We hope that WorldQA, our methodology, and these insights could contribute to the future development of multimodal world models.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@misc{li2023otterhd,
+    title={OtterHD: A High-Resolution Multi-modality Model},
+    author={Bo Li* and Peiyuan Zhang* and Jingkang Yang† and Yuanhan Zhang† and Fanyi Pu† and Ziwei Liu},
+    year={2023},
+    eprint={2311.04219},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    preview={OtterHD.png},
+    arxiv={2311.04219},
+    altmetric={156254825},
+    bibtex_show={true},
+    google_scholar_id={u-x6o8ySG0sC},
+    pdf={https://arxiv.org/pdf/2311.04219.pdf},
+    code={https://github.com/Luodian/Otter},
+    abstract={In this paper, we present OtterHD-8B, an innovative multimodal model evolved from Fuyu-8B, specifically engineered to interpret high-resolution visual inputs with granular precision. Unlike conventional models that are constrained by fixed-size vision encoders, OtterHD-8B boasts the ability to handle flexible input dimensions, ensuring its versatility across various inference requirements. Alongside this model, we introduce MagnifierBench, an evaluation framework designed to scrutinize models' ability to discern minute details and spatial relationships of small objects. Our comparative analysis reveals that while current leading models falter on this benchmark, OtterHD-8B, particularly when directly processing high-resolution inputs, outperforms its counterparts by a substantial margin. The findings illuminate the structural variances in visual information processing among different models and the influence that the vision encoders' pre-training resolution disparities have on model effectiveness within such benchmarks. Our study highlights the critical role of flexibility and high-resolution input capabilities in large multimodal models and also exemplifies the potential inherent in the Fuyu architecture's simplicity for handling complex visual data.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{li2023mimicit,
+    title={MIMIC-IT: Multi-Modal In-Context Instruction Tuning},
+    author={Bo Li* and Yuanhan Zhang* and Liangyu Chen* and Jinghao Wang* and Fanyi Pu* and Jingkang Yang and Chunyuan Li and Ziwei Liu},
+    year={2023},
+    eprint={2306.05425},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    arXiv={2306.05425},
+    pdf={https://arxiv.org/pdf/2306.05425.pdf},
+    code={https://github.com/Luodian/Otter},
+    google_scholar_id={IjCSPb-OGe4C},
+    altmetric={149773892},
+    bibtex_show={true},
+    preview={MIMICIT.png},
+    selected={true},
+    abstract={High-quality instructions and responses are essential for the
+zero-shot performance of large language models on interactive natural
+language tasks. For interactive vision-language tasks involving
+intricate visual scenes, a large quantity of diverse and creative
+instruction-response pairs should be imperative to tune vision-language
+models (VLMs). Nevertheless, the current availability of vision-language
+instruction-response pairs in terms of quantity, diversity, and
+creativity remains limited, posing challenges to the generalization of
+interactive VLMs. Here we present
+<strong>M</strong>ult<strong>I</strong>-<strong>M</strong>odal
+<strong>I</strong>n-<strong>C</strong>ontext
+<strong>I</strong>nstruction <strong>T</strong>uning
+(<strong>MIMIC-IT</strong>), a dataset comprising 2.8 million multimodal
+instruction-response pairs, with 2.2 million unique instructions derived
+from images and videos. Each pair is accompanied by multi-modal
+in-context information, forming conversational contexts aimed at
+empowering VLMs in perception, reasoning, and planning. The
+instruction-response collection process, dubbed as
+<strong>Syphus</strong>, is scaled using an automatic annotation
+pipeline that combines human expertise with GPT's capabilities. Using
+the MIMIC-IT dataset, we train a large VLM named <strong>Otter</strong>.
+Based on extensive evaluations conducted on vision-language benchmarks,
+it has been observed that Otter demonstrates remarkable proficiency in
+multi-modal perception, reasoning, and in-context learning. Human
+evaluation reveals it effectively aligns with the user's intentions. We
+release the MIMIC-IT dataset, instruction-response collection pipeline,
+benchmarks, and the Otter model.}
 }
