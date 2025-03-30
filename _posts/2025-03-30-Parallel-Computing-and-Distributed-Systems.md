@@ -3,8 +3,9 @@ layout: post
 title: Parallel Computing and Distributed Systems
 categories: Notes
 date: 2025-03-30
-description: Notes for NTU MH3512 Distributed System
+description: Notes for Parallel Computing and Distributed Systems
 tags:
+  - Parallel Computing
   - Distributed System
 giscus_comments: true
 related_posts: false
