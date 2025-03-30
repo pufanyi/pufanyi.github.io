@@ -44,7 +44,7 @@ Overcoming bandwidth limits is often the most important challenge facing softwar
 
 [Stanford CS244B](https://www.scs.stanford.edu/24sp-cs244b/)
 
-忽然发现 CS244B 的主讲人是 <d-cite key="vamplew2016get"></d-cite> 的一作。
+忽然发现 CS244B 的 instructor 是 <d-cite key="vamplew2016get"></d-cite> 的一作。
 
 ### Remote Procedure Call (RPC)
 
@@ -72,3 +72,9 @@ Interface Definition Languages (IDL): Specify RPC call and return types
 - Byzantine-fault-tolerant <d-cite key="lamport2019byzantine"></d-cite>: agent 出错可能出现任意行为，比如发送假消息
 
 **FLP impossibility result** <d-cite key="fischer1985impossibility"></d-cite>: No deterministic consensus protocol guarantees all three of safety, liveness, and fault tolerance in an asynchronous system.
+
+**Bivalent**: An execution of a consensus protocol is in a bivalent state when the network can affect which value agents choose.
+
+**Univalent, Valent**: An execution of a consensus protocol is in a univalent state when only one output value is possible. If that value is $$i$$, call the state $$i$$-valent.
+
+**Stuck**: An execution of a \[broken\] consensus protocol is in a stuck state when one or more non-faulty nodes can never output a value.
