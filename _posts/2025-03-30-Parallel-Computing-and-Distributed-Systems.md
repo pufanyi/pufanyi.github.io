@@ -58,4 +58,20 @@ Interface Definition Languages (IDL): Specify RPC call and return types
 
 在讨论 asynchronous systems 的时候，我们会保守地认为网络是很慢的。也就是说，we can't distinguish failed agent from slow network.
 
-FLP impossibility result <d-cite key="fischer1985impossibility"></d-cite>: No deterministic consensus protocol guarantees all three of safety, liveness, and fault tolerance in an asynchronous system.
+有 $$n$$ 个 agents，每个 agent input 一个数字，现在要各个 agent 通过互相交流达成一致，使得每个 agent 的 output 都相同，并且是其中一个 agent 的 input。
+
+**Safety**: 所有 agent 的 output 都相同（agreement）并且 output 为其中某个 agent 的 input（validity）
+
+**Liveness**: 所有 non-failed 的 agents 都有输出
+
+**Fault tolerance**:
+- Fail-stop: 如果 agent 出错，那么他会立即停止
+- Byzantine-fault-tolerant <d-cite key="lamport2019byzantine"></d-cite>: agent 出错可能出现任意行为，比如发送假消息
+
+**FLP impossibility result** <d-cite key="fischer1985impossibility"></d-cite>: No deterministic consensus protocol guarantees all three of safety, liveness, and fault tolerance in an asynchronous system.
+
+**Consensus in the FLP model**
+
+
+
+
