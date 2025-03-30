@@ -65,6 +65,7 @@ Interface Definition Languages (IDL): Specify RPC call and return types
 **Liveness**: 所有 non-failed 的 agents 都有输出
 
 **Fault tolerance**:
+
 - Fail-stop: 如果 agent 出错，那么他会立即停止
 - Byzantine-fault-tolerant <d-cite key="lamport2019byzantine"></d-cite>: agent 出错可能出现任意行为，比如发送假消息
 
