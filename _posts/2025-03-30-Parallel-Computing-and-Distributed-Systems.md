@@ -14,9 +14,10 @@ toc:
 
 ## Parallel Computing
 
-https://cs149.stanford.edu/
+[Stanford CS149](https://cs149.stanford.edu/)
 
 Forms of Parallel Execution
+
 1. Superscalar: 找到不相关的语句然后并行执行
 2. SIMD：ALU 的并行，Single instruction, multiple data
 3. Multi-core：多个 core，所以想咋玩咋玩
@@ -31,9 +32,9 @@ Overcoming bandwidth limits is often the most important challenge facing softwar
 
 ## Distributed System
 
-https://pdos.csail.mit.edu/6.824/index.html
+[MIT 6.824](https://pdos.csail.mit.edu/6.824/index.html)
 
-https://www.scs.stanford.edu/24sp-cs244b/
+[Stanford CS244B](https://www.scs.stanford.edu/24sp-cs244b/)
 
 ### Remote Procedure Call
 
