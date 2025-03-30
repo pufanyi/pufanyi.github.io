@@ -12,6 +12,7 @@ related_posts: false
 toc:
   sidebar: left
 bibliography: 2025-03-30-Parallel-Computing-and-Distributed-Systems.bib
+related_publications: true
 ---
 
 ## Parallel Computing
