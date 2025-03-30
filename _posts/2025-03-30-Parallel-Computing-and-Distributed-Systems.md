@@ -58,4 +58,4 @@ Interface Definition Languages (IDL): Specify RPC call and return types
 
 在讨论 asynchronous systems 的时候，我们会保守地认为网络是很慢的。也就是说，we can't distinguish failed agent from slow network.
 
-<d-cite key="fischer1985impossibility"></d-cite>
+FLP impossibility result <d-cite key="fischer1985impossibility"></d-cite>: No deterministic consensus protocol guarantees all three of safety, liveness, and fault tolerance in an asynchronous system.
