@@ -37,10 +37,18 @@ Overcoming bandwidth limits is often the most important challenge facing softwar
 
 [Stanford CS244B](https://www.scs.stanford.edu/24sp-cs244b/)
 
-### Remote Procedure Call
+### Remote Procedure Call (RPC)
 
 需要比普通的 procedure 多一个 "I don't know" 的选项。
 
 Interface Definition Languages (IDL): Specify RPC call and return types
 
 {% include figure.liquid loading="eager" path="assets/img/2025-03-30-Parallel-Computing-and-Distributed-Systems/ds/idl.png" class="img-fluid rounded z-depth-1" %}
+
+[External Data Representation Standard (XDR)](https://datatracker.ietf.org/doc/html/rfc4506)
+
+### Consensus
+
+在讨论 asynchronous systems 的时候，我们会保守地认为网络是很慢的。也就是说，we can't distinguish failed agent from slow network.
+
+{% cite fischer1985impossibility %}
