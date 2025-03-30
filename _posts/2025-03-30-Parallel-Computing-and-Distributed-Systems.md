@@ -44,6 +44,8 @@ Overcoming bandwidth limits is often the most important challenge facing softwar
 
 [Stanford CS244B](https://www.scs.stanford.edu/24sp-cs244b/)
 
+忽然发现 CS244B 的主讲人是 <d-cite key="vamplew2016get"></d-cite> 的一作。
+
 ### Remote Procedure Call (RPC)
 
 需要比普通的 procedure 多一个 "I don't know" 的选项。
