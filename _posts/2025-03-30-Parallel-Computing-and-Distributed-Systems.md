@@ -9,8 +9,6 @@ tags:
   - Distributed System
 giscus_comments: true
 related_posts: false
-toc:
-  sidebar: left
 bibliography: 2025-03-30-Parallel-Computing-and-Distributed-Systems.bib
 authors:
   - name: Pu Fanyi
@@ -58,4 +56,4 @@ Interface Definition Languages (IDL): Specify RPC call and return types
 
 在讨论 asynchronous systems 的时候，我们会保守地认为网络是很慢的。也就是说，we can't distinguish failed agent from slow network.
 
-{% cite fischer1985impossibility %}
+<d-cite key="fischer1985impossibility"></d-cite>
