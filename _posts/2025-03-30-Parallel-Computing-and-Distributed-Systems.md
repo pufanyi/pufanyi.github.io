@@ -36,6 +36,8 @@ Interleaved (temporal) multi-threading: 这个任务在 stall 了（比如在 fe
 
 Overcoming bandwidth limits is often the most important challenge facing software developers targeting modern throughput-optimized systems.
 
+---
+
 ## Distributed System
 
 [MIT 6.824](https://pdos.csail.mit.edu/6.824/index.html)
