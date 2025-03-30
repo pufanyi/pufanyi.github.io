@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: distill
 title: Parallel Computing and Distributed Systems
 categories: Notes
 date: 2025-03-30
@@ -12,7 +12,12 @@ related_posts: false
 toc:
   sidebar: left
 bibliography: 2025-03-30-Parallel-Computing-and-Distributed-Systems.bib
-related_publications: true
+authors:
+  - name: Pu Fanyi
+    url: "https://pufanyi.github.io"
+    affiliations:
+      name: NTU, Singapore
+      url: "https://www.ntu.edu.sg/"
 ---
 
 ## Parallel Computing
