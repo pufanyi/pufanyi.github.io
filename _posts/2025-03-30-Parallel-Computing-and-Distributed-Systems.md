@@ -25,7 +25,7 @@ Forms of Parallel Execution
 
 SIMD 遇到 branchs？一部分 ALU 需要等待
 
-{% include figure.liquid loading="eager" path="assets/img/pc/simd_branch.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/2025-03-30-Parallel-Computing-and-Distributed-Systems/pc/simd_branch.png" class="img-fluid rounded z-depth-1" %}
 
 Interleaved (temporal) multi-threading: 这个任务在 stall 了（比如在 fetch memory），先执行别的任务
 
