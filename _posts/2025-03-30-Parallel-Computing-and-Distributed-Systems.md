@@ -22,6 +22,8 @@ authors:
 
 [Stanford CS149](https://cs149.stanford.edu/)
 
+### A Modern Multi-Core Processor
+
 Forms of Parallel Execution
 
 1. Superscalar: 找到不相关的语句然后并行执行
