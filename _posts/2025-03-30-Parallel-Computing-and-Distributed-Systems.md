@@ -48,6 +48,17 @@ Overcoming bandwidth limits is often the most important challenge facing softwar
 
 忽然发现 CS244B 的 instructor 是 <d-cite key="vamplew2016get"></d-cite> 的一作。
 
+### Introduction
+
+You should try everything else before you try distributed systems.
+
+Why distributed systems?
+
+- Parallelism
+- Fault tolerance
+- Physical
+- Security (isolation)
+
 ### Remote Procedure Call (RPC)
 
 需要比普通的 procedure 多一个 "I don't know" 的选项。
