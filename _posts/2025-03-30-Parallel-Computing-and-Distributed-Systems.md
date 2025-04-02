@@ -84,7 +84,7 @@ Interface Definition Languages (IDL): Specify RPC call and return types
 - Fail-stop: 如果 agent 出错，那么他会立即停止
 - Byzantine-fault-tolerant <d-cite key="lamport2019byzantine"></d-cite>: agent 出错可能出现任意行为，比如发送假消息
 
-**FLP impossibility result** <d-cite key="fischer1985impossibility"></d-cite>: No deterministic consensus protocol guarantees all three of safety, liveness, and fault tolerance in an asynchronous system.
+**FLP impossibility result** <d-cite key="fischer1985impossibility"></d-cite>: 对于 deterministic consensus protocol，safety, liveness, and fault tolerance 三者不可得兼。
 
 **Bivalent**: An execution of a consensus protocol is in a bivalent state when the network can affect which value agents choose.
 
