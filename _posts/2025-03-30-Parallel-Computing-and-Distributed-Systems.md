@@ -30,9 +30,13 @@ Forms of Parallel Execution
 2. SIMD：ALU 的并行，Single instruction, multiple data
 3. Multi-core：多个 core，所以想咋玩咋玩
 
+Vector Program: [AVX intrinsics](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html)
+
 SIMD 遇到 branchs？一部分 ALU 需要等待
 
 {% include figure.liquid loading="eager" path="assets/img/2025-03-30-Parallel-Computing-and-Distributed-Systems/pc/simd_branch.png" class="img-fluid rounded z-depth-1" %}
+
+### Accessing Memory
 
 Interleaved (temporal) multi-threading: 这个任务在 stall 了（比如在 fetch memory），先执行别的任务
 
