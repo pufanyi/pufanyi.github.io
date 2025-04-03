@@ -63,6 +63,14 @@ Why distributed systems?
 - Physical
 - Security (isolation)
 
+Infrastructure for application:
+
+1. Storage
+2. Communication
+3. Computation
+
+我们是要将这些复杂的 distribution 隐藏起来，让他看起来像是一个普通的系统
+
 ### Remote Procedure Call (RPC)
 
 需要比普通的 procedure 多一个 "I don't know" 的选项。
