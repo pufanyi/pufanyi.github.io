@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RL as a Co-Design of Product and Research
+title: Reinforcement Learning as a Co-Design of Product and Research
 categories: Notes
 date: 2025-04-09
 description: Notes for CS25 Transformers United V5, Lecture 2
