@@ -32,7 +32,7 @@ Two ways of building research-driven products:
    3. Streaming model's thoughts：这个也很平常了，就是用输出些中间过程来防止用户等的太急
 2. Start with product belief & vision -> make the model do that：根据需求 finetune 模型 - **I just think product designers and model trainers need to collaborate more with each other**
    1. Redesign 新闻 page（没咋听懂）：Most effective way to get people to readmore of storylines coverage is by adding alayer of context to our product andcoverage-across major surfaces - that connects people to the stories and information they need.
-   2. more human command line{% include figure.liquid loading="eager" path="assets/img/2025-04-09-RL-in-Products/cmdline.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+   2. more human command line![](assets/img/2025-04-09-RL-in-Products/cmdline.png)
    3. Claude 每个 chat session 的标题是根据用户语言习惯去标的，也就是说，他在生成 chat session 的时候用到了 user info。
    4. Claude in slack：群助手，好像功能更多，比如每周五 summarize channel，然后还有很多其他的 agent 功能。
 
