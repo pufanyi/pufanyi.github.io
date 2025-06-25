@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -55,8 +55,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -70,7 +70,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -127,8 +127,8 @@
       {Nanyang Technological University}{Singapore}
       {Bachelor of Computing in Data Science and Artificial Intelligence}{2022 -- 2026}
       \resumeItemListStart
-      \resumeItem{Expected Honours (Distinction), Current CGPA: 4.63 / 5.00}
-      \resumeItem{Studied various non-major courses such as Japanese (till level 3), Electromagnetism, Computational Economics Numerical Analysis, Stochastic Process and Cryptography.}
+      \resumeItem{Expected Honours (Highest Distinction), Current CGPA: 4.63 / 5.00}
+      \resumeItem{Core courses: Data Structure and Algorithms, Probability and Statistics, Regression Analysis, Machine Learning, Software Engineering, Computational Economics, Stochastic Process, Numerical Analysis, Cryptography.}
       \resumeItemListEnd
     \resumeSubheading
       {University of California, Berkeley}{Berkeley, CA}
@@ -144,20 +144,22 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Experience on Campus}{Jun 2023 -- Present}
+      {Research Assistant}{Jan 2025 -- May 2025}
       {MMLab@NTU}{Singapore}
       \resumeItemListStart
-        \resumeItem{Supervised by Prof. Ziwei Liu.}
-        \resumeItem{Contributed to Otter, LMMs-Eval, VideoMMMU.}
+        \resumeItem{Focused on multimodal understanding of large models.}
+        \resumeItem{Currently 900+ citations on Google Scholar.}
       \resumeItemListEnd
 
     \resumeSubheading
       {The International Collegiate Programming Contest (ICPC)}{2021 -- 2024}
       {Nanyang Technological University / Dalian University of Technology}{Singapore / China}
       \resumeItemListStart
-        \resumeItem{Ranked 6th in ICPC Asia-Manila Regional Contest.}
-        \resumeItem{Gold medal in ICPC Asia-Kunming Regional contest.}
-        \resumeItem{Silver medal in ICPC Asia-Nanjing Regional contest.}
+        \resumeItem{Ranked 22th in 2024 ICPC Asia Pacific Championship.}
+        \resumeItem{Ranked 13th in 2023 ICPC Asia Jakarta Regional Contest.}
+        \resumeItem{Ranked 6th in 2022 ICPC Asia Manila Regional Contest.}
+        \resumeItem{Gold medal in 2021 ICPC Asia Kunming Regional contest.}
+        \resumeItem{Silver medal in 2021 ICPC Asia Nanjing Regional contest.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -173,37 +175,73 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{LMMs-Eval}}{}
+          {\textbf{Synvo Chatbot}}{Feb 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{An Evaluation Suite for Large Multimodal Models}
-            \resumeItem{Earned 2.6k stars on GitHub.}
-            \resumeItem{Adopted by projects such as \href{https://llava-vl.github.io/blog/2024-08-05-llava-onevision/}{LLaVA} (ByteDance) and \href{https://apollo-lmms.github.io/}{Apollo} (Meta).}
+            \resumeItem{A chatbot with multimodal memory.}
+            \resumeItem{Completed the project's RAG system, along with its frontend and backend.}
+            \resumeItem{Assisted in the training of audio models, implementing the Direct Preference Optimization code for training.}
+            \resumeItem{Founded a startup based on this project and raised \$4M USD in an angel round.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Video-MMMU}}{}
+          {\textbf{LMMs-Eval}}{Jan 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Open-source evaluation frameworks spanning text, image, video, and audio tasks with 2.6K GitHub stars.}
+            \resumeItem{Contributed to the pipeline code and developed Multi-modal LiveBench.}
+            \resumeItem{Adopted by projects such as \href{https://llava-vl.github.io/blog/2024-08-05-llava-onevision/}{LLaVA} (ByteDance) and \href{https://apollo-lmms.github.io/}{Apollo} (Meta).}
+            \resumeItem{Paper accepted by NAACL (Findings), first co-author.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Video-MMMU}}{Sep 2024 -- Feb 2025}
           \resumeItemListStart
             \resumeItem{Built an evaluation set on multi-discipline professional videos.}
+            \resumeItem{Contributed to algorithms for evaluating model learning capabilities.}
             \resumeItem{Evaluated LMMs' knowledge acquisition on videos.}
-            \resumeItem{Cited by \href{https://deepmind.google/models/gemini/pro/}{Gemini 2.5 Pro}, \href{https://arxiv.org/pdf/2505.07062}{Seed1.5-VL} and \href{https://arxiv.org/abs/2504.07491}{Kimi-VL}.}
+            \resumeItem{Project cited by \href{https://deepmind.google/models/gemini/pro/}{Gemini 2.5 Pro} (Google), \href{https://arxiv.org/pdf/2505.07062}{Seed1.5-VL} (ByteDance) and \href{https://arxiv.org/abs/2504.07491}{Kimi-VL} (Moonshot AI).}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Multi-Modal In-Context Instruction Tuning}}{}
+          {\textbf{Multi-Modal In-Context Instruction Tuning (Otter, MIMIC-IT)}}{Jun 2023 -- Dec 2023}
           \resumeItemListStart
+            \resumeItem{Early experiment on a vision-language-agent (VLA) model with RLHF.}
             \resumeItem{Developed a pipeline to generate a multimodal instruction tuning dataset using pure language models.}
-            \resumeItem{Paper accepted by \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence} (TPAMI).}
+            \resumeItem{Paper accepted by \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence} (TPAMI), first co-author.}
             \resumeItem{Earned 3.3k stars on GitHub.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Nanyang Programming Contest}}{}
-          \resumeItemListStart
-            \resumeItem{Organized multiple competitions and lectures.}
-            \resumeItem{Aimed at helping students struggling with algorithm problems in interviews.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+\section{Skills}
+
+\textbf{Software Development}: Python (FastAPI, Celery, Gradio), C/C++, Java (Spring Boot), Golang (gRPC), JavaScript/TypeScript (React), HTML, MongoDB, SQL (SQLite, PostgreSQL)
+
+\textbf{Model Training}: PyTorch, Hugging Face (Transformers, Datasets, PEFT, Accelerate)
+
+\textbf{Mathematical Programming}: Lean, R, Matlab, Julia
+
+\textbf{Tools}: Git, \LaTeX, Typst, Markdown
+
+\textbf{Languages}: English, Chinese, Japanese
+
+\section{Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nanyang Programming Contest}{Jan 2025 -- Present}
+      {Nanyang Technological University}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Organized 2 competitions and tutorials to non-ICPC students.}
+        \resumeItem{Aimed at helping students struggling with algorithm problems in interviews.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NTU Students' Computing and Data Science Club}{Nov 2024 -- Present}
+      {Nanyang Technological University}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Managed a telegram group with 130+ members.}
+        \resumeItem{Answer questions about AI/ML and share learning resources related to AI/ML.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 \section{Hobbies}
 
-Chess (lichess ID: \href{https://lichess.org/@/pufanyi}{pufanyi}, rating: 2084), calligraphy (Yan Zhenqing), table tennis
+Chess (lichess rating: 2084), calligraphy, table tennis
 
 \section{Services}
 
