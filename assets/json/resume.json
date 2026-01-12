@@ -4,7 +4,7 @@
     "image": "",
     "email": "FPU001@e.ntu.edu.sg",
     "phone": "+65 8398 1454",
-    "url": "https://pufanyi.github.io",
+    "url": "https://pufanyi.com",
     "location": {
       "address": "50 Nanyang Ave",
       "postalCode": "639798",
@@ -37,7 +37,10 @@
       "position": "URECA Student",
       "url": "https://www.mmlab-ntu.com/",
       "startDate": "2023-07",
-      "highlights": ["Fortunately to be supervised by Asst. Prof. Ziwei Liu.", "Taking research on the large-scale multi-modality models."]
+      "highlights": [
+        "Fortunately to be supervised by Asst. Prof. Ziwei Liu.",
+        "Taking research on the large-scale multi-modality models."
+      ]
     }
   ],
   "awards": [
@@ -134,7 +137,10 @@
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "highlights": [
+        "Quantum Teleportation",
+        "Quantum Cryptography"
+      ],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"

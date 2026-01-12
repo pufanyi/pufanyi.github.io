@@ -12,7 +12,7 @@ related_posts: false
 bibliography: 2025-03-30-Parallel-Computing-and-Distributed-Systems.bib
 authors:
   - name: Pu Fanyi
-    url: "https://pufanyi.github.io"
+    url: "https://pufanyi.com"
     affiliations:
       name: NTU, Singapore
       url: "https://www.ntu.edu.sg/"
