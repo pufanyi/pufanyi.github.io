@@ -37,10 +37,7 @@
       "position": "URECA Student",
       "url": "https://www.mmlab-ntu.com/",
       "startDate": "2023-07",
-      "highlights": [
-        "Fortunately to be supervised by Asst. Prof. Ziwei Liu.",
-        "Taking research on the large-scale multi-modality models."
-      ]
+      "highlights": ["Fortunately to be supervised by Asst. Prof. Ziwei Liu.", "Taking research on the large-scale multi-modality models."]
     }
   ],
   "awards": [
@@ -137,10 +134,7 @@
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": [
-        "Quantum Teleportation",
-        "Quantum Cryptography"
-      ],
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"
