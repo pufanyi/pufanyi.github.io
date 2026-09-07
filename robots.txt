@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://pufanyi.com/sitemap.xml
+Sitemap: https://projects.pufanyi.com/sitemap.xml
